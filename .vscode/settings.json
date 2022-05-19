@@ -1,0 +1,8 @@
+{
+	"json.schemas": [
+		{
+			"fileMatch": ["content/model.json"],
+			"url": "./content/frontaid-schema.json"
+		}
+	]
+}

@@ -1,0 +1,35 @@
+{
+	":name": "Next-CMS",
+	":description": "Basic template",
+	":locales": ["es", "en"],
+	"navbar": {
+		"items": {
+			":items": {
+				"href": {
+					":type": "line"
+				},
+				"label": {
+					":type": "line"
+				}
+			}
+		},
+		"socialMedia": {
+			":name": "Social Media",
+			":items": {
+				"href": {
+					":type": "line"
+				},
+				"icon": {
+					":type": "line"
+				}
+			}
+		},
+		"languages": {
+			":items": {
+				"label": {
+					":type": "line"
+				}
+			}
+		}
+	}
+}
