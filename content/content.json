@@ -1,1 +1,31 @@
-{}
+{
+  "es": {
+    "navbar": {
+      "items": [
+        {
+          "href": "#meet-us",
+          "label": "Cónocenos"
+        },
+        {
+          "href": "#services",
+          "label": "Servicios"
+        },
+        {
+          "href": "#our-coffees",
+          "label": "Nuestros cafés"
+        },
+        {}
+      ]
+    }
+  },
+  "en": {
+    "navbar": {
+      "items": [
+        {},
+        {},
+        {},
+        {}
+      ]
+    }
+  }
+}
