@@ -14,13 +14,21 @@
           "href": "#our-coffees",
           "label": "Nuestros cafés"
         },
-        {}
+        {
+          "href": "#team",
+          "label": "Equipo"
+        },
+        {
+          "href": "#contact",
+          "label": "Contacto"
+        }
       ]
     }
   },
   "en": {
     "navbar": {
       "items": [
+        {},
         {},
         {},
         {},
