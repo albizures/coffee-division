@@ -1,6 +1,6 @@
 {
-	":name": "Next-CMS",
-	":description": "Basic template",
+	":name": "Coffee Divison",
+	":description": "Landing page of Industrias Noviembre, Coffee Division",
 	":locales": ["es", "en"],
 	"navbar": {
 		"items": {

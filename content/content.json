@@ -1,39 +1,33 @@
 {
-  "es": {
-    "navbar": {
-      "items": [
-        {
-          "href": "#meet-us",
-          "label": "Cónocenos"
-        },
-        {
-          "href": "#services",
-          "label": "Servicios"
-        },
-        {
-          "href": "#our-coffees",
-          "label": "Nuestros cafés"
-        },
-        {
-          "href": "#team",
-          "label": "Equipo"
-        },
-        {
-          "href": "#contact",
-          "label": "Contacto"
-        }
-      ]
-    }
-  },
-  "en": {
-    "navbar": {
-      "items": [
-        {},
-        {},
-        {},
-        {},
-        {}
-      ]
-    }
-  }
+	"es": {
+		"navbar": {
+			"items": [
+				{
+					"href": "#meet-us",
+					"label": "Conócenos"
+				},
+				{
+					"href": "#services",
+					"label": "Servicios"
+				},
+				{
+					"href": "#our-coffees",
+					"label": "Nuestros cafés"
+				},
+				{
+					"href": "#team",
+					"label": "Equipo"
+				},
+				{
+					"href": "#contact",
+					"label": "Contacto"
+				}
+			]
+		}
+	},
+	"en": {
+		"navbar": {
+			"items": [{}, {}, {}, {}, {}]
+		}
+	}
 }

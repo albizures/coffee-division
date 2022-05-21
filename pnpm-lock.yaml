@@ -14,10 +14,12 @@ specifiers:
   eslint-config-next: 12.1.0
   eslint-plugin-react-hooks: ^4.5.0
   eslint-plugin-unicorn: ^41.0.0
+  lodash.merge: ^4.6.2
   next: 12.1.0
   npm-run-all: ^4.1.5
   react: 17.0.2
   react-dom: 17.0.2
+  react-take: ^0.0.7
   start-server-and-test: ^1.14.0
   typescript: ^4.6.2
   windicss: ^3.5.1
@@ -26,9 +28,11 @@ specifiers:
 
 dependencies:
   clsx: 1.1.1
+  lodash.merge: 4.6.2
   next: 12.1.0_1c8eb55a7cd394dff7d2e804253294a5
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  react-take: 0.0.7_react@17.0.2
 
 devDependencies:
   '@albizures/prettier-config': 1.0.1
@@ -2628,7 +2632,6 @@ packages:
 
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
-    dev: true
 
   /lodash.once/4.1.1:
     resolution: {integrity: sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=}
@@ -2733,6 +2736,10 @@ packages:
   /minimist/1.2.6:
     resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
     dev: true
+
+  /mitt/3.0.0:
+    resolution: {integrity: sha512-7dX2/10ITVyqh4aOSVI9gdape+t9l2/8QxHrFmUXu4EEUpdlxl6RudZUPZoc+zuY2hk1j7XxVroIVIan/pD/SQ==}
+    dev: false
 
   /mrmime/1.0.0:
     resolution: {integrity: sha512-a70zx7zFfVO7XpnQ2IX1Myh9yY4UYvfld/dikWRnsXxbyvMcfz+u6UfgNAtH+k2QqtJuzVpv6eLTx1G2+WKZbQ==}
@@ -3194,6 +3201,16 @@ packages:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: true
 
+  /react-take/0.0.7_react@17.0.2:
+    resolution: {integrity: sha512-dWKiTIS+caaATXR4bgtu91NE46W7ZGrqc9BLAgBUqh9/6OSYZUuPl7vESLrZMTGcOPu3YGXUE+vN37EJHpfCzA==}
+    peerDependencies:
+      react: ^17.0.2
+    dependencies:
+      mitt: 3.0.0
+      react: 17.0.2
+      tiny-invariant: 1.2.0
+    dev: false
+
   /react/17.0.2:
     resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
     engines: {node: '>=0.10.0'}
@@ -3641,6 +3658,10 @@ packages:
   /through/2.3.8:
     resolution: {integrity: sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=}
     dev: true
+
+  /tiny-invariant/1.2.0:
+    resolution: {integrity: sha512-1Uhn/aqw5C6RI4KejVeTg6mIS7IqxnLJ8Mv2tV5rTc0qWobay7pDUz6Wi392Cnc8ak1H0F2cjoRzb2/AW4+Fvg==}
+    dev: false
 
   /tmp/0.2.1:
     resolution: {integrity: sha512-76SUhtfqR2Ijn+xllcI5P1oyannHNHByD80W1q447gU3mp9G9PSpGdWmjUOHRDPiHYacIk66W7ubDTuPF3BEtQ==}
