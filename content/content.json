@@ -37,6 +37,22 @@
           "icon": "linkedin"
         }
       ]
+    },
+    "hero": {
+      "label": {
+        "part1": "La pasión por café",
+        "part2": "nos conecta"
+      },
+      "cta": {
+        "label": "INICIA AQUÍ",
+        "href": "#start-here"
+      }
+    },
+    "meetUs": {
+      "title": {
+        "part1": "¿Qué",
+        "part2": "hacemos?"
+      }
     }
   },
   "en": {
