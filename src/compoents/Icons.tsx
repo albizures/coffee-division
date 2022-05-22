@@ -94,6 +94,55 @@ export function LinkedinIcon(props: IconProps) {
 	);
 }
 
+export function RightArrowIcon(props: IconProps) {
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="100%"
+			height="100%"
+			viewBox="0 0 68 68"
+			{...props}
+		>
+			<g
+				id="Icon_feather-arrow-right-circle"
+				data-name="Icon feather-arrow-right-circle"
+				transform="translate(-1.5 -1.5)"
+			>
+				<path
+					id="Path_1308"
+					data-name="Path 1308"
+					d="M68,35.5A32.5,32.5,0,1,1,35.5,3,32.5,32.5,0,0,1,68,35.5Z"
+					transform="translate(0 0)"
+					fill="none"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+					strokeWidth="3"
+				/>
+				<path
+					id="Path_1309"
+					data-name="Path 1309"
+					d="M18,38,31,25,18,12"
+					transform="translate(17.5 10.5)"
+					fill="none"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+					strokeWidth="3"
+				/>
+				<path
+					id="Path_1310"
+					data-name="Path 1310"
+					d="M12,18H38"
+					transform="translate(10.5 17.5)"
+					fill="none"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+					strokeWidth="3"
+				/>
+			</g>
+		</svg>
+	);
+}
+
 export const icons = {
 	instagram: InstagramIcon,
 	facebook: FacebookIcon,
