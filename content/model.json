@@ -60,7 +60,12 @@
 			}
 		},
 		"description": {
-			":type": "line"
+			"part1": {
+				":type": "line"
+			},
+			"part2": {
+				":type": "line"
+			}
 		},
 		"description2": {
 			"part1": {
