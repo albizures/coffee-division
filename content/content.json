@@ -52,6 +52,14 @@
       "title": {
         "part1": "¿Qué",
         "part2": "hacemos?"
+      },
+      "description": {
+        "part1": "Enlazamos a productores guatemaltecos con compradores del mundo para exportar nuestros cafés. Nos enfocamos en el detalle de",
+        "part2": "selección de granos y trazabilidad."
+      },
+      "description2": {
+        "part1": "a través de Finca San José las Victorias como parte de nuestro grupo corporativo.",
+        "part2": "Exportamos y producimos excelentes cafés"
       }
     }
   },
