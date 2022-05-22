@@ -31,5 +31,44 @@
 				}
 			}
 		}
+	},
+	"hero": {
+		"label": {
+			"part1": {
+				":type": "line"
+			},
+			"part2": {
+				":type": "line"
+			}
+		},
+		"cta": {
+			"label": {
+				":type": "line"
+			},
+			"href": {
+				":type": "line"
+			}
+		}
+	},
+	"meetUs": {
+		"title": {
+			"part1": {
+				":type": "line"
+			},
+			"part2": {
+				":type": "line"
+			}
+		},
+		"description": {
+			":type": "line"
+		},
+		"description2": {
+			"part1": {
+				":type": "line"
+			},
+			"part2": {
+				":type": "line"
+			}
+		}
 	}
 }
