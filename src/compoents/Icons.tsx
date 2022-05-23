@@ -143,6 +143,126 @@ export function RightArrowIcon(props: IconProps) {
 	);
 }
 
+export function LeafIcon(props: IconProps) {
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="100%"
+			height="100%"
+			viewBox="-20 -25 110 110"
+			{...props}
+		>
+			<g
+				id="Group_189"
+				data-name="Group 189"
+				transform="translate(0 0)"
+				clipPath="url(#clip-path)"
+			>
+				<path
+					id="Path_1351"
+					data-name="Path 1351"
+					d="M23.32,25.68c3.446,1.614,4.61,6.418,2.6,10.729s-6.433,6.5-9.879,4.883-4.61-6.418-2.6-10.729S19.874,24.067,23.32,25.68Z"
+					transform="translate(6.723 13.575)"
+					fill="none"
+					stroke="#eef0ea"
+					strokeLinecap="round"
+					strokeWidth="2"
+				/>
+				<path
+					id="Path_1352"
+					data-name="Path 1352"
+					d="M29.44,28.183c-3.625,1.15-5.4,5.756-3.96,10.287s5.542,7.271,9.166,6.121,5.4-5.756,3.959-10.287S33.065,27.033,29.44,28.183Z"
+					transform="translate(13.484 15.071)"
+					fill="none"
+					stroke="#eef0ea"
+					strokeLinecap="round"
+					strokeWidth="2"
+				/>
+				<path
+					id="Path_1353"
+					data-name="Path 1353"
+					d="M38.635,35.051c2.744.884,5.577.4,7.311-1.5C48.5,30.74,47.7,25.9,44.175,22.734s-8.456-3.454-11.008-.647a6.317,6.317,0,0,0-1.306,5.734"
+					transform="translate(17.096 10.881)"
+					fill="none"
+					stroke="#eef0ea"
+					strokeLinecap="round"
+					strokeWidth="2"
+				/>
+				<path
+					id="Path_1354"
+					data-name="Path 1354"
+					d="M37.395,23.767s-7.751-5.717-13.552-6.72"
+					transform="translate(12.87 9.202)"
+					fill="none"
+					stroke="#eef0ea"
+					strokeLinecap="round"
+					strokeWidth="2"
+				/>
+				<path
+					id="Path_1355"
+					data-name="Path 1355"
+					d="M19.511,30.053s3.357-9.694,6.669-13.006"
+					transform="translate(10.532 9.202)"
+					fill="none"
+					stroke="#eef0ea"
+					strokeLinecap="round"
+					strokeWidth="2"
+				/>
+				<path
+					id="Path_1356"
+					data-name="Path 1356"
+					d="M39.545,42.574C31.846,11.778,7.207,1,7.207,1"
+					transform="translate(3.89 0.54)"
+					fill="none"
+					stroke="#eef0ea"
+					strokeLinecap="round"
+					strokeWidth="2"
+				/>
+				<path
+					id="Path_1357"
+					data-name="Path 1357"
+					d="M24.194,8.624C25.4,3.535,30.8-.069,38.2,1.679,48.25,4.053,56.126,15.641,56.126,15.641S43.9,22.481,33.845,20.107c-4.625-1.092-7.67-3.512-9.008-6.416"
+					transform="translate(13.059 0.665)"
+					fill="none"
+					stroke="#eef0ea"
+					strokeLinecap="round"
+					strokeWidth="2"
+				/>
+				<path
+					id="Path_1358"
+					data-name="Path 1358"
+					d="M16.286,4.7C11.746,10.166,7.72,18.736,7.207,29.987"
+					transform="translate(3.89 2.538)"
+					fill="none"
+					stroke="#eef0ea"
+					strokeLinecap="round"
+					strokeWidth="2"
+				/>
+				<path
+					id="Path_1359"
+					data-name="Path 1359"
+					d="M16.7,8.843c7.522-3.286,20.2-4.379,28.415-.176"
+					transform="translate(9.015 3.199)"
+					fill="none"
+					stroke="#eef0ea"
+					strokeLinecap="round"
+					strokeWidth="2"
+				/>
+				<path
+					id="Path_1360"
+					data-name="Path 1360"
+					d="M13.625,11.475C9.239,10.812,4.68,13.617,2.31,19.859c-3.665,9.656,1.521,22.672,1.521,22.672s12.517-6.3,16.181-15.954c2.054-5.412,1.163-9.984-1.537-12.677"
+					transform="translate(0.54 6.143)"
+					fill="none"
+					stroke="#eef0ea"
+					strokeLinecap="round"
+					strokeWidth="2"
+				/>
+			</g>
+		</svg>
+	);
+}
+
 export const icons = {
 	instagram: InstagramIcon,
 	facebook: FacebookIcon,

@@ -1,18 +1,24 @@
 import merge from 'lodash.merge';
-import Image from 'next/image';
 import { GetStaticProps } from 'next';
 import content from '../../content/content.json';
+import { Contact } from '../compoents/Contact';
 import { Header } from '../compoents/Header';
-import { useContent } from '../state';
 import { Hero } from '../compoents/Hero';
+import { MeetUs } from '../compoents/MeetUs';
+import { OurCoffees } from '../compoents/OurCoffees';
+import { Services } from '../compoents/Services';
+import { Team } from '../compoents/Team';
 
 export default function Index() {
-	const content = useContent();
-
 	return (
 		<>
 			<Header />
 			<Hero />
+			<MeetUs />
+			<Services />
+			<OurCoffees />
+			<Team />
+			<Contact />
 		</>
 	);
 }

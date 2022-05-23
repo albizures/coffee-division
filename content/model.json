@@ -79,7 +79,7 @@
 			"label": { ":type": "line" },
 			"href": { ":type": "line" }
 		},
-		"mision": {
+		"mission": {
 			"title": { ":type": "line" },
 			"description": { ":type": "line" }
 		},

@@ -16,10 +16,15 @@ export default defineConfig({
 			komorebi: '#bdc4b3',
 			foothills: '#a08b67',
 			'extra-white': '#edf0e9',
+			crisp: '#E9E3D7',
 			rutherford: '#8f7252',
 			hunt: '#2b4f3f',
 			flintstone: '#697484',
 			liquorice: '#3b3b3b',
+		},
+		fontFamily: {
+			sans: ['Work Sans', 'sans-serif'],
+			serif: ['DM Serif Display', 'serif'],
 		},
 	},
 });

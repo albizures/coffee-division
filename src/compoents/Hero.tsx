@@ -25,7 +25,7 @@ export function Hero() {
 						href={hero.cta.href}
 					>
 						<span className="align-middle">{hero.cta.label}</span>
-						<RightArrowIcon className="inline-block w-5 h-5 stroke-white" />
+						<RightArrowIcon className="ml-3 inline-block w-5 h-5 stroke-white" />
 					</a>
 				</div>
 			</div>
