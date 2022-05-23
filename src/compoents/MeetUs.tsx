@@ -16,12 +16,12 @@ export function MeetUs() {
 	return (
 		<>
 			<div className="bg-crisp">
-				<div className="max-w-4xl mx-auto relative pt-12 pb-14">
+				<div className="max-w-4xl mx-auto relative pt-12 pb-14 px-4">
 					<h2 className="text-center font-serif text-hunt mb-8">
-						<span className="text-6xl block">
+						<span className="md:text-6xl block">
 							{meetUs.title.part1}
 						</span>
-						<span className="text-8xl	block">
+						<span className="md:text-8xl	block">
 							{meetUs.title.part2}
 						</span>
 					</h2>
@@ -33,14 +33,14 @@ export function MeetUs() {
 						</span>
 					</p>
 					<div className="mt-12 mb-12 border-rutherford border-t-1" />
-					<div className="flex">
+					<div className="flex flex-col md:flex-row">
 						<div className="flex-1 relative">
 							<Image src={MeetUs1Img} />
 							<span className="rounded-full absolute -right-3 top-1/2 bg-hunt shadow-2xl shadow-black inline-block h-24 w-25">
 								<LeafIcon className="h-24 w-25" />
 							</span>
 						</div>
-						<p className="flex-1 self-center px-10">
+						<p className="flex-1 self-center px-10 mt-4 md:mt-0">
 							{meetUs.description2.part1}{' '}
 							<span className="font-bold">
 								{meetUs.description2.part2}
@@ -49,7 +49,7 @@ export function MeetUs() {
 					</div>
 				</div>
 			</div>
-			<div className="bg-caraway">
+			<div className="bg-caraway px-4">
 				<a className="max-w-4xl flex block mx-auto justify-center items-center py-6 cursor-pointer">
 					<Image src={MiniGuateImg} height="60" width="45" />
 					<p className="mx-4 text-center text-extra-white">
@@ -58,8 +58,9 @@ export function MeetUs() {
 					<RightArrowIcon className="h-8 w-8 stroke-extra-white" />
 				</a>
 			</div>
+			{/* Mission and vision */}
 			<div className="py-14 bg-hunt">
-				<div className="max-w-4xl flex mx-auto items-center">
+				<div className="max-w-4xl px-4 flex flex-col md:flex-row mx-auto items-center">
 					<div className="flex-1">
 						<h3 className="font-serif text-6xl text-extra-white text-center">
 							{meetUs.mission.title}
@@ -68,7 +69,7 @@ export function MeetUs() {
 							{meetUs.mission.description}
 						</p>
 					</div>
-					<div className="mx-4 flex-1">
+					<div className="mx-4 my-2 md:my-0 flex-1">
 						<Image src={MissionVisionImg} />
 					</div>
 					<div className="flex-1">
@@ -85,7 +86,7 @@ export function MeetUs() {
 				<p className="text-center font-semibold">
 					{meetUs.ourHistory.upperTitle}
 				</p>
-				<h2 className="text-center text-6xl font-serif">
+				<h2 className="text-center md:text-6xl font-serif">
 					{meetUs.ourHistory.title}
 				</h2>
 

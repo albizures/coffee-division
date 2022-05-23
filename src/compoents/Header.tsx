@@ -33,7 +33,7 @@ export function Header() {
 	const { navbar } = useContent();
 	return (
 		<div className="shadow-sm">
-			<header className="flex max-w-4xl mx-auto py-4">
+			<header className="flex max-w-4xl mx-auto py-4 hidden md:block">
 				<div className="h-12 w-48">
 					<Image src={LogoImg} layout="responsive" />
 				</div>
