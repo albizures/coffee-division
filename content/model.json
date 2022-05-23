@@ -74,6 +74,29 @@
 			"part2": {
 				":type": "line"
 			}
+		},
+		"coffeeOrigin": {
+			"label": { ":type": "line" },
+			"href": { ":type": "line" }
+		},
+		"mision": {
+			"title": { ":type": "line" },
+			"description": { ":type": "line" }
+		},
+		"vision": {
+			"title": { ":type": "line" },
+			"description": { ":type": "line" }
+		},
+		"ourHistory": {
+			"upperTitle": { ":type": "line" },
+			"title": { ":type": "line" },
+			"items": {
+				":items": {
+					"image": { ":type": "line" },
+					"title": { ":type": "line" },
+					"description": { ":type": "line" }
+				}
+			}
 		}
 	}
 }
