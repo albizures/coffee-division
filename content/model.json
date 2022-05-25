@@ -98,5 +98,43 @@
 				}
 			}
 		}
+	},
+	"services": {
+		"title": { ":type": "line" },
+		"description1": {
+			"part1": {
+				":type": "line"
+			},
+			"part2": {
+				":type": "line"
+			}
+		},
+		"description2": {
+			"part1": {
+				":type": "line"
+			},
+			"part2": {
+				":type": "line"
+			}
+		},
+		"whatMakesUsDifferent": {
+			"title": { ":type": "line" },
+			"items": {
+				":items": {
+					"icon": { ":type": "line" },
+					"description": { ":type": "line" }
+				}
+			}
+		},
+		"outProccess": {
+			"upperTitle": { ":type": "line" },
+			"title": { ":type": "line" },
+			"items": {
+				":items": {
+					"icon": { ":type": "line" },
+					"description": { ":type": "line" }
+				}
+			}
+		}
 	}
 }
