@@ -126,7 +126,7 @@
 				}
 			}
 		},
-		"outProccess": {
+		"ourProccess": {
 			"upperTitle": { ":type": "line" },
 			"title": { ":type": "line" },
 			"items": {
