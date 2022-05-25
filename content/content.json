@@ -1,114 +1,211 @@
 {
-	"es": {
-		"navbar": {
-			"items": [
-				{
-					"href": "#meet-us",
-					"label": "Conócenos"
-				},
-				{
-					"href": "#services",
-					"label": "Servicios"
-				},
-				{
-					"href": "#our-coffees",
-					"label": "Nuestros cafés"
-				},
-				{
-					"href": "#team",
-					"label": "Equipo"
-				},
-				{
-					"href": "#contact",
-					"label": "Contacto"
-				}
-			],
-			"socialMedia": [
-				{
-					"href": "https://instagram.com",
-					"icon": "instagram"
-				},
-				{
-					"href": "https://facebook.com",
-					"icon": "facebook"
-				},
-				{
-					"href": "https://www.linkedin.com/",
-					"icon": "linkedin"
-				}
-			]
-		},
-		"hero": {
-			"label": {
-				"part1": "La pasión por café",
-				"part2": "nos conecta"
-			},
-			"cta": {
-				"label": "INICIA AQUÍ",
-				"href": "#start-here"
-			}
-		},
-		"meetUs": {
-			"title": {
-				"part1": "¿Qué",
-				"part2": "hacemos?"
-			},
-			"description": {
-				"part1": "Enlazamos a productores guatemaltecos con compradores del mundo para exportar nuestros cafés. Nos enfocamos en el detalle de",
-				"part2": "selección de granos y trazabilidad."
-			},
-			"description2": {
-				"part1": "a través de Finca San José las Victorias como parte de nuestro grupo corporativo.",
-				"part2": "Exportamos y producimos excelentes cafés"
-			},
-			"coffeeOrigin": {
-				"label": "CONOCE EL ORIGEN DE NUESTRO CAFÉ",
-				"href": "#origin"
-			},
-			"mission": {
-				"title": "Misión",
-				"description": "Brindar el mejor servicio de comercialización de café a productores e importadores de café guatemalteco."
-			},
-			"vision": {
-				"title": "Visión",
-				"description": "Conectar a Guatemala con el mundo por medio de la comercialización del Café, enfocados en la trazabilidad y calidad."
-			},
-			"ourHistory": {
-				"upperTitle": "ASÍ INICIA",
-				"title": "Nuestra historia",
-				"items": [
-					{
-						"description": "Industrias Noviembre nace como un proyecto para procesar y exportar pulpa de piña congelada. Dicha empresa nos permitió conocer acerca de la industria de alimentos y la comercialización de productos agrícolas.",
-						"title": "2010 - inicio"
-					},
-					{
-						"image": "history-2019",
-						"title": "2019",
-						"description": "El CEO, siendo la 4ta generación de caficultores, comienza a trabajar en un proyecto para la exportación a Asia."
-					},
-					{
-						"image": "history-2020",
-						"description": "Obtenemos la licencia de comprador-exportador en Anacafé y se crean sólidas relaciones comerciales incrementando de esta forma la cantidad de exportaciones.",
-						"title": "2020"
-					},
-					{
-						"title": "2021",
-						"description": "Iniciamos la compra de café a otros productores guatemaltecos, logrando un aumento considerable en el volumen de ventas, asimismo exportando a Europa y América como nuevos mercados.",
-						"image": "history-2021"
-					}
-				]
-			}
-		}
-	},
-	"en": {
-		"navbar": {
-			"items": [{}, {}, {}, {}, {}],
-			"socialMedia": [{}, {}, {}]
-		},
-		"meetUs": {
-			"ourHistory": {
-				"items": [{}, {}, {}, {}]
-			}
-		}
-	}
+  "es": {
+    "navbar": {
+      "items": [
+        {
+          "href": "#meet-us",
+          "label": "Conócenos"
+        },
+        {
+          "href": "#services",
+          "label": "Servicios"
+        },
+        {
+          "href": "#our-coffees",
+          "label": "Nuestros cafés"
+        },
+        {
+          "href": "#team",
+          "label": "Equipo"
+        },
+        {
+          "href": "#contact",
+          "label": "Contacto"
+        }
+      ],
+      "socialMedia": [
+        {
+          "href": "https://instagram.com",
+          "icon": "instagram"
+        },
+        {
+          "href": "https://facebook.com",
+          "icon": "facebook"
+        },
+        {
+          "href": "https://www.linkedin.com/",
+          "icon": "linkedin"
+        }
+      ]
+    },
+    "hero": {
+      "label": {
+        "part1": "La pasión por café",
+        "part2": "nos conecta"
+      },
+      "cta": {
+        "label": "INICIA AQUÍ",
+        "href": "#start-here"
+      }
+    },
+    "meetUs": {
+      "title": {
+        "part1": "¿Qué",
+        "part2": "hacemos?"
+      },
+      "description": {
+        "part1": "Enlazamos a productores guatemaltecos con compradores del mundo para exportar nuestros cafés. Nos enfocamos en el detalle de",
+        "part2": "selección de granos y trazabilidad."
+      },
+      "description2": {
+        "part1": "a través de Finca San José las Victorias como parte de nuestro grupo corporativo.",
+        "part2": "Exportamos y producimos excelentes cafés"
+      },
+      "coffeeOrigin": {
+        "label": "CONOCE EL ORIGEN DE NUESTRO CAFÉ",
+        "href": "#origin"
+      },
+      "mission": {
+        "title": "Misión",
+        "description": "Brindar el mejor servicio de comercialización de café a productores e importadores de café guatemalteco."
+      },
+      "vision": {
+        "title": "Visión",
+        "description": "Conectar a Guatemala con el mundo por medio de la comercialización del Café, enfocados en la trazabilidad y calidad."
+      },
+      "ourHistory": {
+        "upperTitle": "ASÍ INICIA",
+        "title": "Nuestra historia",
+        "items": [
+          {
+            "description": "Industrias Noviembre nace como un proyecto para procesar y exportar pulpa de piña congelada. Dicha empresa nos permitió conocer acerca de la industria de alimentos y la comercialización de productos agrícolas.",
+            "title": "2010 - inicio"
+          },
+          {
+            "image": "history-2019",
+            "title": "2019",
+            "description": "El CEO, siendo la 4ta generación de caficultores, comienza a trabajar en un proyecto para la exportación a Asia."
+          },
+          {
+            "image": "history-2020",
+            "description": "Obtenemos la licencia de comprador-exportador en Anacafé y se crean sólidas relaciones comerciales incrementando de esta forma la cantidad de exportaciones.",
+            "title": "2020"
+          },
+          {
+            "title": "2021",
+            "description": "Iniciamos la compra de café a otros productores guatemaltecos, logrando un aumento considerable en el volumen de ventas, asimismo exportando a Europa y América como nuevos mercados.",
+            "image": "history-2021"
+          }
+        ]
+      }
+    },
+    "services": {
+      "ourProccess": {
+        "upperTitle": "NUESTRO",
+        "title": "proceso",
+        "items": [
+          {
+            "description": "Recepción de muestras",
+            "icon": "package"
+          },
+          {
+            "description": "Codificación",
+            "icon": "computer"
+          },
+          {
+            "description": "Preparación y envasado",
+            "icon": "drop-and-coffee"
+          },
+          {
+            "description": "Exportación del café",
+            "icon": "coffee-beans"
+          },
+          {
+            "description": "Clientes felices",
+            "icon": "happy-pleople"
+          }
+        ]
+      },
+      "title": "Servicios",
+      "description1": {
+        "part1": "Abastecemos al mundo",
+        "part2": "con el mejor café guatemalteco."
+      },
+      "description2": {
+        "part1": "Apoyamos",
+        "part2": "a productores a comercializar su café."
+      },
+      "whatMakesUsDifferent": {
+        "title": "LO QUE NOS DIFERENCIA",
+        "items": [
+          {
+            "description": "Generamos relaciones personales y alianzas estratégicas con productores guatemaltecos",
+            "icon": "handshake"
+          },
+          {
+            "description": "Brindamos asesoría personalizada",
+            "icon": "talking"
+          },
+          {
+            "description": "Trazabilidad del café",
+            "icon": "coffee-cup"
+          },
+          {
+            "description": "Estricto control de calidad en todos los procesos",
+            "icon": "thumbs-up"
+          },
+          {
+            "description": "Innovación constante",
+            "icon": "hands-coffee"
+          }
+        ]
+      }
+    }
+  },
+  "en": {
+    "navbar": {
+      "items": [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "socialMedia": [
+        {},
+        {},
+        {}
+      ]
+    },
+    "meetUs": {
+      "ourHistory": {
+        "items": [
+          {},
+          {},
+          {},
+          {}
+        ]
+      }
+    },
+    "services": {
+      "ourProccess": {
+        "items": [
+          {},
+          {},
+          {},
+          {},
+          {}
+        ]
+      },
+      "whatMakesUsDifferent": {
+        "items": [
+          {},
+          {},
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  }
 }
