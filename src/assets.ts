@@ -4,10 +4,21 @@ import WorldMapImg from '../public/world-map.png';
 import MeetUs1Img from '../public/meet-us-1.png';
 import MiniGuateImg from '../public/mini-guate.png';
 import MissionVisionImg from '../public/mission-vision.png';
+import ServicesImg from '../public/services.png';
 import History2019Img from '../public/history-2019.png';
 import History2020Img from '../public/history-2020.png';
 import History2021Img from '../public/history-2021.png';
 import History2022Img from '../public/history-2022.png';
+import ThumbsUp from '../public/thumbs-up.svg';
+import Talking from '../public/talking.svg';
+import Package from '../public/package.svg';
+import HappyPeople from '../public/happy-people.svg';
+import Handshake from '../public/handshake.svg';
+import HandsCoffee from '../public/hands-coffee.svg';
+import Computer from '../public/computer.svg';
+import CoffeeCup from '../public/coffee-cup.svg';
+import DropAndCoffee from '../public/drop-and-coffee.svg';
+import CoffeeBeans from '../public/coffee-beans.svg';
 
 const history = {
 	'history-2019': History2019Img,
@@ -16,8 +27,22 @@ const history = {
 	'history-2022': History2022Img,
 };
 
+export const icons = {
+	'thumbs-up': ThumbsUp,
+	talking: Talking,
+	package: Package,
+	'happy-pleople': HappyPeople,
+	handshake: Handshake,
+	'hands-coffee': HandsCoffee,
+	computer: Computer,
+	'coffee-cup': CoffeeCup,
+	'drop-and-coffee': DropAndCoffee,
+	'coffee-beans': CoffeeBeans,
+};
+
 export {
 	LogoImg,
+	ServicesImg,
 	MissionVisionImg,
 	HeroCoverImg,
 	WorldMapImg,

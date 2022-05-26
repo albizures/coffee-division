@@ -14,7 +14,7 @@ export function Hero() {
 				className="absolute inset-0"
 			/>
 			<div className="absolute inset-0 bg-pumpkin bg-opacity-70"></div>
-			<div className="max-w-4xl mx-auto relative">
+			<div className="max-w-5xl mx-auto relative">
 				<h1 className="text-center font-serif pt-28 pb-14 text-extra-white">
 					<span className="text-6xl block">{hero.label.part1}</span>
 					<span className="text-8xl	block">{hero.label.part2}</span>

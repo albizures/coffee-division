@@ -16,7 +16,7 @@ export function MeetUs() {
 	return (
 		<>
 			<div className="bg-crisp">
-				<div className="max-w-4xl mx-auto relative pt-12 pb-14 px-4">
+				<div className="max-w-5xl mx-auto relative pt-12 pb-14 px-4">
 					<h2 className="text-center font-serif text-hunt mb-8">
 						<span className="md:text-6xl block">
 							{meetUs.title.part1}
@@ -50,17 +50,20 @@ export function MeetUs() {
 				</div>
 			</div>
 			<div className="bg-caraway px-4">
-				<a className="max-w-4xl flex block mx-auto justify-center items-center py-6 cursor-pointer">
+				<a
+					href={meetUs.coffeeOrigin.href}
+					className="max-w-5xl flex block mx-auto justify-center items-center py-6 cursor-pointer"
+				>
 					<Image src={MiniGuateImg} height="60" width="45" />
 					<p className="mx-4 text-center text-extra-white">
-						CONOCE EL ORIGEN DE NUESTRO CAFÉ
+						{meetUs.coffeeOrigin.label}
 					</p>
 					<RightArrowIcon className="h-8 w-8 stroke-extra-white" />
 				</a>
 			</div>
 			{/* Mission and vision */}
 			<div className="py-14 bg-hunt">
-				<div className="max-w-4xl px-4 flex flex-col md:flex-row mx-auto items-center">
+				<div className="max-w-5xl px-4 flex flex-col md:flex-row mx-auto items-center">
 					<div className="flex-1">
 						<h3 className="font-serif text-6xl text-extra-white text-center">
 							{meetUs.mission.title}
@@ -83,11 +86,13 @@ export function MeetUs() {
 				</div>
 			</div>
 			<div className="py-32 bg-crisp text-hunt">
-				<p className="text-center font-semibold">
-					{meetUs.ourHistory.upperTitle}
-				</p>
-				<h2 className="text-center md:text-6xl font-serif">
-					{meetUs.ourHistory.title}
+				<h2 className="text-center">
+					<span className="text-center font-semibold">
+						{meetUs.ourHistory.upperTitle}
+					</span>
+					<span className="text-center md:text-6xl font-serif block">
+						{meetUs.ourHistory.title}
+					</span>
 				</h2>
 
 				<div className="flex overflow-x-auto ml-50 mt-10">
