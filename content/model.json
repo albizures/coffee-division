@@ -136,5 +136,20 @@
 				}
 			}
 		}
+	},
+	"ourCoffees": {
+		"upperTitle": { ":type": "line" },
+		"title": { ":type": "line" },
+		"description": {
+			":type": "line"
+		},
+		"items": {
+			":items": {
+				"title": { ":type": "line" },
+				"description": {
+					":type": "line"
+				}
+			}
+		}
 	}
 }
