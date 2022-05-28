@@ -160,6 +160,53 @@
           }
         ]
       }
+    },
+    "ourCoffees": {
+      "title": "cafés",
+      "upperTitle": "NUESTROS",
+      "description": "Los cafetales guatemaltecos florecen una vez al año, durante los meses de marzo, abril o mayo, dependiendo de la elevación y régimen de lluvias de la región en particular. La floración tarda entre dos y tres días, y durante este espacio de tiempo los cafetales adquieren un aspecto de campo nevado. De cada flor nacerá un fruto que contiene dos semillas o granos de café.",
+      "items": [
+        {
+          "title": "Acatenango",
+          "description": "Cafetales plantados hasta 2,000 msnm. El perfil de Acatenango se caracteriza por tener una acidez marcada, aromático, cuerpo balanceado y postgusto prolongado.",
+          "background": "acatenango"
+        },
+        {
+          "title": "Antigua",
+          "description": "Suelos volcánicos que se caracterizan por su riqueza mineral, gracias a los volcanes de Fuego, Agua y Acatenango. El perfil de Antigua se caracteriza por ser bien balanceado, elegante, muy dulce y acuerpado.",
+          "background": "antigua"
+        },
+        {
+          "title": "Atitlán",
+          "description": "Los suelos más ricos en materia orgánica de Guatemala. Cafés producidos en las faldas de volcan Tolimán, Atitlán y San Pedro. El perfil de Atitlán se caracteriza por su acidez cítrica brillante y cuerpo completo.",
+          "background": "atitlan"
+        },
+        {
+          "description": "Región llena de riquezas naturales, lluvia y frío durante la mayoría del año. El perfil de Cobán se caracteriza por tener notas afrutadas, cuerpo fino y acidez delicada.",
+          "title": "Cobán",
+          "background": "coban"
+        },
+        {
+          "title": "Fraijanes",
+          "description": "Suelos volcánicos con piedra pómez, alturas hasta 1,700 msnm, mucha lluvia y un volcán activo (Pacaya). El perfil de Fraijanes se caracteriza por tener una acidez pronunciada y persistente, aromática y cuerpo definido.",
+          "background": "fraijanes"
+        },
+        {
+          "title": "Huehuetenango",
+          "description": "La región más alta y seca, alcanza hasta los 2,300 msnm. El perfil de Huehue se caracteriza por su acidez intensa, cuerpo completo y notas avinatadas.",
+          "background": "huehuetenango"
+        },
+        {
+          "title": "Santa Rosa",
+          "description": "Región destacada por su nivel de productividad. El perfil de Nuevo Oriente se caracteriza por ser bien balanceado, con mucho cuerpo y sabor achocolatado.",
+          "background": "santa-rosa"
+        },
+        {
+          "title": "San Marcos",
+          "description": "La región con la estación lluviosa más fuerte y floración más temprana. San Marcos se caracteriza por sus notas florales en aroma y sabor, acidez pronunciada y buen cuerpo.",
+          "background": "san-marcos"
+        }
+      ]
     }
   },
   "en": {
@@ -206,6 +253,18 @@
           {}
         ]
       }
+    },
+    "ourCoffees": {
+      "items": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
     }
   }
 }
