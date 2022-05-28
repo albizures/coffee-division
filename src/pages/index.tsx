@@ -1,13 +1,13 @@
 import merge from 'lodash.merge';
 import { GetStaticProps } from 'next';
 import content from '../../content/content.json';
-import { Contact } from '../compoents/Contact';
-import { Header } from '../compoents/Header';
-import { Hero } from '../compoents/Hero';
-import { MeetUs } from '../compoents/MeetUs';
-import { OurCoffees } from '../compoents/OurCoffees';
-import { Services } from '../compoents/Services';
-import { Team } from '../compoents/Team';
+import { Contact } from '../components/Contact';
+import { Header } from '../components/Header';
+import { Hero } from '../components/Hero';
+import { MeetUs } from '../components/MeetUs';
+import { OurCoffees } from '../components/OurCoffees';
+import { Services } from '../components/Services';
+import { Team } from '../components/Team';
 
 export default function Index() {
 	return (

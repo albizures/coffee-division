@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import clsx from 'clsx';
 import { LogoImg } from '../assets';
-import { icons } from '../compoents/Icons';
+import { icons } from '../components/Icons';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useContent } from '../state';

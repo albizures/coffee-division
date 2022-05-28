@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { RightArrowIcon } from '../compoents/Icons';
+import { RightArrowIcon } from '../components/Icons';
 import { HeroCoverImg } from '../assets';
 import { useContent } from '../state';
 
