@@ -146,9 +146,8 @@
 		"items": {
 			":items": {
 				"title": { ":type": "line" },
-				"description": {
-					":type": "line"
-				}
+				"description": { ":type": "line" },
+				"background": { ":type": "line" }
 			}
 		}
 	}
