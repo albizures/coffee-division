@@ -16,7 +16,7 @@ export function MeetUs() {
 	return (
 		<>
 			<div className="bg-crisp">
-				<div className="max-w-5xl mx-auto relative pt-12 pb-14 px-4">
+				<div className="max-w-5xl mx-auto relative pt-12 pb-14 px-4 text-center">
 					<h2 className="text-center font-serif text-hunt mb-8">
 						<span className="md:text-6xl block">
 							{meetUs.title.part1}

@@ -19,6 +19,14 @@ import Computer from '../public/computer.svg';
 import CoffeeCup from '../public/coffee-cup.svg';
 import DropAndCoffee from '../public/drop-and-coffee.svg';
 import CoffeeBeans from '../public/coffee-beans.svg';
+import AcatenangoImg from '../public/acatenango.jpeg';
+import AntiguaImg from '../public/antigua.jpeg';
+import AtitlanImg from '../public/Atitlan.jpeg';
+import CobanImg from '../public/coban.jpeg';
+import FraijanesImg from '../public/fraijanes.jpeg';
+import HuehuetenangoImg from '../public/huehuetenango.jpeg';
+import SanMarcosImg from '../public/san-marcos.jpeg';
+import SantaRosaImg from '../public/santa-rosa.jpeg';
 
 const history = {
 	'history-2019': History2019Img,
@@ -38,6 +46,17 @@ export const icons = {
 	'coffee-cup': CoffeeCup,
 	'drop-and-coffee': DropAndCoffee,
 	'coffee-beans': CoffeeBeans,
+};
+
+export const coffeeImages = {
+	acatenango: AcatenangoImg,
+	antigua: AntiguaImg,
+	atitlan: AtitlanImg,
+	coban: CobanImg,
+	fraijanes: FraijanesImg,
+	huehuetenango: HuehuetenangoImg,
+	'san-marcos': SanMarcosImg,
+	'santa-rosa': SantaRosaImg,
 };
 
 export {
