@@ -217,8 +217,64 @@
       "upperTitle": "NUESTRO",
       "title": "equipo",
       "items": [
-        {}
-      ]
+        {
+          "name": "HECTOR VENTURA",
+          "title": "Gerente General",
+          "description": "Nace en una familia de 4ta generación de café, involucrado desde niño en esta industria. Graduado de Bachiller en Ciencias y Letras del Julio Verne. Ingeniero Industrial en la Universidad del Valle de Guatemala.\nEn el transcurso de sus estudios universitarios comienza a involucrarse en temas del café con la familia y en el 2001 comienza a trabajar en una exportadora de café en la cual estuvo durante 9 años.\nDesde el 2011, Hector Ventura forma parte de la junta directiva de colegio Julio Verne y lleva 3 años siendo el presidente de la junta directiva, teniendo relación con la biculturalidad francesa.\nActualmente Hector Ventura con 43 años y una amplia experiencia en la industria del café es el CEO de Industrias Noviembre.\nLa proyección de Hector Ventura con Industrias Noviembre es llegar a ser el proveedor más grande de Café en el mundo.",
+          "picture": "hector-ventura"
+        },
+        {
+          "name": "DIEGO SOLARES",
+          "title": "Departamento administrativo",
+          "description": "Soy Diego Solares, Administrador de Empresas con especialidad en Negocios Internacionales de la Universidad del Istmo y entrenador de CrossFit Nivel 1 y 2. Tengo un fuerte interés por los deportes y la administración de empresas. Mas de 8 años de experiencia como líder de equipos, manejo de presupuestos, innovación, ejecución de proyectos, estrategia, entre otras.\nEn Industrias Noviembre soy el responsable de la administración general de todas las áreas y del funcionamiento eficiente de todos los recursos y proyectos asignados. Líder de actividades y de la ejecución de la empresa, manteniendo comunicación con clientes, proveedores, staff y contrapartes.\nMi objetivo es el buen desempeño de la empresa, generar utilidades a los socios y generar relaciones estrechas y de confianza entre todas la partes para el crecimiento continuo.",
+          "picture": "diego-solares"
+        },
+        {
+          "name": "ALBA POZUELOS",
+          "title": "Departamento Administrativo",
+          "description": "Soy Alba Pozuelos, tengo 45, profesión Secretariado Oficinista.\nActualmente ocupo el puesto de Asistente de Gerencia para Industrias Noviembre, S. A. realizando tareas administrativas y auxiliando diferentes funciones en otras áreas.\nOtorgando el valor en la comunicación entre la empresa y el cliente en forma fluida y verídica.",
+          "picture": "alba-pozuelos"
+        },
+        {
+          "name": "ROCIO PIRIR",
+          "title": "Departamento exportaciones",
+          "description": "Soy Rocio Pirir, tengo 28 años, graduada en Psicología Industrial, con 5 años de experiencia en operaciones logísticas y 3 años en área de exportaciones de café.\nActualmente soy la encargada de Logística y Exportación de Industrias Noviembre, mantengo comunicación con productores del país para promoción y coordinación de cada exportación y consolidados de café marítimo y aéreo.\nCon mi labor en Industrias Noviembre, apoyo en la comercialización del café de los productores del país, llevando un control de la logística y exportaciones.",
+          "picture": "rocio-pirir"
+        }
+      ],
+      "tasters": {
+        "title": "Catadores",
+        "description": "Nuestros catadores son QGraders y han participado en competencias internacionales como Cup of Excellence.",
+        "items": [
+          {
+            "title": "DANNY MOGOLLÓN",
+            "description": "Control de calidad",
+            "picture": "danny-mogollon"
+          },
+          {
+            "title": "LUISA RODRIGUEZ",
+            "description": "Control de calidad",
+            "picture": "luisa-rodriguez"
+          }
+        ]
+      }
+    },
+    "contact": {
+      "title": "Contáctanos",
+      "description": "Si eres un apasionado del café, contáctanos.",
+      "phone": "+502 2316-0556",
+      "email": "asistente@industriasnoviembre.com",
+      "address": "Km. 13.5 carretera a Muxbal, centro comercial Plaza Muxbal, Primer Nivel, Oficina 101",
+      "form": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "phone": "Teléfono",
+        "message": "Mensaje",
+        "send": "ENVIAR"
+      }
+    },
+    "footer": {
+      "terms": "®Todos los derechos reservados, Industrias Noviembre."
     }
   },
   "en": {
@@ -281,8 +337,17 @@
     },
     "team": {
       "items": [
+        {},
+        {},
+        {},
         {}
-      ]
+      ],
+      "tasters": {
+        "items": [
+          {},
+          {}
+        ]
+      }
     }
   }
 }
