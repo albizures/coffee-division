@@ -150,5 +150,44 @@
 				"background": { ":type": "line" }
 			}
 		}
+	},
+	"team": {
+		"upperTitle": { ":type": "line" },
+		"title": { ":type": "line" },
+		"items": {
+			":items": {
+				"title": { ":type": "line" },
+				"description": { ":type": "text" },
+				"picture": { ":type": "line" }
+			}
+		},
+		"tasters": {
+			"title": { ":type": "line" },
+			"description": { ":type": "line" },
+			"items": {
+				":items": {
+					"title": { ":type": "line" },
+					"description": { ":type": "text" },
+					"picture": { ":type": "line" }
+				}
+			}
+		}
+	},
+	"contact": {
+		"title": { ":type": "line" },
+		"description": { ":type": "line" },
+		"form": {
+			"name": { ":type": "line" },
+			"email": { ":type": "line" },
+			"phone": { ":type": "line" },
+			"message": { ":type": "line" },
+			"send": { ":type": "line" }
+		},
+		"phone": { ":type": "line" },
+		"email": { ":type": "line" },
+		"address": { ":type": "line" }
+	},
+	"footer": {
+		"terms": { ":type": "line" }
 	}
 }
