@@ -95,6 +95,11 @@
             "title": "2021",
             "description": "Iniciamos la compra de café a otros productores guatemaltecos, logrando un aumento considerable en el volumen de ventas, asimismo exportando a Europa y América como nuevos mercados.",
             "image": "history-2021"
+          },
+          {
+            "description": "Seguimos haciendo historia.",
+            "title": "2022",
+            "image": "history-2022"
           }
         ]
       }
@@ -207,6 +212,13 @@
           "background": "san-marcos"
         }
       ]
+    },
+    "team": {
+      "upperTitle": "NUESTRO",
+      "title": "equipo",
+      "items": [
+        {}
+      ]
     }
   },
   "en": {
@@ -227,6 +239,7 @@
     "meetUs": {
       "ourHistory": {
         "items": [
+          {},
           {},
           {},
           {},
@@ -263,6 +276,11 @@
         {},
         {},
         {},
+        {}
+      ]
+    },
+    "team": {
+      "items": [
         {}
       ]
     }
