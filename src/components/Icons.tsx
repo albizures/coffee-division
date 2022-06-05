@@ -152,15 +152,8 @@ export function LeafIcon(props: IconProps) {
 			viewBox="-20 -25 110 110"
 			{...props}
 		>
-			<g
-				id="Group_189"
-				data-name="Group 189"
-				transform="translate(0 0)"
-				clipPath="url(#clip-path)"
-			>
+			<g transform="translate(0 0)" clipPath="url(#clip-path)">
 				<path
-					id="Path_1351"
-					data-name="Path 1351"
 					d="M23.32,25.68c3.446,1.614,4.61,6.418,2.6,10.729s-6.433,6.5-9.879,4.883-4.61-6.418-2.6-10.729S19.874,24.067,23.32,25.68Z"
 					transform="translate(6.723 13.575)"
 					fill="none"
@@ -169,8 +162,6 @@ export function LeafIcon(props: IconProps) {
 					strokeWidth="2"
 				/>
 				<path
-					id="Path_1352"
-					data-name="Path 1352"
 					d="M29.44,28.183c-3.625,1.15-5.4,5.756-3.96,10.287s5.542,7.271,9.166,6.121,5.4-5.756,3.959-10.287S33.065,27.033,29.44,28.183Z"
 					transform="translate(13.484 15.071)"
 					fill="none"
@@ -179,8 +170,6 @@ export function LeafIcon(props: IconProps) {
 					strokeWidth="2"
 				/>
 				<path
-					id="Path_1353"
-					data-name="Path 1353"
 					d="M38.635,35.051c2.744.884,5.577.4,7.311-1.5C48.5,30.74,47.7,25.9,44.175,22.734s-8.456-3.454-11.008-.647a6.317,6.317,0,0,0-1.306,5.734"
 					transform="translate(17.096 10.881)"
 					fill="none"
@@ -189,8 +178,6 @@ export function LeafIcon(props: IconProps) {
 					strokeWidth="2"
 				/>
 				<path
-					id="Path_1354"
-					data-name="Path 1354"
 					d="M37.395,23.767s-7.751-5.717-13.552-6.72"
 					transform="translate(12.87 9.202)"
 					fill="none"
@@ -199,8 +186,6 @@ export function LeafIcon(props: IconProps) {
 					strokeWidth="2"
 				/>
 				<path
-					id="Path_1355"
-					data-name="Path 1355"
 					d="M19.511,30.053s3.357-9.694,6.669-13.006"
 					transform="translate(10.532 9.202)"
 					fill="none"
@@ -209,8 +194,6 @@ export function LeafIcon(props: IconProps) {
 					strokeWidth="2"
 				/>
 				<path
-					id="Path_1356"
-					data-name="Path 1356"
 					d="M39.545,42.574C31.846,11.778,7.207,1,7.207,1"
 					transform="translate(3.89 0.54)"
 					fill="none"
@@ -219,8 +202,6 @@ export function LeafIcon(props: IconProps) {
 					strokeWidth="2"
 				/>
 				<path
-					id="Path_1357"
-					data-name="Path 1357"
 					d="M24.194,8.624C25.4,3.535,30.8-.069,38.2,1.679,48.25,4.053,56.126,15.641,56.126,15.641S43.9,22.481,33.845,20.107c-4.625-1.092-7.67-3.512-9.008-6.416"
 					transform="translate(13.059 0.665)"
 					fill="none"
@@ -229,8 +210,6 @@ export function LeafIcon(props: IconProps) {
 					strokeWidth="2"
 				/>
 				<path
-					id="Path_1358"
-					data-name="Path 1358"
 					d="M16.286,4.7C11.746,10.166,7.72,18.736,7.207,29.987"
 					transform="translate(3.89 2.538)"
 					fill="none"
@@ -239,8 +218,6 @@ export function LeafIcon(props: IconProps) {
 					strokeWidth="2"
 				/>
 				<path
-					id="Path_1359"
-					data-name="Path 1359"
 					d="M16.7,8.843c7.522-3.286,20.2-4.379,28.415-.176"
 					transform="translate(9.015 3.199)"
 					fill="none"
@@ -249,14 +226,159 @@ export function LeafIcon(props: IconProps) {
 					strokeWidth="2"
 				/>
 				<path
-					id="Path_1360"
-					data-name="Path 1360"
 					d="M13.625,11.475C9.239,10.812,4.68,13.617,2.31,19.859c-3.665,9.656,1.521,22.672,1.521,22.672s12.517-6.3,16.181-15.954c2.054-5.412,1.163-9.984-1.537-12.677"
 					transform="translate(0.54 6.143)"
 					fill="none"
 					stroke="#eef0ea"
 					strokeLinecap="round"
 					strokeWidth="2"
+				/>
+			</g>
+		</svg>
+	);
+}
+
+export function Plus(props: IconProps) {
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="32"
+			height="32"
+			viewBox="0 0 32 32"
+			{...props}
+		>
+			<g transform="translate(-2 -2)">
+				<path
+					d="M33,18A15,15,0,1,1,18,3,15,15,0,0,1,33,18Z"
+					fill="none"
+					stroke="#bec4b4"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+					strokeWidth="2"
+				/>
+				<path
+					d="M18,12V24"
+					fill="none"
+					stroke="#bec4b4"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+					strokeWidth="2"
+				/>
+				<path
+					d="M12,18H24"
+					fill="none"
+					stroke="#bec4b4"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+					strokeWidth="2"
+				/>
+			</g>
+		</svg>
+	);
+}
+
+export function PhoneIcon(props: IconProps) {
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="32"
+			height="20.706"
+			viewBox="0 0 32 20.706"
+			{...props}
+		>
+			<defs>
+				<clipPath id="clip-path">
+					<rect
+						id="Rectangle_67"
+						width="32"
+						height="20.706"
+						fill="none"
+					/>
+				</clipPath>
+			</defs>
+			<g
+				id="Group_96"
+				transform="translate(0 0)"
+				clip-path="url(#clip-path)"
+			>
+				<path
+					id="Path_550"
+					d="M15.758,20.706,2.675,14.565a4.652,4.652,0,0,1,0-8.423L15.758,0,29.046,5.831a4.938,4.938,0,0,1,0,9.043Z"
+					transform="translate(0 0)"
+					fill="#d3c29e"
+				/>
+				<path
+					id="Path_551"
+					d="M15.031,5.942a1.037,1.037,0,0,1,.466.2c.019.016.039.032.057.049.382.382.766.762,1.145,1.146a.8.8,0,0,1,.132,1,.71.71,0,0,1-.378.31.836.836,0,0,0-.516.461.71.71,0,0,0-.033.478,2.811,2.811,0,0,0,.635,1.115,3.858,3.858,0,0,0,1.208.96,1.075,1.075,0,0,0,.628.149.763.763,0,0,0,.65-.475.877.877,0,0,1,.355-.465.783.783,0,0,1,.928.081c.233.212.451.441.674.664.2.2.414.4.6.618a.817.817,0,0,1,.035.995,1.4,1.4,0,0,1-.144.171c-.223.227-.454.447-.674.678a1.188,1.188,0,0,1-.852.368,2.811,2.811,0,0,1-1.025-.176,6.911,6.911,0,0,1-1.8-.963,11.749,11.749,0,0,1-2.435-2.342,7.471,7.471,0,0,1-1.227-2.163,2.866,2.866,0,0,1-.179-1.075,1.177,1.177,0,0,1,.365-.837q.3-.288.593-.593a1.028,1.028,0,0,1,.607-.359Z"
+					transform="translate(-1.525 -0.682)"
+					fill="#fff"
+				/>
+			</g>
+		</svg>
+	);
+}
+
+export function EmailIcon(props: IconProps) {
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="32"
+			height="20.706"
+			viewBox="0 0 32 20.706"
+			{...props}
+		>
+			<defs>
+				<clipPath id="clip-path">
+					<rect width="32" height="20.706" fill="none" />
+				</clipPath>
+			</defs>
+			<g transform="translate(6)">
+				<g transform="translate(-6 0)" clip-path="url(#clip-path)">
+					<path
+						d="M15.758,20.706,2.675,14.565a4.652,4.652,0,0,1,0-8.423L15.758,0,29.046,5.831a4.938,4.938,0,0,1,0,9.043Z"
+						transform="translate(0 0)"
+						fill="#d3c29e"
+					/>
+					<path
+						d="M11.961,10.248q.949.578,1.9,1.155,1.358.828,2.715,1.66a.621.621,0,0,0,.709,0q2.25-1.378,4.506-2.748l.117-.068v3.735a1.47,1.47,0,0,1-1.534,1.524q-3.18,0-6.361,0a5.682,5.682,0,0,1-.843-.032,1.435,1.435,0,0,1-1.189-1.21.308.308,0,0,0-.019-.052Z"
+						transform="translate(-1.374 -1.177)"
+						fill="#fff"
+					/>
+					<path
+						d="M21.863,9.042a.722.722,0,0,1-.076.064l-1.978,1.209q-1.391.85-2.78,1.7a.133.133,0,0,1-.164,0q-2.377-1.451-4.755-2.9a.123.123,0,0,1-.067-.169,1.46,1.46,0,0,1,1.423-1.041q3.476-.005,6.952,0A1.45,1.45,0,0,1,21.84,8.96l.023.082"
+						transform="translate(-1.382 -0.908)"
+						fill="#fff"
+					/>
+				</g>
+			</g>
+		</svg>
+	);
+}
+
+export function AddressIcon(props: IconProps) {
+	return (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="32"
+			height="20.706"
+			viewBox="0 0 32 20.706"
+			{...props}
+		>
+			<defs>
+				<clipPath id="clip-path">
+					<rect width="32" height="20.706" fill="none" />
+				</clipPath>
+			</defs>
+			<g transform="translate(0 0)" clip-path="url(#clip-path)">
+				<path
+					d="M15.758,20.706,2.675,14.565a4.652,4.652,0,0,1,0-8.423L15.758,0,29.046,5.831a4.938,4.938,0,0,1,0,9.043Z"
+					transform="translate(0 0)"
+					fill="#d3c29e"
+				/>
+				<path
+					d="M19.937,8.672a3.044,3.044,0,0,0-2.586-1.535h-.138a3.045,3.045,0,0,0-2.586,1.535,3.124,3.124,0,0,0-.041,3.085l2.224,4.071,0,.005a.541.541,0,0,0,.938,0l0-.005,2.224-4.071a3.124,3.124,0,0,0-.041-3.085M17.282,11.2a1.261,1.261,0,1,1,1.261-1.261A1.262,1.262,0,0,1,17.282,11.2"
+					transform="translate(-1.631 -0.82)"
+					fill="#fff"
 				/>
 			</g>
 		</svg>

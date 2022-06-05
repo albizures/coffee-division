@@ -27,6 +27,18 @@ import FraijanesImg from '../public/fraijanes.jpeg';
 import HuehuetenangoImg from '../public/huehuetenango.jpeg';
 import SanMarcosImg from '../public/san-marcos.jpeg';
 import SantaRosaImg from '../public/santa-rosa.jpeg';
+import AlbaPozuelosImg from '../public/alba-pozuelos.png';
+import DiegoSolaresImg from '../public/diego-solares.png';
+import HectorVenturaImg from '../public/hector-ventura.png';
+import RocioPirirImg from '../public/rocio-pirir.png';
+import ContactImg from '../public/contact.png';
+
+export const teamPhotos = {
+	'alba-pozuelos': AlbaPozuelosImg,
+	'diego-solares': DiegoSolaresImg,
+	'hector-ventura': HectorVenturaImg,
+	'rocio-pirir': RocioPirirImg,
+};
 
 const history = {
 	'history-2019': History2019Img,
@@ -68,4 +80,5 @@ export {
 	MeetUs1Img,
 	MiniGuateImg,
 	history,
+	ContactImg,
 };

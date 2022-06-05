@@ -1,0 +1,19 @@
+.team-hover:hover::before {
+	content: ' ';
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(0deg, #2b4f3f, transparent);
+}
+
+.team-gradient::before {
+	content: ' ';
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(0deg, #2b4f3f, transparent 40%);
+}

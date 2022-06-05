@@ -21,6 +21,7 @@ export default defineConfig({
 			hunt: '#2b4f3f',
 			flintstone: '#697484',
 			liquorice: '#3b3b3b',
+			transparent: 'transparent',
 		},
 		fontFamily: {
 			sans: ['Work Sans', 'sans-serif'],
