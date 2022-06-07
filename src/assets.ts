@@ -32,6 +32,9 @@ import DiegoSolaresImg from '../public/diego-solares.png';
 import HectorVenturaImg from '../public/hector-ventura.png';
 import RocioPirirImg from '../public/rocio-pirir.png';
 import ContactImg from '../public/contact.png';
+import Logo2Img from '../public/logo2.svg';
+import Logo3Img from '../public/logo3.svg';
+import Logo4Img from '../public/logo4.svg';
 
 export const teamPhotos = {
 	'alba-pozuelos': AlbaPozuelosImg,
@@ -81,4 +84,7 @@ export {
 	MiniGuateImg,
 	history,
 	ContactImg,
+	Logo2Img,
+	Logo3Img,
+	Logo4Img,
 };

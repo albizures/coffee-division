@@ -8,6 +8,7 @@ import { MeetUs } from '../components/MeetUs';
 import { OurCoffees } from '../components/OurCoffees';
 import { Services } from '../components/Services';
 import { Team } from '../components/Team';
+import { Footer } from '../components/Footer';
 
 export default function Index() {
 	return (
@@ -19,6 +20,7 @@ export default function Index() {
 			<OurCoffees />
 			<Team />
 			<Contact />
+			<Footer />
 		</>
 	);
 }
