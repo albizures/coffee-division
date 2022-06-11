@@ -28,8 +28,8 @@ module.exports = {
 		'unicorn/prevent-abbreviations': [
 			'error',
 			{
-				allowList: ['env'],
-				ignore: [/args/i],
+				allowList: { env: true },
+				ignore: [/args/i, /props/i],
 			},
 		],
 	},

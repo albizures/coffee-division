@@ -16,17 +16,17 @@ export function MeetUs() {
 	return (
 		<>
 			<div className="bg-crisp">
-				<div className="max-w-5xl mx-auto relative pt-12 pb-14 px-4 text-center">
+				<div className="max-w-5xl mx-6 mx-auto relative pt-12 pb-14 text-center">
 					<h2 className="text-center font-serif text-hunt mb-8">
-						<span className="md:text-6xl block">
+						<span className="md:text-6xl text-4xl block">
 							{meetUs.title.part1}
 						</span>
-						<span className="md:text-8xl	block">
+						<span className="md:text-8xl text-6xl	block">
 							{meetUs.title.part2}
 						</span>
 					</h2>
 					<Image src={WorldMapImg} />
-					<p className="mt-14 max-w-2xl text-center mx-auto">
+					<p className="md:mt-14 mt-8 max-w-2xl text-sm md:text-base font-light text-center mx-auto">
 						{meetUs.description.part1}{' '}
 						<span className="font-bold">
 							{meetUs.description.part2}
@@ -36,11 +36,11 @@ export function MeetUs() {
 					<div className="flex flex-col md:flex-row">
 						<div className="flex-1 relative">
 							<Image src={MeetUs1Img} />
-							<span className="rounded-full absolute -right-3 top-1/2 bg-hunt shadow-2xl shadow-black inline-block h-24 w-25">
-								<LeafIcon className="h-24 w-25" />
+							<span className="rounded-full absolute -right-3 top-1/2 bg-hunt shadow-2xl shadow-black inline-block h-14 w-14 md:(w-25 h-24)">
+								<LeafIcon className="h-14 w-14 md:(w-25 h-24)" />
 							</span>
 						</div>
-						<p className="flex-1 self-center px-10 mt-4 md:mt-0">
+						<p className="flex-1 self-center mt-4 text-sm md:(px-10 mt-0 text-base) ">
 							{meetUs.description2.part1}{' '}
 							<span className="font-bold">
 								{meetUs.description2.part2}
@@ -52,7 +52,7 @@ export function MeetUs() {
 			<div className="bg-caraway px-4">
 				<a
 					href={meetUs.coffeeOrigin.href}
-					className="max-w-5xl flex block mx-auto justify-center items-center py-6 cursor-pointer"
+					className="max-w-5xl mx-6 text-sm md:text-base flex block justify-center items-center py-6 cursor-pointer"
 				>
 					<Image src={MiniGuateImg} height="60" width="45" />
 					<p className="mx-4 text-center text-extra-white">
@@ -68,7 +68,7 @@ export function MeetUs() {
 						<h3 className="font-serif text-6xl text-extra-white text-center">
 							{meetUs.mission.title}
 						</h3>
-						<p className="text-extra-white text-center mt-3">
+						<p className="text-extra-white text-center mt-3 text-sm md:text-base">
 							{meetUs.mission.description}
 						</p>
 					</div>
@@ -79,18 +79,18 @@ export function MeetUs() {
 						<h3 className="font-serif text-6xl text-extra-white text-center">
 							{meetUs.vision.title}
 						</h3>
-						<p className="text-extra-white text-center mt-3">
+						<p className="text-extra-white text-center mt-3 text-sm md:text-base">
 							{meetUs.vision.description}
 						</p>
 					</div>
 				</div>
 			</div>
-			<div className="py-32 bg-crisp text-hunt">
+			<div className="py-20 md:py-32 bg-crisp text-hunt">
 				<h2 className="text-center">
 					<span className="text-center font-semibold">
 						{meetUs.ourHistory.upperTitle}
 					</span>
-					<span className="text-center md:text-6xl font-serif block">
+					<span className="text-center text-6xl font-serif block">
 						{meetUs.ourHistory.title}
 					</span>
 				</h2>

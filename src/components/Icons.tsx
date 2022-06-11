@@ -95,7 +95,6 @@ export function RightArrowIcon(props: IconProps) {
 			<g transform="translate(-1.5 -1.5)">
 				<path
 					id="Path_1308"
-					data-name="Path 1308"
 					d="M68,35.5A32.5,32.5,0,1,1,35.5,3,32.5,32.5,0,0,1,68,35.5Z"
 					transform="translate(0 0)"
 					fill="none"
@@ -105,7 +104,6 @@ export function RightArrowIcon(props: IconProps) {
 				/>
 				<path
 					id="Path_1309"
-					data-name="Path 1309"
 					d="M18,38,31,25,18,12"
 					transform="translate(17.5 10.5)"
 					fill="none"
@@ -115,7 +113,6 @@ export function RightArrowIcon(props: IconProps) {
 				/>
 				<path
 					id="Path_1310"
-					data-name="Path 1310"
 					d="M12,18H38"
 					transform="translate(10.5 17.5)"
 					fill="none"
@@ -137,7 +134,7 @@ export function LeafIcon(props: IconProps) {
 			viewBox="-20 -25 110 110"
 			{...props}
 		>
-			<g transform="translate(0 0)" clipPath="url(#clip-path)">
+			<g transform="translate(0 0)">
 				<path
 					d="M23.32,25.68c3.446,1.614,4.61,6.418,2.6,10.729s-6.433,6.5-9.879,4.883-4.61-6.418-2.6-10.729S19.874,24.067,23.32,25.68Z"
 					transform="translate(6.723 13.575)"
@@ -403,7 +400,7 @@ export function CloseIcon(props: IconProps) {
 			xmlns="http://www.w3.org/2000/svg"
 			{...props}
 		>
-			<path d="M289.94 256l95-95A24 24 0 00351 127l-95 95-95-95a24 24 0 00-34 34l95 95-95 95a24 24 0 1034 34l95-95 95 95a24 24 0 0034-34z"></path>
+			<path d="M289.94 256l95-95A24 24 0 00351 127l-95 95-95-95a24 24 0 00-34 34l95 95-95 95a24 24 0 1034 34l95-95 95 95a24 24 0 0034-34z" />
 		</svg>
 	);
 }

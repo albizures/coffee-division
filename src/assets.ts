@@ -21,7 +21,7 @@ import DropAndCoffee from '../public/drop-and-coffee.svg';
 import CoffeeBeans from '../public/coffee-beans.svg';
 import AcatenangoImg from '../public/acatenango.jpeg';
 import AntiguaImg from '../public/antigua.jpeg';
-import AtitlanImg from '../public/Atitlan.jpeg';
+import AtitlanImg from '../public/atitlan.jpeg';
 import CobanImg from '../public/coban.jpeg';
 import FraijanesImg from '../public/fraijanes.jpeg';
 import HuehuetenangoImg from '../public/huehuetenango.jpeg';
