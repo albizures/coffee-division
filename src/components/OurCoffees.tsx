@@ -12,23 +12,14 @@ export function OurCoffees() {
 
 	const current = ourCoffees.items[currentIndex];
 
-	return (
-		<div className="relative">
-			<div className="flex absolute inset-0">
-				<div className="flex-1 bg-caraway"></div>
-				<div className="flex-1 relative">
-					<Image
-						src={coffeeImages[current.background]}
-						layout="fill"
-						objectFit="cover"
-						className="absolute inset-0"
-					/>
-					<div className="absolute bg-hunt bg-opacity-40 inset-0" />
-				</div>
-			</div>
+	function onChange(event: React.ChangeEvent<HTMLSelectElement>) {
+		setCurrentIndex(Number(event.target.value));
+	}
 
-			<div className="flex max-w-5xl mx-auto relative -m-2">
-				<div className="flex-1 px-8 py-20 text-extra-white">
+	return (
+		<div className="flex flex-col md:(flex-row -m-2)">
+			<div className="flex-1 py-20 px-6 text-extra-white relative bg-caraway">
+				<div className="max-w-lg m-auto">
 					<h2 className="text-center">
 						<span className="font-semibold">
 							{ourCoffees.upperTitle}
@@ -38,7 +29,7 @@ export function OurCoffees() {
 						</span>
 					</h2>
 					<p className="my-10">{ourCoffees.description}</p>
-					<ul>
+					<ul className="hidden md:block">
 						{ourCoffees.items.map((item, index) => {
 							return (
 								<li
@@ -64,8 +55,36 @@ export function OurCoffees() {
 							);
 						})}
 					</ul>
+					<div className="inline-block bg-white py-3 w-full relative text-caraway text-center">
+						<select
+							onChange={onChange}
+							value={currentIndex}
+							className="absolute inset-0 opacity-0"
+						>
+							{ourCoffees.items.map((item, index) => {
+								return (
+									<option key={index} value={index}>
+										{item.title}
+									</option>
+								);
+							})}
+						</select>
+						<span className="uppercase font-sans font-semibold">
+							{current.title}
+						</span>
+						<span className="absolute inset-y-3 right-8 rotate-45 transform border-caraway border-t-transparent border-l-transparent w-4 h-4 z-20 border-4" />
+					</div>
 				</div>
-				<div className="flex-1 flex items-center justify-center flex-col px-8">
+			</div>
+			<div className="flex-1 flex relative items-center justify-center flex-col">
+				<Image
+					src={coffeeImages[current.background]}
+					layout="fill"
+					objectFit="cover"
+					className="absolute inset-0"
+				/>
+				<div className="absolute bg-hunt bg-opacity-50 inset-0" />
+				<div className="max-w-lg max-auto px-6 py-32 z-10 text-center">
 					<h3 className="text-extra-white text-6xl font-serif">
 						{current.title}
 					</h3>
