@@ -9,7 +9,7 @@ export function Services() {
 	return (
 		<>
 			<div className="bg-hunt">
-				<div className="max-w-xl mx-6">
+				<div className="max-w-xl mx-auto px-6">
 					<div className="mx-auto w-3/5 transform -translate-y-5 z-0">
 						<Image src={ServicesImg} layout="responsive" />
 					</div>
@@ -37,14 +37,24 @@ export function Services() {
 					<h5 className="mt-16 font-semibold text-extra-white text-center">
 						{services.whatMakesUsDifferent.title}
 					</h5>
-					<div className="divide-crisp mx-4 flex flex-col mt-9 pb-18 divide-y md:(flex-row divide-x divide-y-0 mx-0 pb-32)">
+				</div>
+				<div className="max-w-5xl mx-auto">
+					<div
+						className={clsx(
+							'divide-crisp px-4 flex flex-grow overflow-x-auto divide-x mt-9 pb-18 ',
+							'md:(flex-row divide-x mx-0 pb-32)',
+						)}
+					>
 						{services.whatMakesUsDifferent.items.map(
 							(item, index) => {
 								return (
 									<div
-										className={clsx('flex-1 text-center p-3', {
-											'md:-mb-16': index === 0,
-										})}
+										className={clsx(
+											'flex-1 text-center p-3 min-w-44 md:w-auto',
+											{
+												'md:-mb-16': index === 0,
+											},
+										)}
 										key={index}
 									>
 										<Image

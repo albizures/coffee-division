@@ -16,7 +16,7 @@ export function Hero() {
 			<div className="absolute inset-0 bg-pumpkin bg-opacity-70">
 				{/* green filters */}
 			</div>
-			<div className="max-w-5xl mx-6 mx-auto relative">
+			<div className="max-w-5xl px-6 mx-auto relative">
 				<h1 className="text-center font-serif pt-20 pb-10 md:(pt-28 pb-14) text-extra-white">
 					<span className="md:text-6xl text-4xl block">
 						{hero.label.part1}
