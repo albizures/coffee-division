@@ -159,6 +159,7 @@
 				"name": { ":type": "line" },
 				"title": { ":type": "line" },
 				"description": { ":type": "text" },
+				"shortDescription": { ":type": "line" },
 				"picture": { ":type": "line" }
 			}
 		},
