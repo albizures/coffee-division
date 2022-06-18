@@ -17,7 +17,7 @@ export function Services() {
 						{services.title}
 					</h2>
 					<div className="bg-caraway text-extra-white text-center p-4 mt-5">
-						<p className="text-sm md:text-base">
+						<p className="text-sm lg:text-base">
 							<span className="font-semibold">
 								{services.description1.part1}
 							</span>{' '}
@@ -25,7 +25,7 @@ export function Services() {
 						</p>
 					</div>
 					<div className="bg-caraway text-extra-white text-center p-4 mt-5">
-						<p className="text-sm md:text-base">
+						<p className="text-sm lg:text-base">
 							<span className="font-semibold">
 								{services.description2.part1}
 							</span>{' '}
@@ -42,7 +42,7 @@ export function Services() {
 					<div
 						className={clsx(
 							'divide-crisp px-4 flex flex-grow overflow-x-auto divide-x mt-9 pb-18 ',
-							'md:(flex-row divide-x mx-0 pb-32)',
+							'lg:(flex-row divide-x mx-0 pb-32)',
 						)}
 					>
 						{services.whatMakesUsDifferent.items.map(
@@ -50,9 +50,9 @@ export function Services() {
 								return (
 									<div
 										className={clsx(
-											'flex-1 text-center p-3 min-w-44 md:w-auto',
+											'flex-1 text-center p-3 min-w-44 lg:w-auto',
 											{
-												'md:-mb-16': index === 0,
+												'lg:-mb-16': index === 0,
 											},
 										)}
 										key={index}
@@ -72,21 +72,21 @@ export function Services() {
 				</div>
 			</div>
 			<div className="bg-crisp">
-				<div className="max-w-5xl mx-auto pt-18 md:pt-32">
+				<div className="max-w-5xl mx-auto pt-18 lg:pt-32">
 					<h2 className="text-center text-hunt">
 						<span className="text-center font-semibold">
 							{services.ourProccess.upperTitle}
 						</span>
-						<span className="text-center text-6xl md:text-8xl font-serif block -mt-4">
+						<span className="text-center text-6xl lg:text-8xl font-serif block -mt-4">
 							{services.ourProccess.title}
 						</span>
 					</h2>
-					<div className="flex flex-col mt-10 md:mt-16 mx-4 pb-18 divide-y divide-komorebi md:(flex-row divide-x divide-y-0 mx-0 pb-32)">
+					<div className="flex flex-col mt-10 lg:mt-16 mx-4 pb-18 divide-y divide-komorebi lg:(flex-row divide-x divide-y-0 mx-0 pb-32)">
 						{services.ourProccess.items.map((item, index) => {
 							return (
 								<div
 									className={
-										'flex-1 flex items-center md:flex-col text-center p-3'
+										'flex-1 flex items-center lg:flex-col text-center p-3'
 									}
 									key={index}
 								>
@@ -94,7 +94,7 @@ export function Services() {
 										src={icons[item.icon]}
 										className="mx-auto "
 									/>
-									<p className="text-liquorice text-center ml-3 md:(m-1 ml-0)">
+									<p className="text-liquorice text-center ml-3 lg:(m-1 ml-0)">
 										{item.description}
 									</p>
 								</div>

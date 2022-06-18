@@ -31,6 +31,8 @@ import AlbaPozuelosImg from '../public/alba-pozuelos.png';
 import DiegoSolaresImg from '../public/diego-solares.png';
 import HectorVenturaImg from '../public/hector-ventura.png';
 import RocioPirirImg from '../public/rocio-pirir.png';
+import DannyMogollonImg from '../public/danny-mogollon.png';
+import LuisaRodriguezImg from '../public/luisa-rodriguez.png';
 import ContactImg from '../public/contact.png';
 import Logo2Img from '../public/logo2.svg';
 import Logo3Img from '../public/logo3.svg';
@@ -41,6 +43,12 @@ export const teamPhotos = {
 	'diego-solares': DiegoSolaresImg,
 	'hector-ventura': HectorVenturaImg,
 	'rocio-pirir': RocioPirirImg,
+	'danny-mogollon': DannyMogollonImg,
+	'luisa-rodriguez': LuisaRodriguezImg,
+};
+export const urlTeamPhotos = {
+	'danny-mogollon': '/danny-mogollon.png',
+	'luisa-rodriguez': '/luisa-rodriguez.png',
 };
 
 const history = {
@@ -76,6 +84,7 @@ export const coffeeImages = {
 
 export {
 	LogoImg,
+	ThumbsUp,
 	ServicesImg,
 	MissionVisionImg,
 	HeroCoverImg,

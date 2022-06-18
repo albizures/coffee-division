@@ -17,7 +17,7 @@ export function OurCoffees() {
 	}
 
 	return (
-		<div className="flex flex-col md:(flex-row -m-2)">
+		<div className="flex flex-col lg:(flex-row -m-2)">
 			<div className="flex-1 py-20 px-6 text-extra-white relative bg-caraway">
 				<div className="max-w-lg m-auto">
 					<h2 className="text-center">
@@ -29,7 +29,7 @@ export function OurCoffees() {
 						</span>
 					</h2>
 					<p className="my-10">{ourCoffees.description}</p>
-					<ul className="hidden md:block">
+					<ul className="hidden lg:block">
 						{ourCoffees.items.map((item, index) => {
 							return (
 								<li
@@ -55,7 +55,7 @@ export function OurCoffees() {
 							);
 						})}
 					</ul>
-					<div className="inline-block bg-white py-3 w-full relative text-caraway text-center">
+					<div className="inline-block bg-white py-3 w-full relative text-caraway text-center lg:hidden">
 						<select
 							onChange={onChange}
 							value={currentIndex}

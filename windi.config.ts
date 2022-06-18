@@ -19,6 +19,7 @@ export default defineConfig({
 			crisp: '#E9E3D7',
 			rutherford: '#8f7252',
 			hunt: '#2b4f3f',
+			hunty: '#244335',
 			flintstone: '#697484',
 			liquorice: '#3b3b3b',
 			transparent: 'transparent',

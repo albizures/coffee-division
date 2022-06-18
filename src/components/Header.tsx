@@ -21,9 +21,9 @@ function Language(props: LanguageProps) {
 		<Link href={href} locale={locale}>
 			<a
 				className={clsx(
-					'text-extra-white md:text-flintstone text-sm',
+					'text-extra-white lg:text-flintstone text-sm',
 					{
-						'md:text-hunt font-semibold': routers.locale === locale,
+						'lg:text-hunt font-semibold': routers.locale === locale,
 					},
 				)}
 			>
@@ -57,7 +57,7 @@ export function Header() {
 	return (
 		<div className="shadow-sm">
 			<header
-				className={clsx('max-w-5xl mx-auto py-4 md:justify-center', {
+				className={clsx('max-w-5xl mx-auto py-4 lg:justify-center', {
 					'bg-hunt fixed inset-0 z-30': menuStatus === 'open',
 					flex: menuStatus === 'close',
 				})}
@@ -65,19 +65,19 @@ export function Header() {
 				<div
 					className={clsx(
 						'flex items-center justify-between w-full mx-6',
-						'md:(mx-0 w-auto)',
+						'lg:(mx-0 w-auto)',
 						{
 							hidden: menuStatus === 'open',
 						},
 					)}
 				>
-					<button className="md:hidden -mr-3" onClick={onClickMenu}>
+					<button className="lg:hidden -mr-3" onClick={onClickMenu}>
 						<MenuIcon />
 					</button>
 					<div className={clsx('h-12 w-48')}>
 						<Image src={LogoImg} layout="responsive" />
 					</div>
-					<span className="md:hidden">{/* space */}</span>
+					<span className="lg:hidden">{/* space */}</span>
 				</div>
 
 				<div
@@ -90,7 +90,7 @@ export function Header() {
 						<div className={clsx('h-12 w-48')}>
 							<Image src={Logo2Img} layout="responsive" />
 						</div>
-						<button className="md:hidden -ml-3" onClick={onClickMenu}>
+						<button className="lg:hidden -ml-3" onClick={onClickMenu}>
 							<CloseIcon className="text-extra-white text-2xl" />
 						</button>
 					</div>
@@ -99,7 +99,7 @@ export function Header() {
 				<nav
 					className={clsx(
 						'self-center flex-1 mx-6 mt-14',
-						'md:(flex mt-0)',
+						'lg:(flex mt-0)',
 						{
 							hidden: menuStatus === 'close',
 						},
@@ -108,7 +108,7 @@ export function Header() {
 					<ul
 						className={clsx(
 							'flex flex-col text-xl space-y-6 text-extra-white justify-between content-center text-sm w-full',
-							'md:(flex-row flex-row text-liquorice text-sm space-y-0)',
+							'lg:(flex-row flex-row text-liquorice text-sm space-y-0)',
 						)}
 					>
 						{navbar.items.map((items) => {
@@ -129,7 +129,7 @@ export function Header() {
 				<div
 					className={clsx(
 						'flex absolute bottom-0 w-full p-6 content-center space-x-3 items-center justify-between',
-						'md:(flex relative p-0 w-auto)',
+						'lg:(flex relative p-0 w-auto)',
 						{
 							hidden: menuStatus === 'close',
 						},
@@ -147,18 +147,18 @@ export function Header() {
 									<Icon
 										height="100%"
 										width="100%"
-										className="inset-0 absolut text-extra-white md:text-hunt w-5 h-5"
-										pathClassName="fill-hunt md:fill-white"
+										className="inset-0 absolut text-extra-white lg:text-hunt w-5 h-5"
+										pathClassName="fill-hunt lg:fill-white"
 									/>
 								</a>
 							);
 						})}
 					</div>
-					<div className="flex md:items-center">
+					<div className="flex lg:items-center">
 						<Language href="/" locale="en">
 							Eng
 						</Language>
-						<span className="text-extra-white md:text-flintstone inline-block mx-1">
+						<span className="text-extra-white lg:text-flintstone inline-block mx-1">
 							|
 						</span>
 						<Language href="/" locale="es">
