@@ -29,18 +29,29 @@ export function Contact() {
 
 	return (
 		<div className="bg-crisp py-14">
-			<div className="text-center">
+			<div className="text-center hidden lg:block">
 				<h2 className="text-6xl mx-auto font-serif text-hunt">
 					{contact.title}
 				</h2>
 				<p className="text-liquorice mt-6">{contact.description}</p>
 			</div>
-			<div className="max-w-5xl flex mt-14 mx-auto">
-				<div className="w-1/2">
-					<Image src={ContactImg} />
-					<div className="mt-14">
-						<div className="space-x-3 children:inline-block mb-5">
-							<span>
+
+			<div className="max-w-5xl px-6 flex flex-col lg:flex-row lg:mt-14 mx-auto">
+				<div className="lg:w-1/2">
+					<div className="max-w-sm mx-auto lg:max-w-[100%]">
+						<Image src={ContactImg} />
+						<div className="text-center lg:hidden block mt-5">
+							<h2 className="text-6xl mx-auto font-serif text-hunt">
+								{contact.title}
+							</h2>
+							<p className="text-liquorice mt-6">
+								{contact.description}
+							</p>
+						</div>
+					</div>
+					<div className="mt-14 hidden lg:block ">
+						<div className="children:inline-block mb-5">
+							<span className="leading-12">
 								<PhoneIcon className="inline-block w-8 h-5 mr-1" />{' '}
 								{contact.phone}
 							</span>
@@ -49,13 +60,13 @@ export function Contact() {
 								{contact.email}
 							</span>
 						</div>
-						<span>
-							<AddressIcon className="inline-block w-8 h-5 mr-1" />{' '}
+						<span className="flex">
+							<AddressIcon className="inline-block w-11 h-8 mr-3" />{' '}
 							{contact.address}
 						</span>
 					</div>
 				</div>
-				<div className="w-1/2 px-8">
+				<div className="lg:w-1/2 mt-16 lg:mt-0 lg:px-8">
 					<form>
 						<Field name="name" label={contact.form.name} />
 						<Field
@@ -77,6 +88,20 @@ export function Contact() {
 							{contact.form.send}
 						</button>
 					</form>
+				</div>
+				<div className="lg:hidden space-y-5 mt-5">
+					<div>
+						<PhoneIcon className="inline-block w-8 h-5 mr-1" />{' '}
+						{contact.phone}
+					</div>
+					<div>
+						<EmailIcon className="inline-block w-8 h-5 mr-1" />{' '}
+						{contact.email}
+					</div>
+					<div className="flex">
+						<AddressIcon className="w-13 h-8 mr-3" />{' '}
+						{contact.address}
+					</div>
 				</div>
 			</div>
 		</div>
