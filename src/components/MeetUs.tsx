@@ -9,9 +9,12 @@ import {
 } from '../assets';
 import { useContent } from '../state';
 import { LeafIcon, RightArrowIcon } from './Icons';
+import { useScroll } from '../hooks';
 
 export function MeetUs() {
 	const { meetUs } = useContent();
+
+	const onMoveHistory = useScroll('.history', '.history-item');
 
 	return (
 		<>
@@ -95,27 +98,37 @@ export function MeetUs() {
 					</span>
 				</h2>
 
-				<div className="flex flex-grow overflow-x-auto pl-50 mt-10 pb-20 md:pb-32">
-					{meetUs.ourHistory.items.map((item, index) => {
-						const asset = history[item.image];
-						return (
-							<div
-								className={clsx('min-w-60 mr-16', {
-									'mt-6': index % 2 === 0,
-									'flex justify-center flex-col': !asset,
-								})}
-								key={index}
-							>
-								{asset && (
-									<Image src={asset} width="270" height="208" />
-								)}
-								<h3 className="text-4xl font-serif mt-5">
-									{item.title}
-								</h3>
-								<p className="mt-2">{item.description}</p>
-							</div>
-						);
-					})}
+				<div className="relative">
+					<div className="flex history flex-grow overflow-x-auto pl-50 mt-10 pb-30 md:pb-32">
+						{meetUs.ourHistory.items.map((item, index) => {
+							const asset = history[item.image];
+							return (
+								<div
+									className={clsx('min-w-60 mr-16 history-item', {
+										'mt-6': index % 2 === 0,
+										'flex justify-center flex-col': !asset,
+									})}
+									key={index}
+								>
+									{asset && (
+										<Image src={asset} width="270" height="208" />
+									)}
+									<h3 className="text-4xl font-serif mt-5">
+										{item.title}
+									</h3>
+									<p className="mt-2">{item.description}</p>
+								</div>
+							);
+						})}
+					</div>
+					<div className="absolute pointer-events-none inset-x-0 bottom-15 lg:(top-15 right-1/4) flex justify-center items-start">
+						<button
+							className="pointer-events-auto"
+							onClick={onMoveHistory}
+						>
+							<RightArrowIcon className="h-10 w-10 lg:(h-16 w-16) stroke-hunt " />
+						</button>
+					</div>
 				</div>
 			</div>
 		</>

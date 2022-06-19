@@ -1,10 +1,14 @@
 import clsx from 'clsx';
 import Image from 'next/image';
 import { icons, ServicesImg } from '../assets';
+import { useScroll } from '../hooks';
 import { useContent } from '../state';
+import { RightArrowIcon } from './Icons';
 
 export function Services() {
 	const { services } = useContent();
+
+	const onMoveServices = useScroll('.services', '.services-item');
 
 	return (
 		<>
@@ -39,35 +43,47 @@ export function Services() {
 					</h5>
 				</div>
 				<div className="max-w-5xl mx-auto">
-					<div
-						className={clsx(
-							'divide-crisp px-4 flex flex-grow overflow-x-auto divide-x mt-9 pb-18 ',
-							'lg:(flex-row divide-x mx-0 pb-32)',
-						)}
-					>
-						{services.whatMakesUsDifferent.items.map(
-							(item, index) => {
-								return (
-									<div
-										className={clsx(
-											'flex-1 text-center p-3 min-w-44 lg:w-auto',
-											{
-												'lg:-mb-16': index === 0,
-											},
-										)}
-										key={index}
-									>
-										<Image
-											src={icons[item.icon]}
-											className="mx-auto"
-										/>
-										<p className="text-crisp text-center">
-											{item.description}
-										</p>
-									</div>
-								);
-							},
-						)}
+					<div className="relative">
+						<div
+							className={clsx(
+								'services',
+								'divide-crisp px-4 flex flex-grow overflow-x-auto divide-x mt-9 pb-40',
+								'lg:(flex-row divide-x mx-0 pb-32)',
+							)}
+						>
+							{services.whatMakesUsDifferent.items.map(
+								(item, index) => {
+									return (
+										<div
+											className={clsx(
+												'services-item',
+												'flex-1 text-center p-3 min-w-44 lg:w-auto',
+												{
+													'lg:-mb-16': index === 0,
+												},
+											)}
+											key={index}
+										>
+											<Image
+												src={icons[item.icon]}
+												className="mx-auto"
+											/>
+											<p className="text-crisp text-center">
+												{item.description}
+											</p>
+										</div>
+									);
+								},
+							)}
+						</div>
+						<div className="absolute pointer-events-none inset-x-0 bottom-15 flex justify-center items-start lg:hidden">
+							<button
+								className="pointer-events-auto"
+								onClick={onMoveServices}
+							>
+								<RightArrowIcon className="h-10 w-10 lg:(h-16 w-16) stroke-crisp" />
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
