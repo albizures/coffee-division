@@ -84,12 +84,12 @@ export function Contact() {
 								placeholder={contact.form.message}
 							></textarea>
 						</label>
-						<button className="bg-hunt py-4 px-9 text-white mt-6">
+						<button className="bg-hunt py-4 px-9 text-white mt-6 w-full lg:w-auto">
 							{contact.form.send}
 						</button>
 					</form>
 				</div>
-				<div className="lg:hidden space-y-5 mt-5">
+				<div className="lg:hidden space-y-5 mt-10">
 					<div>
 						<PhoneIcon className="inline-block w-8 h-5 mr-1" />{' '}
 						{contact.phone}
