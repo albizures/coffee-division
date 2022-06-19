@@ -17,7 +17,7 @@ export function OurCoffees() {
 	}
 
 	return (
-		<div className="flex flex-col lg:(flex-row -m-2)">
+		<div className="flex flex-col lg:flex-row">
 			<div className="flex-1 py-20 px-6 text-extra-white relative bg-caraway">
 				<div className="max-w-lg m-auto">
 					<h2 className="text-center">

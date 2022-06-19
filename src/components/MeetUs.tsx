@@ -85,7 +85,7 @@ export function MeetUs() {
 					</div>
 				</div>
 			</div>
-			<div className="py-20 md:py-32 bg-crisp text-hunt">
+			<div className="pt-20 md:pt-32 bg-crisp text-hunt">
 				<h2 className="text-center">
 					<span className="text-center font-semibold">
 						{meetUs.ourHistory.upperTitle}
@@ -95,12 +95,12 @@ export function MeetUs() {
 					</span>
 				</h2>
 
-				<div className="flex overflow-x-auto ml-50 mt-10">
+				<div className="flex flex-grow overflow-x-auto pl-50 mt-10 pb-20 md:pb-32">
 					{meetUs.ourHistory.items.map((item, index) => {
 						const asset = history[item.image];
 						return (
 							<div
-								className={clsx('w-60 mr-16', {
+								className={clsx('min-w-60 mr-16', {
 									'mt-6': index % 2 === 0,
 									'flex justify-center flex-col': !asset,
 								})}
