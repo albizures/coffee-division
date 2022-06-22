@@ -57,10 +57,13 @@ export function Header() {
 	return (
 		<div className="shadow-sm">
 			<header
-				className={clsx('max-w-5xl mx-auto py-4 lg:justify-center', {
-					'bg-hunt fixed inset-0 z-30': menuStatus === 'open',
-					flex: menuStatus === 'close',
-				})}
+				className={clsx(
+					'max-w-5xl mx-auto py-4 lg:(justify-center px-6)',
+					{
+						'bg-hunt fixed inset-0 z-30': menuStatus === 'open',
+						flex: menuStatus === 'close',
+					},
+				)}
 			>
 				<div
 					className={clsx(

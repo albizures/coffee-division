@@ -37,6 +37,9 @@ import ContactImg from '../public/contact.png';
 import Logo2Img from '../public/logo2.svg';
 import Logo3Img from '../public/logo3.svg';
 import Logo4Img from '../public/logo4.svg';
+import Leaf1 from '../public/leaf1.png';
+import Leaf2 from '../public/leaf2.png';
+import Leaf3 from '../public/leaf3.png';
 
 export const teamPhotos = {
 	'alba-pozuelos': AlbaPozuelosImg,
@@ -96,4 +99,7 @@ export {
 	Logo2Img,
 	Logo3Img,
 	Logo4Img,
+	Leaf1,
+	Leaf2,
+	Leaf3,
 };

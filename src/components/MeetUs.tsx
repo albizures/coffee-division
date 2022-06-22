@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import React from 'react';
 import clsx from 'clsx';
 import {
 	MeetUs1Img,
@@ -6,21 +7,50 @@ import {
 	WorldMapImg,
 	MissionVisionImg,
 	history,
+	Leaf2,
+	Leaf1,
 } from '../assets';
 import { useContent } from '../state';
 import { LeafIcon, RightArrowIcon } from './Icons';
-import { useScroll } from '../hooks';
+import { useAnimateOnScreen, useScroll } from '../hooks';
 
 export function MeetUs() {
 	const { meetUs } = useContent();
 
 	const onMoveHistory = useScroll('.history', '.history-item');
 
+	const swingOnMount = useAnimateOnScreen(
+		'animate-swing',
+		'animate-duration-3000',
+	);
+	const appearOnMount = useAnimateOnScreen(
+		'animate-back-in-up',
+		'animate-duration-1000',
+	);
+
 	return (
 		<>
-			<div className="bg-crisp">
-				<div className="max-w-5xl px-6 mx-auto relative pt-12 pb-14 text-center">
-					<h2 className="text-center font-serif text-hunt mb-8">
+			<div className="bg-crisp relative">
+				<div
+					ref={swingOnMount}
+					className="absolute transition ease-in-out -right-50 xl:-right-40 top-1/2 xl:top-1/2"
+				>
+					<Image
+						src={Leaf1}
+						className="scale-75 transform xl:scale-100"
+					/>
+				</div>
+				<div className="max-w-5xl px-6 mx-auto relative pt-12 pb-14 text-center overflow-hidden">
+					<div
+						ref={swingOnMount}
+						className="absolute -top-40 -left-10 md:-top-30 lg:-top-30 md:left-0"
+					>
+						<Image src={Leaf2} />
+					</div>
+					<h2
+						ref={appearOnMount}
+						className="text-center font-serif text-hunt mb-8"
+					>
 						<span className="md:text-6xl text-4xl block">
 							{meetUs.title.part1}
 						</span>
@@ -28,7 +58,9 @@ export function MeetUs() {
 							{meetUs.title.part2}
 						</span>
 					</h2>
-					<Image src={WorldMapImg} />
+					<div ref={appearOnMount}>
+						<Image src={WorldMapImg} />
+					</div>
 					<p className="md:mt-14 mt-8 max-w-2xl text-sm md:text-base font-light text-center mx-auto">
 						{meetUs.description.part1}{' '}
 						<span className="font-bold">
@@ -37,7 +69,7 @@ export function MeetUs() {
 					</p>
 					<div className="mt-12 mb-12 border-rutherford border-t-1" />
 					<div className="flex flex-col md:flex-row">
-						<div className="flex-1 relative">
+						<div ref={appearOnMount} className="flex-1 relative">
 							<Image src={MeetUs1Img} />
 							<span className="rounded-full absolute -right-3 top-1/2 bg-hunt shadow-2xl shadow-black inline-block h-14 w-14 md:(w-25 h-24)">
 								<LeafIcon className="h-14 w-14 md:(w-25 h-24)" />
@@ -65,7 +97,7 @@ export function MeetUs() {
 				</a>
 			</div>
 			{/* Mission and vision */}
-			<div className="py-14 bg-hunt">
+			<div className="py-14 bg-hunt overflow-hidden">
 				<div className="max-w-5xl px-4 flex flex-col md:flex-row mx-auto items-center">
 					<div className="flex-1">
 						<h3 className="font-serif text-6xl text-extra-white text-center">
@@ -75,7 +107,10 @@ export function MeetUs() {
 							{meetUs.mission.description}
 						</p>
 					</div>
-					<div className="mx-4 my-2 md:my-0 flex-1">
+					<div
+						ref={appearOnMount}
+						className="mx-4 my-2 md:my-0 flex-1"
+					>
 						<Image src={MissionVisionImg} />
 					</div>
 					<div className="flex-1">
@@ -98,7 +133,7 @@ export function MeetUs() {
 					</span>
 				</h2>
 
-				<div className="relative">
+				<div ref={appearOnMount} className="relative">
 					<div className="flex history flex-grow overflow-x-auto pl-50 mt-10 pb-30 md:pb-32">
 						{meetUs.ourHistory.items.map((item, index) => {
 							const asset = history[item.image];

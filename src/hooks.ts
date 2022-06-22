@@ -1,3 +1,5 @@
+import React from 'react';
+
 function easeOutCubic(x: number): number {
 	return 1 - Math.pow(1 - x, 3);
 }
@@ -24,4 +26,35 @@ export function useScroll(parentName: string, itemName: string) {
 			}
 		}
 	};
+}
+
+type Duration =
+	| 'animate-duration-1000'
+	| 'animate-duration-2000'
+	| 'animate-duration-3000';
+
+export function useAnimateOnScreen(
+	animate: string,
+	duration: Duration = 'animate-duration-2000',
+) {
+	return React.useCallback(
+		(element: HTMLDivElement) => {
+			if (!element) {
+				return;
+			}
+
+			element.classList.add(duration);
+			const observer = new IntersectionObserver(([entry]) => {
+				console.log(entry);
+
+				if (!entry.isIntersecting) {
+					return;
+				}
+				element.classList.add(animate);
+				observer.disconnect();
+			});
+			observer.observe(element);
+		},
+		[animate, duration],
+	);
 }

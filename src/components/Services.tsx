@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import Image from 'next/image';
-import { icons, ServicesImg } from '../assets';
-import { useScroll } from '../hooks';
+import { icons, Leaf2, ServicesImg } from '../assets';
+import { useAnimateOnScreen, useScroll } from '../hooks';
 import { useContent } from '../state';
 import { RightArrowIcon } from './Icons';
 
@@ -10,11 +10,23 @@ export function Services() {
 
 	const onMoveServices = useScroll('.services', '.services-item');
 
+	const swingOnMount = useAnimateOnScreen(
+		'animate-swing',
+		'animate-duration-3000',
+	);
+	const appearOnMount = useAnimateOnScreen(
+		'animate-back-in-up',
+		'animate-duration-1000',
+	);
+
 	return (
 		<>
 			<div className="bg-hunt">
 				<div className="max-w-xl mx-auto px-6">
-					<div className="mx-auto w-3/5 transform -translate-y-5 z-0">
+					<div
+						ref={appearOnMount}
+						className="mx-auto w-3/5 transform anima -translate-y-5 z-0"
+					>
 						<Image src={ServicesImg} layout="responsive" />
 					</div>
 					<h2 className="text-6xl text-center font-serif text-extra-white transform -mt-10 z-10">
@@ -87,9 +99,15 @@ export function Services() {
 					</div>
 				</div>
 			</div>
-			<div className="bg-crisp">
-				<div className="max-w-5xl mx-auto pt-18 lg:pt-32">
-					<h2 className="text-center text-hunt">
+			<div className="bg-crisp overflow-hidden">
+				<div className="max-w-5xl mx-auto pt-18 lg:pt-32 relative">
+					<div
+						ref={swingOnMount}
+						className="absolute -top-40 lg:-top-30 left-0"
+					>
+						<Image src={Leaf2} />
+					</div>
+					<h2 ref={appearOnMount} className="text-center text-hunt">
 						<span className="text-center font-semibold">
 							{services.ourProccess.upperTitle}
 						</span>

@@ -1,7 +1,13 @@
 import clsx from 'clsx';
 import Image from 'next/image';
 import React from 'react';
-import { teamPhotos, ThumbsUp, urlTeamPhotos } from '../assets';
+import {
+	Leaf1,
+	teamPhotos,
+	ThumbsUp,
+	urlTeamPhotos,
+} from '../assets';
+import { useAnimateOnScreen } from '../hooks';
 import { useContent } from '../state';
 import { Plus } from './Icons';
 import styles from './Team.module.css';
@@ -12,11 +18,29 @@ export function Team() {
 
 	const current = team.items[currentIndex];
 
+	const swingOnMount = useAnimateOnScreen(
+		'animate-swing',
+		'animate-duration-3000',
+	);
+	const appearOnMount = useAnimateOnScreen(
+		'animate-back-in-up',
+		'animate-duration-1000',
+	);
+
 	return (
 		<>
-			<div className="bg-hunt text-crisp py-24">
+			<div className="bg-hunt text-crisp py-24 relative overflow-hidden">
+				<div
+					ref={swingOnMount}
+					className="absolute -right-50 xl:-right-40 -top-40"
+				>
+					<Image
+						src={Leaf1}
+						className="scale-75 transform xl:scale-100"
+					/>
+				</div>
 				<div className="max-w-5xl px-6 mx-auto">
-					<h2 className="text-center">
+					<h2 ref={appearOnMount} className="text-center">
 						<span className="block font-semibold">
 							{team.upperTitle}
 						</span>
@@ -30,6 +54,7 @@ export function Team() {
 								return (
 									<div
 										key={index}
+										ref={appearOnMount}
 										className="mb-5 overflow-hidden grid grid-cols-3 md:(mr-5 block)"
 									>
 										<div className="relative">
@@ -64,7 +89,10 @@ export function Team() {
 							})}
 						</div>
 
-						<div className="hidden md:flex pl-5 border-l-crip border-l-1">
+						<div
+							ref={appearOnMount}
+							className="hidden md:flex pl-5 border-l-crip border-l-1"
+						>
 							<div
 								className={`relative before:pointer-events-none ${styles['team-gradient']}`}
 							>
@@ -95,9 +123,12 @@ export function Team() {
 					</div>
 				</div>
 			</div>
-			<div className="bg-hunty text-crisp py-20 lg:py-24">
+			<div className="bg-hunty text-crisp py-20 lg:py-24 overflow-hidden">
 				<div className="flex flex-col items-center lg:flex-row max-w-5xl px-6 mx-auto">
-					<div className="flex-1 text-center mt-8 lg:mb-14">
+					<div
+						ref={appearOnMount}
+						className="flex-1 text-center mt-8 lg:mb-14"
+					>
 						<Image src={ThumbsUp} />
 						<h3 className="font-serif text-6xl">
 							{team.tasters.title}
@@ -108,6 +139,7 @@ export function Team() {
 						return (
 							<div
 								key={index}
+								ref={appearOnMount}
 								className="flex-1 max-w-sm flex flex-col mt-5 lg:(px-14 mt-0) text-center sibling:(border-t-2 border-t-komorebi lg:border-transparent lg:border-l-2 lg:border-l-komorebi)"
 							>
 								<div

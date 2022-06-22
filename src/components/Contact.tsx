@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { ContactImg } from '../assets';
+import { useAnimateOnScreen } from '../hooks';
 import { useContent } from '../state';
 import { AddressIcon, EmailIcon, PhoneIcon } from './Icons';
 
@@ -27,10 +28,18 @@ function Field(props: FieldProps) {
 export function Contact() {
 	const { contact } = useContent();
 
+	const appearOnMount = useAnimateOnScreen(
+		'animate-back-in-up',
+		'animate-duration-1000',
+	);
+
 	return (
 		<div className="bg-crisp py-14">
 			<div className="text-center hidden lg:block">
-				<h2 className="text-6xl mx-auto font-serif text-hunt">
+				<h2
+					ref={appearOnMount}
+					className="text-6xl mx-auto font-serif text-hunt"
+				>
 					{contact.title}
 				</h2>
 				<p className="text-liquorice mt-6">{contact.description}</p>
@@ -39,7 +48,9 @@ export function Contact() {
 			<div className="max-w-5xl px-6 flex flex-col lg:flex-row lg:mt-14 mx-auto">
 				<div className="lg:w-1/2">
 					<div className="max-w-sm mx-auto lg:max-w-[100%]">
-						<Image src={ContactImg} />
+						<div ref={appearOnMount}>
+							<Image src={ContactImg} />
+						</div>
 						<div className="text-center lg:hidden block mt-5">
 							<h2 className="text-6xl mx-auto font-serif text-hunt">
 								{contact.title}
@@ -82,7 +93,7 @@ export function Contact() {
 								name="message"
 								rows={5}
 								placeholder={contact.form.message}
-							></textarea>
+							/>
 						</label>
 						<button className="bg-hunt py-4 px-9 text-white mt-6 w-full lg:w-auto">
 							{contact.form.send}

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { coffeeImages } from '../assets';
+import { useAnimateOnScreen } from '../hooks';
 import { useContent } from '../state';
 import { RightArrowIcon } from './Icons';
 
@@ -16,11 +17,16 @@ export function OurCoffees() {
 		setCurrentIndex(Number(event.target.value));
 	}
 
+	const appearOnMount = useAnimateOnScreen(
+		'animate-back-in-up',
+		'animate-duration-1000',
+	);
+
 	return (
 		<div className="flex flex-col lg:flex-row">
 			<div className="flex-1 py-20 px-6 text-extra-white relative bg-caraway">
 				<div className="max-w-lg m-auto">
-					<h2 className="text-center">
+					<h2 ref={appearOnMount} className="text-center">
 						<span className="font-semibold">
 							{ourCoffees.upperTitle}
 						</span>
@@ -55,7 +61,10 @@ export function OurCoffees() {
 							);
 						})}
 					</ul>
-					<div className="inline-block bg-white py-3 w-full relative text-caraway text-center lg:hidden">
+					<div
+						ref={appearOnMount}
+						className="inline-block bg-white py-3 w-full relative text-caraway text-center lg:hidden"
+					>
 						<select
 							onChange={onChange}
 							value={currentIndex}
@@ -76,7 +85,10 @@ export function OurCoffees() {
 					</div>
 				</div>
 			</div>
-			<div className="flex-1 flex relative items-center justify-center flex-col">
+			<div
+				ref={appearOnMount}
+				className="flex-1 flex relative items-center justify-center flex-col"
+			>
 				<Image
 					src={coffeeImages[current.background]}
 					layout="fill"
