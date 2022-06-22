@@ -30,7 +30,7 @@ export function MeetUs() {
 
 	return (
 		<>
-			<div className="bg-crisp relative">
+			<div className="bg-crisp relative overflow-hidden">
 				<div
 					ref={swingOnMount}
 					className="absolute transition ease-in-out -right-50 xl:-right-40 top-1/2 xl:top-1/2"
