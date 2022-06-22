@@ -105,7 +105,10 @@ export function Services() {
 						ref={swingOnMount}
 						className="absolute -top-40 lg:-top-30 left-0"
 					>
-						<Image src={Leaf2} />
+						<Image
+							className="scale-50 origin-left transform md:scale-100"
+							src={Leaf2}
+						/>
 					</div>
 					<h2 ref={appearOnMount} className="text-center text-hunt">
 						<span className="text-center font-semibold">

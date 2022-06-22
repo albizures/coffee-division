@@ -37,7 +37,7 @@ export function MeetUs() {
 				>
 					<Image
 						src={Leaf1}
-						className="scale-75 transform xl:scale-100"
+						className="scale-50 origin-top transform xl:scale-100"
 					/>
 				</div>
 				<div className="max-w-5xl px-6 mx-auto relative pt-12 pb-14 text-center overflow-hidden">
@@ -45,7 +45,10 @@ export function MeetUs() {
 						ref={swingOnMount}
 						className="absolute -top-40 -left-10 md:-top-30 lg:-top-30 md:left-0"
 					>
-						<Image src={Leaf2} />
+						<Image
+							className="scale-50 origin-left transform md:scale-100"
+							src={Leaf2}
+						/>
 					</div>
 					<h2
 						ref={appearOnMount}
