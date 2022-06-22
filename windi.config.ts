@@ -28,5 +28,11 @@ export default defineConfig({
 			sans: ['Work Sans', 'sans-serif'],
 			serif: ['DM Serif Display', 'serif'],
 		},
+		extend: {
+			animation: {
+				pulse: 'pulse',
+				swing: 'swing',
+			},
+		},
 	},
 });
