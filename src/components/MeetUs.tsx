@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import clsx from 'clsx';
 import {
@@ -88,16 +89,15 @@ export function MeetUs() {
 				</div>
 			</div>
 			<div className="bg-caraway px-4">
-				<a
-					href={meetUs.coffeeOrigin.href}
-					className="max-w-5xl mx-6 text-sm md:text-base flex block justify-center items-center py-6 cursor-pointer"
-				>
-					<Image src={MiniGuateImg} height="60" width="45" />
-					<p className="mx-4 text-center text-extra-white">
-						{meetUs.coffeeOrigin.label}
-					</p>
-					<RightArrowIcon className="h-8 w-8 stroke-extra-white" />
-				</a>
+				<Link href={meetUs.coffeeOrigin.href}>
+					<a className="max-w-5xl px-6 mx-auto text-sm md:text-base flex block justify-center items-center py-6 cursor-pointer">
+						<Image src={MiniGuateImg} height="60" width="45" />
+						<p className="mx-4 text-center text-extra-white">
+							{meetUs.coffeeOrigin.label}
+						</p>
+						<RightArrowIcon className="h-8 w-8 stroke-extra-white" />
+					</a>
+				</Link>
 			</div>
 			{/* Mission and vision */}
 			<div className="py-14 bg-hunt overflow-hidden">

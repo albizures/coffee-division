@@ -191,5 +191,16 @@
 	},
 	"footer": {
 		"terms": { ":type": "line" }
+	},
+	"coffeeOrigin": {
+		"upperTitle": { ":type": "line" },
+		"title": { ":type": "line" },
+		"items": {
+			":items": {
+				"title": { ":type": "line" },
+				"description": { ":type": "text" },
+				"image": { ":type": "line" }
+			}
+		}
 	}
 }
