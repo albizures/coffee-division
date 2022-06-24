@@ -31,6 +31,7 @@ export function Contact() {
 	const appearOnMount = useAnimateOnScreen(
 		'animate-back-in-up',
 		'animate-duration-1000',
+		'anim-appear',
 	);
 
 	return (

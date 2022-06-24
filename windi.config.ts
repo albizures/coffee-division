@@ -5,6 +5,9 @@ export default defineConfig({
 		include: ['**/*.{jsx,tsx,css}'],
 		exclude: ['node_modules', '.git', '.next'],
 	},
+	shortcuts: {
+		'anim-appear': 'transform scale-0 animate-fill-forwards',
+	},
 	theme: {
 		colors: {
 			white: 'white',
@@ -30,6 +33,9 @@ export default defineConfig({
 		},
 		extend: {
 			animation: {
+				'back-in-left': 'backInLeft forwards',
+				'back-in-right': 'backInRight forwards',
+				'back-in-up': 'backInUp forwards',
 				pulse: 'pulse',
 				swing: 'swing',
 			},

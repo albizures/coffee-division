@@ -25,11 +25,12 @@ export function Team() {
 	const appearOnMount = useAnimateOnScreen(
 		'animate-back-in-up',
 		'animate-duration-1000',
+		'anim-appear',
 	);
 
 	return (
 		<>
-			<div className="bg-hunt text-crisp py-24 relative overflow-hidden">
+			<div className="bg-hunt text-crisp py-24 relative">
 				<div
 					ref={swingOnMount}
 					className="absolute -right-50 xl:-right-40 -top-40"
@@ -39,7 +40,7 @@ export function Team() {
 						className="scale-75 transform xl:scale-100"
 					/>
 				</div>
-				<div className="max-w-5xl px-6 mx-auto">
+				<div className="max-w-5xl px-6 mx-auto overflow-hidden">
 					<h2 ref={appearOnMount} className="text-center">
 						<span className="block font-semibold">
 							{team.upperTitle}

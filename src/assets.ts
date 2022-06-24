@@ -41,6 +41,12 @@ import Leaf1 from '../public/leaf1.png';
 import Leaf2 from '../public/leaf2.png';
 import Leaf3 from '../public/leaf3.png';
 
+import Img850dc from '../public/850-dc.png';
+import Img1760 from '../public/1760.png';
+import Img1800 from '../public/1800.png';
+import Img1858 from '../public/1858.png';
+import guatemalanCoffeeImg from '../public/guatemalan-coffee.png';
+
 export const teamPhotos = {
 	'alba-pozuelos': AlbaPozuelosImg,
 	'diego-solares': DiegoSolaresImg,
@@ -72,6 +78,14 @@ export const icons = {
 	'coffee-cup': CoffeeCup,
 	'drop-and-coffee': DropAndCoffee,
 	'coffee-beans': CoffeeBeans,
+};
+
+export const originImages = {
+	'850-dc': Img850dc,
+	'1760': Img1760,
+	'1800': Img1800,
+	'1858': Img1858,
+	'guatemalan-coffee': guatemalanCoffeeImg,
 };
 
 export const coffeeImages = {

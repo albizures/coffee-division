@@ -1,0 +1,27 @@
+.timeline::before,
+.timeline::after {
+	content: ' ';
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	background: #8f7252;
+	border-radius: 100%;
+}
+
+.timeline::before {
+	top: 0;
+}
+
+.timeline::after {
+	bottom: -1rem;
+}
+
+.timeline_left::before,
+.timeline_left::after {
+	left: -0.5rem;
+}
+
+.timeline_right::before,
+.timeline_right::after {
+	right: -0.5rem;
+}

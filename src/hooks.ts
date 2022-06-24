@@ -36,6 +36,7 @@ type Duration =
 export function useAnimateOnScreen(
 	animate: string,
 	duration: Duration = 'animate-duration-2000',
+	init?: string,
 ) {
 	return React.useCallback(
 		(element: HTMLDivElement) => {
@@ -44,17 +45,21 @@ export function useAnimateOnScreen(
 			}
 
 			element.classList.add(duration);
-			const observer = new IntersectionObserver(([entry]) => {
-				console.log(entry);
-
-				if (!entry.isIntersecting) {
-					return;
-				}
-				element.classList.add(animate);
-				observer.disconnect();
-			});
+			init && element.classList.add(init);
+			const observer = new IntersectionObserver(
+				([entry]) => {
+					if (!entry.isIntersecting) {
+						return;
+					}
+					element.classList.add(animate);
+					observer.disconnect();
+				},
+				{
+					threshold: 0.4,
+				},
+			);
 			observer.observe(element);
 		},
-		[animate, duration],
+		[animate, duration, init],
 	);
 }

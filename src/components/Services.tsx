@@ -17,6 +17,7 @@ export function Services() {
 	const appearOnMount = useAnimateOnScreen(
 		'animate-back-in-up',
 		'animate-duration-1000',
+		'anim-appear',
 	);
 
 	return (
@@ -25,9 +26,11 @@ export function Services() {
 				<div className="max-w-xl mx-auto px-6">
 					<div
 						ref={appearOnMount}
-						className="mx-auto w-3/5 transform anima -translate-y-5 z-0"
+						className="mx-auto w-3/5 anima z-0"
 					>
-						<Image src={ServicesImg} layout="responsive" />
+						<div className="transform -translate-y-5">
+							<Image src={ServicesImg} layout="responsive" />
+						</div>
 					</div>
 					<h2 className="text-6xl text-center font-serif text-extra-white transform -mt-10 z-10">
 						{services.title}

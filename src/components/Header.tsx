@@ -55,7 +55,7 @@ export function Header() {
 	}
 
 	return (
-		<div className="shadow-sm">
+		<div className="shadow-md z-50 relative">
 			<header
 				className={clsx(
 					'max-w-5xl mx-auto py-4 lg:(justify-center px-6)',
@@ -78,7 +78,11 @@ export function Header() {
 						<MenuIcon />
 					</button>
 					<div className={clsx('h-12 w-48')}>
-						<Image src={LogoImg} layout="responsive" />
+						<Link href="/">
+							<a>
+								<Image src={LogoImg} layout="responsive" />
+							</a>
+						</Link>
 					</div>
 					<span className="lg:hidden">{/* space */}</span>
 				</div>
@@ -91,7 +95,11 @@ export function Header() {
 					<div className="flex items-center justify-between w-full px-6">
 						<span>{/* space */}</span>
 						<div className={clsx('h-12 w-48')}>
-							<Image src={Logo2Img} layout="responsive" />
+							<Link href="/">
+								<a>
+									<Image src={Logo2Img} layout="responsive" />
+								</a>
+							</Link>
 						</div>
 						<button className="lg:hidden -ml-3" onClick={onClickMenu}>
 							<CloseIcon className="text-extra-white text-2xl" />
