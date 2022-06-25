@@ -8,8 +8,8 @@ export function Footer() {
 
 	return (
 		<div className="bg-komorebi">
-			<div className="max-w-sm lg:max-w-5xl mx-auto px-6 flex flex-col lg:flex-row justify-between mx-auto py-8">
-				<div className="space-x-5 max-w-xs text-center">
+			<div className="max-w-sm mx-auto px-6 flex flex-col justify-between py-8 lg:(max-w-5xl flex-row)">
+				<div className="space-x-5 flex-1 max-w-xs text-center lg:(max-w-max)">
 					<span className="inline-block">
 						<Image src={Logo2Img} />
 					</span>
@@ -20,7 +20,7 @@ export function Footer() {
 						<Image src={Logo4Img} />
 					</span>
 				</div>
-				<div className="flex flex-col lg:flex-row text-center">
+				<div className="flex flex-col items-center lg:flex-row text-center">
 					<p className="text-sm text-garland lg:pr-4 mt-4 lg:mt-0">
 						{footer.terms}
 					</p>
