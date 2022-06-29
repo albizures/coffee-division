@@ -213,7 +213,9 @@
 					"title": { ":type": "line" },
 					"image": { ":type": "line" },
 					"regions": {
-						"name": { ":type": "line" }
+						":items": {
+							"name": { ":type": "line" }
+						}
 					}
 				}
 			}
