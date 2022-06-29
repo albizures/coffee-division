@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { icons, CloseIcon, MenuIcon } from '../components/Icons';
 import { useContent } from '../state';
-import { Logo2Img, LogoImg } from '../assets';
+import { LogoImg, WhiteLogoImg } from '../assets';
 
 interface LanguageProps {
 	href: string;
@@ -97,7 +97,7 @@ export function Header() {
 						<div className={clsx('h-12 w-48')}>
 							<Link href="/">
 								<a>
-									<Image src={Logo2Img} layout="responsive" />
+									<Image src={WhiteLogoImg} layout="responsive" />
 								</a>
 							</Link>
 						</div>

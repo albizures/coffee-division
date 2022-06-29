@@ -35,6 +35,7 @@ import DannyMogollonImg from '../public/danny-mogollon.png';
 import LuisaRodriguezImg from '../public/luisa-rodriguez.png';
 import ContactImg from '../public/contact.png';
 import Logo2Img from '../public/logo2.svg';
+import WhiteLogoImg from '../public/white-logo.svg';
 import Logo3Img from '../public/logo3.svg';
 import Logo4Img from '../public/logo4.svg';
 import Leaf1 from '../public/leaf1.png';
@@ -111,6 +112,7 @@ export {
 	history,
 	ContactImg,
 	Logo2Img,
+	WhiteLogoImg,
 	Logo3Img,
 	Logo4Img,
 	Leaf1,

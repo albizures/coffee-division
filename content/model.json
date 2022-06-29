@@ -211,17 +211,10 @@
 			"items": {
 				":items": {
 					"title": { ":type": "line" },
-					"image": { ":type": "line" }
-				}
-			}
-		},
-		"regions": {
-			"title": { ":type": "line" },
-			"items": {
-				":items": {
-					"title": { ":type": "line" },
-					"description": { ":type": "text" },
-					"image": { ":type": "line" }
+					"image": { ":type": "line" },
+					"regions": {
+						"name": { ":type": "line" }
+					}
 				}
 			}
 		},
