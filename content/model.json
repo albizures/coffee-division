@@ -182,6 +182,7 @@
 			"name": { ":type": "line" },
 			"email": { ":type": "line" },
 			"phone": { ":type": "line" },
+			"country": { ":type": "line" },
 			"message": { ":type": "line" },
 			"send": { ":type": "line" }
 		},
@@ -201,6 +202,42 @@
 				"description": { ":type": "text" },
 				"image": { ":type": "line" }
 			}
+		}
+	},
+	"form": {
+		"back": { ":type": "line" },
+		"characteristics": {
+			"title": { ":type": "line" },
+			"items": {
+				":items": {
+					"title": { ":type": "line" },
+					"image": { ":type": "line" }
+				}
+			}
+		},
+		"regions": {
+			"title": { ":type": "line" },
+			"items": {
+				":items": {
+					"title": { ":type": "line" },
+					"description": { ":type": "text" },
+					"image": { ":type": "line" }
+				}
+			}
+		},
+		"processes": {
+			"title": { ":type": "line" },
+			"items": {
+				":items": {
+					"title": { ":type": "line" },
+					"description": { ":type": "text" },
+					"image": { ":type": "line" }
+				}
+			}
+		},
+		"contact": {
+			"title": { ":type": "line" },
+			"description": { ":type": "line" }
 		}
 	}
 }
