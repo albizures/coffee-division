@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import Image from 'next/image';
-import { icons, Leaf2, ServicesImg } from '../assets';
+import { icons, Leaf3, ServicesImg } from '../assets';
 import { useAnimateOnScreen, useScroll } from '../hooks';
 import { useContent } from '../state';
 import { RightArrowIcon } from './Icons';
@@ -10,15 +10,15 @@ export function Services() {
 
 	const onMoveServices = useScroll('.services', '.services-item');
 
-	const swingOnMount = useAnimateOnScreen(
-		'animate-swing',
-		'animate-duration-3000',
-	);
-	const appearOnMount = useAnimateOnScreen(
-		'animate-back-in-up',
-		'animate-duration-1000',
-		'anim-appear',
-	);
+	const swingOnMount = useAnimateOnScreen({
+		animate: 'animate-swing',
+		duration: 'animate-duration-3000',
+	});
+	const appearOnMount = useAnimateOnScreen({
+		animate: 'animate-back-in-up',
+		duration: 'animate-duration-1000',
+		init: 'anim-appear',
+	});
 
 	return (
 		<>
@@ -110,7 +110,7 @@ export function Services() {
 					>
 						<Image
 							className="scale-50 origin-left transform md:scale-100"
-							src={Leaf2}
+							src={Leaf3}
 						/>
 					</div>
 					<h2 ref={appearOnMount} className="text-center text-hunt">

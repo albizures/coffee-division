@@ -17,11 +17,11 @@ export function OurCoffees() {
 		setCurrentIndex(Number(event.target.value));
 	}
 
-	const appearOnMount = useAnimateOnScreen(
-		'animate-back-in-up',
-		'animate-duration-1000',
-		'anim-appear',
-	);
+	const appearOnMount = useAnimateOnScreen({
+		animate: 'animate-back-in-up',
+		duration: 'animate-duration-1000',
+		init: 'anim-appear',
+	});
 
 	return (
 		<div className="flex flex-col lg:flex-row">
@@ -86,10 +86,7 @@ export function OurCoffees() {
 					</div>
 				</div>
 			</div>
-			<div
-				ref={appearOnMount}
-				className="flex-1 flex relative items-center justify-center flex-col"
-			>
+			<div className="flex-1 flex relative items-center justify-center flex-col">
 				<Image
 					src={coffeeImages[current.background]}
 					layout="fill"
@@ -98,13 +95,19 @@ export function OurCoffees() {
 				/>
 				<div className="absolute bg-hunt bg-opacity-50 inset-0" />
 				<div className="max-w-lg max-auto px-6 py-32 z-10 text-center">
-					<h3 className="text-extra-white text-6xl font-serif">
+					<h3
+						ref={appearOnMount}
+						className="text-extra-white text-6xl font-serif"
+					>
 						{current.title}
 					</h3>
-					<p className="text-extra-white mt-8 text-center">
+					<p
+						ref={appearOnMount}
+						className="text-extra-white mt-8 text-center"
+					>
 						{current.description}
 					</p>
-					<div className="mt-9">
+					<div ref={appearOnMount} className="mt-9">
 						<Link href="/">
 							<a className="bg-rutherford text-white stroke-white py-4 px-7">
 								SOLICITA MÁS INFO

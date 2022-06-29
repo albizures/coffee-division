@@ -33,11 +33,21 @@ type Duration =
 	| 'animate-duration-2000'
 	| 'animate-duration-3000';
 
-export function useAnimateOnScreen(
-	animate: string,
-	duration: Duration = 'animate-duration-2000',
-	init?: string,
-) {
+interface UseAnimateOnScreenArgs {
+	animate: string;
+	duration: Duration;
+	init?: string;
+	threshold?: number;
+}
+
+export function useAnimateOnScreen(args: UseAnimateOnScreenArgs) {
+	const {
+		animate,
+		duration = 'animate-duration-2000',
+		init,
+		threshold = 0.4,
+	} = args;
+
 	return React.useCallback(
 		(element: HTMLDivElement) => {
 			if (!element) {
@@ -55,7 +65,7 @@ export function useAnimateOnScreen(
 					observer.disconnect();
 				},
 				{
-					threshold: 0.4,
+					threshold,
 				},
 			);
 			observer.observe(element);

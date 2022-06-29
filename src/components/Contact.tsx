@@ -28,11 +28,11 @@ function Field(props: FieldProps) {
 export function Contact() {
 	const { contact } = useContent();
 
-	const appearOnMount = useAnimateOnScreen(
-		'animate-back-in-up',
-		'animate-duration-1000',
-		'anim-appear',
-	);
+	const appearOnMount = useAnimateOnScreen({
+		animate: 'animate-back-in-up',
+		duration: 'animate-duration-1000',
+		init: 'anim-appear',
+	});
 
 	return (
 		<div className="bg-crisp py-14">
@@ -53,7 +53,7 @@ export function Contact() {
 							<Image src={ContactImg} />
 						</div>
 						<div className="text-center lg:hidden block mt-5">
-							<h2 className="text-6xl mx-auto font-serif text-hunt">
+							<h2 className="text-4xl mx-auto font-serif text-hunt">
 								{contact.title}
 							</h2>
 							<p className="text-liquorice mt-6">
@@ -78,7 +78,7 @@ export function Contact() {
 						</span>
 					</div>
 				</div>
-				<div className="lg:w-1/2 mt-16 lg:mt-0 lg:px-8">
+				<div className="lg:w-1/2 mt-8 lg:mt-0 lg:px-8">
 					<form>
 						<Field name="name" label={contact.form.name} />
 						<Field

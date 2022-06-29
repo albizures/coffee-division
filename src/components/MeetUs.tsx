@@ -8,7 +8,7 @@ import {
 	WorldMapImg,
 	MissionVisionImg,
 	history,
-	Leaf2,
+	Leaf3,
 	Leaf1,
 } from '../assets';
 import { useContent } from '../state';
@@ -20,15 +20,15 @@ export function MeetUs() {
 
 	const onMoveHistory = useScroll('.history', '.history-item');
 
-	const swingOnMount = useAnimateOnScreen(
-		'animate-swing',
-		'animate-duration-3000',
-	);
-	const appearOnMount = useAnimateOnScreen(
-		'animate-back-in-up',
-		'animate-duration-1000',
-		'anim-appear',
-	);
+	const swingOnMount = useAnimateOnScreen({
+		animate: 'animate-swing',
+		duration: 'animate-duration-3000',
+	});
+	const appearOnMount = useAnimateOnScreen({
+		animate: 'animate-back-in-up',
+		duration: 'animate-duration-1000',
+		init: 'anim-appear',
+	});
 
 	return (
 		<>
@@ -49,7 +49,7 @@ export function MeetUs() {
 					>
 						<Image
 							className="scale-50 origin-left transform md:scale-100"
-							src={Leaf2}
+							src={Leaf3}
 						/>
 					</div>
 					<h2

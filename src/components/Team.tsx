@@ -18,15 +18,16 @@ export function Team() {
 
 	const current = team.items[currentIndex];
 
-	const swingOnMount = useAnimateOnScreen(
-		'animate-swing',
-		'animate-duration-3000',
-	);
-	const appearOnMount = useAnimateOnScreen(
-		'animate-back-in-up',
-		'animate-duration-1000',
-		'anim-appear',
-	);
+	const swingOnMount = useAnimateOnScreen({
+		animate: 'animate-swing',
+		duration: 'animate-duration-3000',
+	});
+
+	const appearOnMount = useAnimateOnScreen({
+		animate: 'animate-back-in-up',
+		duration: 'animate-duration-1000',
+		init: 'anim-appear',
+	});
 
 	return (
 		<>
