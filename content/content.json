@@ -310,6 +310,80 @@
           "image": "guatemalan-coffee"
         }
       ]
+    },
+    "form": {
+      "back": "REGRESAR",
+      "characteristics": {
+        "title": "¿Qué características te gustan de un café?",
+        "items": [
+          {
+            "title": "Frutales",
+            "image": "frutales"
+          },
+          {
+            "title": "Florales",
+            "image": "florales"
+          },
+          {
+            "title": "Cítricos",
+            "image": "citricos"
+          },
+          {
+            "title": "Chocolates",
+            "image": "chocolates"
+          }
+        ]
+      },
+      "regions": {
+        "title": "¿Qué regiones te gustan?",
+        "items": [
+          {
+            "title": "Acatenango",
+            "description": "Cafetales plantados hasta 2,000 msnm. El perfil de Acatenango se caracteriza por tener una acidez marcada, aromático, cuerpo balanceado y postgusto prolongado.",
+            "image": "acatenango"
+          },
+          {
+            "title": "Atitlán",
+            "description": "os suelos más ricos en materia orgánica de Guatemala. Cafés producidos en las faldas de volcan Tolimán, Atitlán y San Pedro. El perfil de Atitlán se caracteriza por su acidez cítrica brillante y cuerpo completo.",
+            "image": "atitlan"
+          },
+          {
+            "title": "Huehuetenango",
+            "description": "La región más alta y seca, alcanza hasta los 2,300 msnm. El perfil de Huehue se caracteriza por su acidez intensa, cuerpo completo y notas avinatadas.",
+            "image": "huehuetenango"
+          },
+          {
+            "title": "Cobán",
+            "description": "Región llena de riquezas naturales, lluvia y frío durante la mayoría del año. El perfil de Cobán se caracteriza por tener notas afrutadas, cuerpo fino y acidez delicada.",
+            "image": "coban"
+          }
+        ]
+      },
+      "processes": {
+        "title": "¿Qué procesos te gustan?",
+        "items": [
+          {
+            "description": "Consiste en despulpar las cerezas, fermentar la masa para despegar el mucílago, y posteriormente lavar la miel restante, para dejar un café completamente limpio.",
+            "title": "Lavado",
+            "image": "lavado"
+          },
+          {
+            "description": "Se conserva la pulpa, mucílago y semilla juntas mientras se seca. Este proceso ayuda a potenciar los sabores. Es un proceso más ecológico, no utiliza agua.",
+            "title": "Natural",
+            "image": "natural"
+          },
+          {
+            "title": "Honey",
+            "description": "Consiste en despulpar la cereza y dejar el mucílago adherido a la semilla. Por lo general, entre más cantidad de mucílago tiene el grano, más dulce será el perfil de taza.",
+            "image": "honey"
+          },
+          {
+            "description": "Los procesos experimentales pueden ir desde variaciones en el proceso de secado, hasta fermentaciones anaeróbicas, fermentaciones prolongadas o fermentaciones dobles.",
+            "title": "Experimental",
+            "image": "experimental"
+          }
+        ]
+      }
     }
   },
   "en": {
@@ -392,6 +466,32 @@
         {},
         {}
       ]
+    },
+    "form": {
+      "characteristics": {
+        "items": [
+          {},
+          {},
+          {},
+          {}
+        ]
+      },
+      "regions": {
+        "items": [
+          {},
+          {},
+          {},
+          {}
+        ]
+      },
+      "processes": {
+        "items": [
+          {},
+          {},
+          {},
+          {}
+        ]
+      }
     }
   }
 }
