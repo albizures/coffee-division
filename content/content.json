@@ -318,19 +318,69 @@
 				"items": [
 					{
 						"title": "Frutales",
-						"image": "frutales"
+						"image": "frutales",
+						"regions": [
+							{
+								"name": "acatenango"
+							},
+							{
+								"name": "atitlan"
+							},
+							{
+								"name": "huehuetenango"
+							},
+							{
+								"name": "coban"
+							}
+						]
 					},
 					{
 						"title": "Florales",
-						"image": "florales"
+						"image": "florales",
+						"regions": [
+							{
+								"name": "san-marcos"
+							},
+							{
+								"name": "acatenango"
+							},
+							{
+								"name": "atitlan"
+							}
+						]
 					},
 					{
 						"title": "Cítricos",
-						"image": "citricos"
+						"image": "citricos",
+						"regions": [
+							{
+								"name": "atitlan"
+							},
+							{
+								"name": "huehuetenango"
+							},
+							{
+								"name": "fraijanes"
+							},
+							{
+								"name": "acatenango"
+							}
+						]
 					},
 					{
 						"title": "Chocolates",
-						"image": "chocolates"
+						"image": "chocolates",
+						"regions": [
+							{
+								"name": "santa-rosa"
+							},
+							{
+								"name": "antigua"
+							},
+							{
+								"name": "fraijanes"
+							}
+						]
 					}
 				]
 			},
