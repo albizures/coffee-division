@@ -48,6 +48,30 @@ import Img1800 from '../public/1800.png';
 import Img1858 from '../public/1858.png';
 import guatemalanCoffeeImg from '../public/guatemalan-coffee.png';
 
+import FloralesImg from '../public/florales.png';
+import FrutalesImg from '../public/frutales.png';
+import CitricosImg from '../public/citricos.png';
+import ChocolatesImg from '../public/chocolates.png';
+
+import ExperimentalImg from '../public/experimental.jpeg';
+import HoneyImg from '../public/honey.jpeg';
+import LavadoImg from '../public/lavado.jpeg';
+import NaturalImg from '../public/natural.jpeg';
+
+export const characteristicsImages = {
+	florales: FloralesImg,
+	frutales: FrutalesImg,
+	citricos: CitricosImg,
+	chocolates: ChocolatesImg,
+};
+
+export const processesImages = {
+	experimental: ExperimentalImg,
+	honey: HoneyImg,
+	lavado: LavadoImg,
+	natural: NaturalImg,
+};
+
 export const teamPhotos = {
 	'alba-pozuelos': AlbaPozuelosImg,
 	'diego-solares': DiegoSolaresImg,

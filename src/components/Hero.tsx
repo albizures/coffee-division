@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { RightArrowIcon } from '../components/Icons';
 import { HeroCoverImg } from '../assets';
 import { useContent } from '../state';
@@ -26,13 +27,12 @@ export function Hero() {
 					</span>
 				</h1>
 				<div className="text-center mb-20 md:mb-28">
-					<a
-						className="py-4 px-10 bg-rutherford text-white inline-block"
-						href={hero.cta.href}
-					>
-						<span className="align-middle">{hero.cta.label}</span>
-						<RightArrowIcon className="ml-3 inline-block w-5 h-5 stroke-white" />
-					</a>
+					<Link href={hero.cta.href}>
+						<a className="py-4 px-10 bg-rutherford text-white inline-block">
+							<span className="align-middle">{hero.cta.label}</span>
+							<RightArrowIcon className="ml-3 inline-block w-5 h-5 stroke-white" />
+						</a>
+					</Link>
 				</div>
 			</div>
 		</div>

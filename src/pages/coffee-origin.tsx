@@ -15,6 +15,7 @@ export default function Index() {
 		duration: 'animate-duration-3000',
 		threshold: 0.2,
 	});
+
 	return (
 		<>
 			<Header />
