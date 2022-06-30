@@ -220,6 +220,9 @@
 				}
 			}
 		},
+		"regions": {
+			"title": { ":type": "line" }
+		},
 		"processes": {
 			"title": { ":type": "line" },
 			"items": {

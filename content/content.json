@@ -45,7 +45,7 @@
 			},
 			"cta": {
 				"label": "INICIA AQUÍ",
-				"href": "#start-here"
+				"href": "/form"
 			}
 		},
 		"meetUs": {
@@ -333,6 +333,9 @@
 						"image": "chocolates"
 					}
 				]
+			},
+			"regions": {
+				"title": "¿Qué regiones te gustan?"
 			},
 			"processes": {
 				"title": "¿Qué procesos te gustan?",
