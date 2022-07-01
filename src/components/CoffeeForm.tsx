@@ -17,6 +17,76 @@ function scrollToTop() {
 	}, 100);
 }
 
+interface BackProps {
+	children: React.ReactNode;
+	onBack: (index: null) => void;
+}
+
+function Back(props: BackProps) {
+	const { onBack, children } = props;
+	return (
+		<div className="text-center pb-20 md:(text-left)">
+			<button
+				className="underline text-white"
+				onClick={() => onBack(null)}
+			>
+				{children}
+			</button>
+		</div>
+	);
+}
+
+interface TitleProps {
+	children: React.ReactNode;
+}
+function Title(props: TitleProps) {
+	const { children } = props;
+	return (
+		<h1 className="mt-13 text-4xl text-white font-serif">
+			{children}
+		</h1>
+	);
+}
+
+interface CardProps {
+	onSelect: (index: number) => void;
+	index: number;
+	background: StaticImageData;
+	title: string;
+	description: string;
+}
+
+function Card(props: CardProps) {
+	const { index, onSelect, background, description, title } = props;
+	return (
+		<div
+			onClick={() => onSelect(index)}
+			key={index}
+			className="flex md:(flex-col flex-1) cursor-pointer mt-10 even:children:bg-caraway odd:children:bg-foothills"
+		>
+			<div
+				className="flex-1 bg-cover bg-center md:(relative)"
+				style={{
+					backgroundImage: `url(${background.src})`,
+				}}
+			>
+				<p className="bg-pumpkin py-6 px-3 text-white text-sm hidden md:(block opacity-0 hover:opacity-100)">
+					<span className="bg-pumpkin absolute inset-0"></span>
+					<span className="relative">{description}</span>
+				</p>
+			</div>
+			<div className="flex-1 flex flex-col items-center md:(h-20 flex-grow-0 border-t-4 border-hunt)">
+				<h5 className="flex-1 py-3 text-white font-serif text-xl text-center">
+					{title}
+				</h5>
+				<p className="bg-pumpkin py-6 px-3 text-white text-sm md:(hidden)">
+					{description}
+				</p>
+			</div>
+		</div>
+	);
+}
+
 export function CoffeeForm() {
 	const { form, ourCoffees } = useContent();
 	const [characteristicIndex, setCharacteristicIndex] =
@@ -58,16 +128,14 @@ export function CoffeeForm() {
 				</div>
 				{!characteristic && (
 					<>
-						<h1 className="mt-13 text-4xl text-white font-serif">
-							{form.characteristics.title}
-						</h1>
-						<div className="pb-20">
+						<Title>{form.characteristics.title}</Title>
+						<div className="pb-20 md:(flex space-x-4 mt-6)">
 							{form.characteristics.items.map((item, index) => {
 								return (
 									<div
 										onClick={() => onSelectCharacteristics(index)}
 										key={index}
-										className="flex cursor-pointer mt-10 space-x-1 even:children:bg-caraway odd:children:bg-foothills"
+										className="flex md:(flex-col space-x-0 space-y-1) cursor-pointer mt-10 space-x-1 even:children:bg-caraway odd:children:bg-foothills"
 									>
 										<div className="flex-1">
 											<div className="-mt-5">
@@ -77,7 +145,7 @@ export function CoffeeForm() {
 											</div>
 										</div>
 										<div className="flex-1 flex items-center">
-											<h5 className="flex-1 text-white font-serif text-2xl text-center">
+											<h5 className="flex-1 text-white font-serif text-2xl text-center md:p">
 												{item.title}
 											</h5>
 										</div>
@@ -89,88 +157,42 @@ export function CoffeeForm() {
 				)}
 				{characteristic && !region && (
 					<>
-						<h1 className="mt-13 text-4xl text-white font-serif">
-							{form.regions.title}
-						</h1>
-						<div className="pb-10">
+						<Title>{form.regions.title}</Title>
+						<div className="pb-10 md:(flex space-x-4 mt-6)">
 							{regions.map((item, index) => {
 								return (
-									<div
-										onClick={() => onSelectRegion(index)}
+									<Card
 										key={index}
-										className="flex cursor-pointer mt-10 even:children:bg-caraway odd:children:bg-foothills"
-									>
-										<div
-											className="flex-1 bg-cover bg-center"
-											style={{
-												backgroundImage: `url(${
-													coffeeImages[item.background].src
-												})`,
-											}}
-										></div>
-										<div className="flex-1 flex flex-col items-center">
-											<h5 className="flex-1 py-3 text-white font-serif text-xl text-center">
-												{item.title}
-											</h5>
-											<p className="bg-pumpkin py-6 px-3 text-white text-sm">
-												{item.description}
-											</p>
-										</div>
-									</div>
+										title={item.title}
+										description={item.description}
+										onSelect={onSelectRegion}
+										index={index}
+										background={coffeeImages[item.background]}
+									/>
 								);
 							})}
 						</div>
-						<div className="text-center pb-20">
-							<button
-								className="underline text-white"
-								onClick={() => onSelectCharacteristics(null)}
-							>
-								{form.back}
-							</button>
-						</div>
+						<Back onBack={onSelectCharacteristics}>{form.back}</Back>
 					</>
 				)}
 				{region && !process && (
 					<>
-						<h1 className="mt-13 text-4xl text-white font-serif">
-							{form.processes.title}
-						</h1>
-						<div className="pb-10">
+						<Title>{form.processes.title}</Title>
+						<div className="pb-10 md:(flex space-x-4 mt-6)">
 							{form.processes.items.map((item, index) => {
 								return (
-									<div
-										onClick={() => onSelectProcess(index)}
+									<Card
 										key={index}
-										className="flex cursor-pointer mt-10 even:children:bg-caraway odd:children:bg-foothills"
-									>
-										<div
-											className="flex-1 bg-cover bg-center"
-											style={{
-												backgroundImage: `url(${
-													processesImages[item.image].src
-												})`,
-											}}
-										></div>
-										<div className="flex-1 flex flex-col items-center">
-											<h5 className="flex-1 py-3 text-white font-serif text-xl text-center">
-												{item.title}
-											</h5>
-											<p className="bg-pumpkin py-6 px-3 text-white text-sm">
-												{item.description}
-											</p>
-										</div>
-									</div>
+										title={item.title}
+										description={item.description}
+										onSelect={onSelectProcess}
+										index={index}
+										background={processesImages[item.image]}
+									/>
 								);
 							})}
 						</div>
-						<div className="text-center pb-20">
-							<button
-								className="underline text-white"
-								onClick={() => onSelectRegion(null)}
-							>
-								{form.back}
-							</button>
-						</div>
+						<Back onBack={onSelectRegion}>{form.back}</Back>
 					</>
 				)}
 			</div>
