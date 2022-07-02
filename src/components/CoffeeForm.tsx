@@ -7,6 +7,9 @@ import {
 	processesImages,
 } from '../assets';
 import { useContent } from '../state';
+import { BeanIcon } from './Icons';
+import clsx from 'clsx';
+import { Field } from './Field';
 
 function scrollToTop() {
 	setTimeout(() => {
@@ -42,7 +45,7 @@ interface TitleProps {
 function Title(props: TitleProps) {
 	const { children } = props;
 	return (
-		<h1 className="mt-13 text-4xl text-white font-serif">
+		<h1 className="mt-8 text-4xl text-white font-serif">
 			{children}
 		</h1>
 	);
@@ -87,8 +90,39 @@ function Card(props: CardProps) {
 	);
 }
 
+interface DividerProps {
+	isActive: unknown;
+}
+
+function Divider(props: DividerProps) {
+	const { isActive } = props;
+	return (
+		<span
+			className={clsx('flex-1 border-t ', {
+				'border-pumpkin': !isActive,
+				'border-lemon': isActive,
+			})}
+		/>
+	);
+}
+interface BeanProps {
+	isActive: unknown;
+}
+
+function Bean(props: BeanProps) {
+	const { isActive } = props;
+	return (
+		<BeanIcon
+			className={clsx({
+				'text-pumpkin': !isActive,
+				'text-lemon': isActive,
+			})}
+		/>
+	);
+}
+
 export function CoffeeForm() {
-	const { form, ourCoffees } = useContent();
+	const { form, ourCoffees, contact } = useContent();
 	const [characteristicIndex, setCharacteristicIndex] =
 		React.useState(null);
 	const [regionIndex, setRegionIndex] = React.useState(null);
@@ -126,6 +160,15 @@ export function CoffeeForm() {
 				<div className="max-h-15 max-w-64 mx-auto">
 					<Image layout="responsive" src={WhiteLogoImg} />
 				</div>
+				<div className="flex space-x-2 items-center mt-8 max-w-xs mx-auto">
+					<BeanIcon className="text-lemon" />
+					<Divider isActive={characteristic} />
+					<Bean isActive={characteristic} />
+					<Divider isActive={region} />
+					<Bean isActive={region} />
+					<Divider isActive={process} />
+					<Bean isActive={process} />
+				</div>
 				{!characteristic && (
 					<>
 						<Title>{form.characteristics.title}</Title>
@@ -145,7 +188,7 @@ export function CoffeeForm() {
 											</div>
 										</div>
 										<div className="flex-1 flex items-center">
-											<h5 className="flex-1 text-white font-serif text-2xl text-center md:p">
+											<h5 className="flex-1 text-white font-serif text-2xl text-center py-4">
 												{item.title}
 											</h5>
 										</div>
@@ -193,6 +236,52 @@ export function CoffeeForm() {
 							})}
 						</div>
 						<Back onBack={onSelectRegion}>{form.back}</Back>
+					</>
+				)}
+				{process && (
+					<>
+						<Title>{form.contact.title}</Title>
+						<p className="text-white mt-4">
+							{form.contact.description}
+						</p>
+						<form className="text-white pt-4 pb-10 md:(grid grid-cols-2 gap-10)">
+							<Field name="name" label={contact.form.name} />
+							<Field
+								name="email"
+								type="email"
+								label={contact.form.email}
+							/>
+							<Field name="phone" label={contact.form.phone} />
+							<Field name="country" label={contact.form.country} />
+							<label className="py-3 mt-5 block md:col-span-full">
+								<span className="sr-only">
+									{contact.form.message}
+								</span>
+								<textarea
+									className="w-full bg-transparent mt-3 border border-komorebi p-2"
+									name="message"
+									rows={5}
+									placeholder={contact.form.message}
+								/>
+							</label>
+							<div className="flex flex-col md:(flex-row col-span-full) justify-between">
+								<button className="bg-lemon py-4 px-9 font-semibold text-hunt mt-6 md:hidden mb-10">
+									{contact.form.send}
+								</button>
+								<button
+									className="underline text-white"
+									onClick={(event) => {
+										event.preventDefault();
+										onSelectProcess(null);
+									}}
+								>
+									{form.back}
+								</button>
+								<button className="bg-lemon py-4 px-9 font-semibold text-hunt mt-6 hidden md:inline-block">
+									{contact.form.send}
+								</button>
+							</div>
+						</form>
 					</>
 				)}
 			</div>
