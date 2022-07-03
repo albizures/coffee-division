@@ -1,5 +1,7 @@
 import Image from 'next/image';
+import React from 'react';
 import { ContactImg } from '../assets';
+import { mailto } from '../contact';
 import { useAnimateOnScreen } from '../hooks';
 import { useContent } from '../state';
 import { Field } from './Field';
@@ -14,8 +16,29 @@ export function Contact() {
 		init: 'anim-appear',
 	});
 
+	function onSubmit(event: React.FormEvent<HTMLFormElement>) {
+		event.preventDefault();
+		const form = event.currentTarget;
+		const name = form.name as unknown as HTMLInputElement;
+		const email = form.email as HTMLInputElement;
+		const phone = form.phone as HTMLInputElement;
+		const message = form.message as HTMLInputElement;
+		mailto({
+			to: contact.email,
+			name: (name as unknown as HTMLInputElement).value,
+			email: email.value,
+			phone: phone.value,
+			message: message.value,
+		});
+
+		name.value = '';
+		email.value = '';
+		phone.value = '';
+		message.value = '';
+	}
+
 	return (
-		<div className="bg-crisp py-14">
+		<div className="bg-crisp py-14 overflow-hidden">
 			<div className="text-center hidden lg:block">
 				<h2
 					ref={appearOnMount}
@@ -59,20 +82,30 @@ export function Contact() {
 					</div>
 				</div>
 				<div className="lg:w-1/2 mt-8 lg:mt-0 lg:px-8">
-					<form>
-						<Field name="name" label={contact.form.name} />
+					<form onSubmit={onSubmit}>
+						<Field
+							required={true}
+							name="name"
+							label={contact.form.name}
+						/>
 						<Field
 							name="email"
 							type="email"
+							required={true}
 							label={contact.form.email}
 						/>
-						<Field name="phone" label={contact.form.phone} />
+						<Field
+							name="phone"
+							required={true}
+							label={contact.form.phone}
+						/>
 						<label className="py-3 mt-5 block">
 							<span className="sr-only">{contact.form.message}</span>
 							<textarea
 								className="w-full bg-transparent mt-3 border border-komorebi p-2"
 								name="message"
 								rows={5}
+								required={true}
 								placeholder={contact.form.message}
 							/>
 						</label>

@@ -14,6 +14,7 @@ import { BeanIcon } from './Icons';
 import clsx from 'clsx';
 import { Field } from './Field';
 import { useAnimateOnScreen } from '../hooks';
+import { mailto } from '../contact';
 
 function scrollToTop() {
 	setTimeout(() => {
@@ -182,6 +183,33 @@ export function CoffeeForm() {
 		scrollToTop();
 	}
 
+	function onSubmit(event: React.FormEvent<HTMLFormElement>) {
+		event.preventDefault();
+		const form = event.currentTarget;
+		const name = form.name as unknown as HTMLInputElement;
+		const email = form.email as HTMLInputElement;
+		const phone = form.phone as HTMLInputElement;
+		const message = form.message as HTMLInputElement;
+
+		mailto({
+			to: contact.email,
+			name: (name as unknown as HTMLInputElement).value,
+			email: email.value,
+			phone: phone.value,
+			message: message.value,
+			extra: {
+				characteristic: characteristic.title,
+				region: region.title,
+				process: process.title,
+			},
+		});
+
+		name.value = '';
+		email.value = '';
+		phone.value = '';
+		message.value = '';
+	}
+
 	return (
 		<div className="bg-hunt relative overflow-hidden">
 			<div ref={swingOnMount} className="absolute -top-40 md:-top-20">
@@ -294,7 +322,10 @@ export function CoffeeForm() {
 						<p className="text-white mt-4">
 							{form.contact.description}
 						</p>
-						<form className="text-white pt-4 pb-10 relative z-10 md:(grid grid-cols-2 gap-10)">
+						<form
+							onSubmit={onSubmit}
+							className="text-white pt-4 pb-10 relative z-10 md:(grid grid-cols-2 gap-10)"
+						>
 							<Field name="name" label={contact.form.name} />
 							<Field
 								name="email"

@@ -273,7 +273,7 @@
 				"name": "Nombre",
 				"email": "Correo electrónico",
 				"phone": "Teléfono",
-				"country": "Teléfono",
+				"country": "País",
 				"message": "Mensaje",
 				"send": "ENVIAR"
 			}
