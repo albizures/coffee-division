@@ -1,4 +1,5 @@
 import { defineConfig } from 'windicss/helpers';
+import plugin from 'windicss/plugin';
 
 export default defineConfig({
 	extract: {
@@ -41,4 +42,18 @@ export default defineConfig({
 			},
 		},
 	},
+	plugins: [
+		require('@windicss/plugin-animations'),
+		// plugin(({ addComponents }) => {
+		// 	addComponents({
+		// 		'animation-delay-75': {
+		// 			animationDelay: '75ms',
+		// 			color: 'red',
+		// 		},
+		// 		'animation-delay-100': {
+		// 			animationDelay: '100ms',
+		// 		},
+		// 	});
+		// }),
+	],
 });

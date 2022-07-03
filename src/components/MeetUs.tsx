@@ -137,15 +137,21 @@ export function MeetUs() {
 					</span>
 				</h2>
 
-				<div ref={appearOnMount} className="relative">
+				<div className="relative">
 					<div className="flex history flex-grow overflow-x-auto pl-50 mt-10 pb-30 md:pb-32">
 						{meetUs.ourHistory.items.map((item, index) => {
 							const asset = history[item.image];
 							return (
 								<div
+									ref={appearOnMount}
 									className={clsx('min-w-60 mr-16 history-item', {
 										'mt-6': index % 2 === 0,
 										'flex justify-center flex-col': !asset,
+
+										'md:animate-delay-50': index === 1,
+										'md:animate-delay-100': index === 2,
+										'md:animate-delay-150': index === 3,
+										'md:animate-delay-200': index === 4,
 									})}
 									key={index}
 								>

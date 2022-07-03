@@ -1,15 +1,19 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import {
 	characteristicsImages,
 	WhiteLogoImg,
 	coffeeImages,
 	processesImages,
+	Leaf2,
+	Leaf1,
 } from '../assets';
 import { useContent } from '../state';
 import { BeanIcon } from './Icons';
 import clsx from 'clsx';
 import { Field } from './Field';
+import { useAnimateOnScreen } from '../hooks';
 
 function scrollToTop() {
 	setTimeout(() => {
@@ -61,11 +65,23 @@ interface CardProps {
 
 function Card(props: CardProps) {
 	const { index, onSelect, background, description, title } = props;
+	const appearOnMount = useAnimateOnScreen({
+		animate: 'animate-back-in-up',
+		duration: 'animate-duration-1000',
+		init: 'anim-appear',
+	});
 	return (
 		<div
 			onClick={() => onSelect(index)}
-			key={index}
-			className="flex md:(flex-col flex-1) cursor-pointer mt-10 even:children:bg-caraway odd:children:bg-foothills"
+			ref={appearOnMount}
+			className={clsx(
+				'flex md:(flex-col flex-1) cursor-pointer mt-10 even:children:bg-caraway odd:children:bg-foothills',
+				{
+					'md:animate-delay-50': index === 1,
+					'md:animate-delay-100': index === 2,
+					'md:animate-delay-150': index === 3,
+				},
+			)}
 		>
 			<div
 				className="flex-1 bg-cover bg-center md:(relative)"
@@ -139,6 +155,18 @@ export function CoffeeForm() {
 	const region = regions[regionIndex];
 	const process = form.processes.items[processIndex];
 
+	const swingOnMount = useAnimateOnScreen({
+		animate: 'animate-swing',
+		duration: 'animate-duration-3000',
+		threshold: 0.2,
+	});
+
+	const appearOnMount = useAnimateOnScreen({
+		animate: 'animate-back-in-up',
+		duration: 'animate-duration-1000',
+		init: 'anim-appear',
+	});
+
 	function onSelectCharacteristics(index: number | null) {
 		setCharacteristicIndex(index);
 		scrollToTop();
@@ -155,10 +183,23 @@ export function CoffeeForm() {
 	}
 
 	return (
-		<div className="bg-hunt">
+		<div className="bg-hunt relative overflow-hidden">
+			<div ref={swingOnMount} className="absolute -top-40 md:-top-20">
+				<Image src={Leaf2} />
+			</div>
+			<div
+				ref={swingOnMount}
+				className="hidden md:block absolute -right-40 -bottom-40"
+			>
+				<Image src={Leaf1} />
+			</div>
 			<div className="max-w-5xl mx-auto px-6 text-center pt-8">
 				<div className="max-h-15 max-w-64 mx-auto">
-					<Image layout="responsive" src={WhiteLogoImg} />
+					<Link href="/">
+						<a>
+							<Image layout="responsive" src={WhiteLogoImg} />
+						</a>
+					</Link>
 				</div>
 				<div className="flex space-x-2 items-center mt-8 max-w-xs mx-auto">
 					<BeanIcon className="text-lemon" />
@@ -172,13 +213,22 @@ export function CoffeeForm() {
 				{!characteristic && (
 					<>
 						<Title>{form.characteristics.title}</Title>
-						<div className="pb-20 md:(flex space-x-4 mt-6)">
+						<div className="pb-20 relative z-10 md:(flex space-x-4 mt-6)">
 							{form.characteristics.items.map((item, index) => {
 								return (
 									<div
+										ref={appearOnMount}
 										onClick={() => onSelectCharacteristics(index)}
 										key={index}
-										className="flex md:(flex-col space-x-0 space-y-1) cursor-pointer mt-10 space-x-1 even:children:bg-caraway odd:children:bg-foothills"
+										className={clsx(
+											'flex cursor-pointer mt-10 space-x-1 even:children:bg-caraway odd:children:bg-foothills',
+											'md:(flex-col space-x-0 space-y-1)',
+											{
+												'md:animate-delay-50': index === 1,
+												'md:animate-delay-100': index === 2,
+												'md:animate-delay-150': index === 3,
+											},
+										)}
 									>
 										<div className="flex-1">
 											<div className="-mt-5">
@@ -201,7 +251,7 @@ export function CoffeeForm() {
 				{characteristic && !region && (
 					<>
 						<Title>{form.regions.title}</Title>
-						<div className="pb-10 md:(flex space-x-4 mt-6)">
+						<div className="pb-10 relative z-10 md:(flex space-x-4 mt-6)">
 							{regions.map((item, index) => {
 								return (
 									<Card
@@ -221,7 +271,7 @@ export function CoffeeForm() {
 				{region && !process && (
 					<>
 						<Title>{form.processes.title}</Title>
-						<div className="pb-10 md:(flex space-x-4 mt-6)">
+						<div className="pb-10 relative z-10 md:(flex space-x-4 mt-6)">
 							{form.processes.items.map((item, index) => {
 								return (
 									<Card
@@ -244,7 +294,7 @@ export function CoffeeForm() {
 						<p className="text-white mt-4">
 							{form.contact.description}
 						</p>
-						<form className="text-white pt-4 pb-10 md:(grid grid-cols-2 gap-10)">
+						<form className="text-white pt-4 pb-10 relative z-10 md:(grid grid-cols-2 gap-10)">
 							<Field name="name" label={contact.form.name} />
 							<Field
 								name="email"

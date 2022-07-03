@@ -57,7 +57,17 @@ export function Team() {
 									<div
 										key={index}
 										ref={appearOnMount}
-										className="mb-5 overflow-hidden grid grid-cols-3 md:(mr-5 block)"
+										className={clsx(
+											'mb-5 overflow-hidden grid grid-cols-3 md:(mr-5 block)',
+											{
+												'md:animate-delay-50':
+													index === 1 || index === 3,
+												'md:animate-delay-100':
+													index === 2 || index === 4,
+												'md:animate-delay-150':
+													index === 3 || index === 5,
+											},
+										)}
 									>
 										<div className="relative">
 											<Image

@@ -70,6 +70,6 @@ export function useAnimateOnScreen(args: UseAnimateOnScreenArgs) {
 			);
 			observer.observe(element);
 		},
-		[animate, duration, init],
+		[animate, duration, init, threshold],
 	);
 }
