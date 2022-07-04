@@ -111,7 +111,10 @@ export function CoffeeOrigin() {
 				ref={swingOnMount}
 				className="absolute transition ease-in-out -right-30 -top-30 xl:(-right-40 -top-10)"
 			>
-				<Image src={Leaf3} />
+				<Image
+					className="scale-45 origin-center transform xl:scale-100"
+					src={Leaf3}
+				/>
 			</div>
 			<div
 				ref={swingOnMount}
