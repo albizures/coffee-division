@@ -17,8 +17,10 @@ export default function Index() {
 			<Hero />
 			<MeetUs />
 			<Services />
-			<OurCoffees />
-			<Team />
+			<div className="overflow-hidden">
+				<OurCoffees />
+				<Team />
+			</div>
 			<Contact />
 			<Footer />
 		</>

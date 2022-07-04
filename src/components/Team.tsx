@@ -38,7 +38,7 @@ export function Team() {
 				>
 					<Image
 						src={Leaf1}
-						className="scale-75 transform xl:scale-100"
+						className="scale-45 origin-center transform xl:scale-100"
 					/>
 				</div>
 				<div className="max-w-5xl px-6 mx-auto overflow-hidden">

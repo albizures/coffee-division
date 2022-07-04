@@ -19,14 +19,19 @@ export default function Index() {
 	return (
 		<>
 			<Header />
-			<CoffeeOrigin />
-			<div className="relative">
-				<OurCoffees />
-				<div
-					ref={swingOnMount}
-					className="absolute transition ease-in-out -right-40 -top-20 xl:(-right-30 -top-20)"
-				>
-					<Image src={Leaf3} className="transform xl:scale-100" />
+			<div className="overflow-hidden">
+				<CoffeeOrigin />
+				<div className="relative">
+					<OurCoffees />
+					<div
+						ref={swingOnMount}
+						className="absolute transition ease-in-out -right-40 -top-20 xl:(-right-30 -top-20)"
+					>
+						<Image
+							src={Leaf3}
+							className="transform scale-75 xl:scale-100"
+						/>
+					</div>
 				</div>
 			</div>
 			<Footer />
