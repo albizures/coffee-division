@@ -58,34 +58,36 @@ export function Header() {
 		<div className="shadow-md z-50 relative">
 			<header
 				className={clsx(
-					'max-w-5xl mx-auto py-4 lg:(justify-center px-6)',
+					'max-w-5xl flex justify-between  mx-auto py-4 lg:(justify-center px-6)',
 					{
 						'bg-hunt fixed inset-0 z-30': menuStatus === 'open',
-						flex: menuStatus === 'close',
+						'flex-col overflow-auto': menuStatus === 'open',
 					},
 				)}
 			>
-				<div
-					className={clsx(
-						'flex items-center justify-between w-full mx-6',
-						'lg:(mx-0 w-auto)',
-						{
-							hidden: menuStatus === 'open',
-						},
-					)}
-				>
-					<button className="lg:hidden -mr-3" onClick={onClickMenu}>
-						<MenuIcon />
-					</button>
-					<div className={clsx('h-12 w-48')}>
-						<Link href="/">
-							<a>
-								<Image src={LogoImg} layout="responsive" />
-							</a>
-						</Link>
+				{menuStatus === 'close' && (
+					<div
+						className={clsx(
+							'flex items-center justify-between w-full mx-6',
+							'lg:(mx-0 w-auto)',
+							// {
+							// 	hidden: menuStatus === 'open',
+							// },
+						)}
+					>
+						<button className="lg:hidden -mr-3" onClick={onClickMenu}>
+							<MenuIcon />
+						</button>
+						<div className={clsx('h-12 w-48')}>
+							<Link href="/">
+								<a>
+									<Image src={LogoImg} layout="responsive" />
+								</a>
+							</Link>
+						</div>
+						<span className="lg:hidden">{/* space */}</span>
 					</div>
-					<span className="lg:hidden">{/* space */}</span>
-				</div>
+				)}
 
 				<div
 					className={clsx({
@@ -109,8 +111,8 @@ export function Header() {
 
 				<nav
 					className={clsx(
-						'self-center flex-1 mx-6 mt-14',
-						'lg:(flex mt-0)',
+						'flex-1 mx-6 mt-14 min-h-[min-content]',
+						'lg:(flex mt-0 self-center)',
 						{
 							hidden: menuStatus === 'close',
 						},
@@ -139,7 +141,7 @@ export function Header() {
 				</nav>
 				<div
 					className={clsx(
-						'flex absolute bottom-0 w-full p-6 content-center space-x-3 items-center justify-between',
+						'flex w-full p-6 content-center space-x-3 items-center justify-between',
 						'lg:(flex relative p-0 w-auto)',
 						{
 							hidden: menuStatus === 'close',

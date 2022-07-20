@@ -16,6 +16,8 @@ export function Contact() {
 		init: 'anim-appear',
 	});
 
+	const [left, right] = contact.email.split('@');
+
 	function onSubmit(event: React.FormEvent<HTMLFormElement>) {
 		event.preventDefault();
 		const form = event.currentTarget;
@@ -121,7 +123,12 @@ export function Contact() {
 					</div>
 					<div>
 						<EmailIcon className="inline-block w-8 h-5 mr-1" />{' '}
-						{contact.email}
+						<span className="whitespace-normal">
+							<span>{left}</span>
+							<span className="text-[0]"> </span>@
+							<span className="text-[0]"> </span>
+							<span>{right}</span>
+						</span>
 					</div>
 					<div className="flex">
 						<AddressIcon className="w-13 h-8 mr-3" />{' '}

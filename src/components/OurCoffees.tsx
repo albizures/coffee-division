@@ -86,7 +86,7 @@ export function OurCoffees() {
 					</div>
 				</div>
 			</div>
-			<div className="flex-1 flex relative items-center justify-center flex-col">
+			<div className="flex-1 flex px-6 relative items-center justify-center flex-col">
 				<Image
 					src={coffeeImages[current.background]}
 					layout="fill"
@@ -94,7 +94,7 @@ export function OurCoffees() {
 					className="absolute inset-0"
 				/>
 				<div className="absolute bg-hunt bg-opacity-50 inset-0" />
-				<div className="max-w-lg max-auto px-6 py-32 z-10 text-center">
+				<div className="max-w-lg px-6 py-32 z-10 text-center">
 					<h3
 						ref={appearOnMount}
 						className="text-extra-white text-6xl font-serif"
