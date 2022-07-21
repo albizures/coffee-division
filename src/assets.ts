@@ -30,6 +30,8 @@ import SantaRosaImg from '../public/santa-rosa.jpeg';
 import AlbaPozuelosImg from '../public/alba-pozuelos.png';
 import DiegoSolaresImg from '../public/diego-solares.png';
 import HectorVenturaImg from '../public/hector-ventura.png';
+import LizbethChavacImg from '../public/lizbeth-chavac.png';
+import YennyFigueroaImg from '../public/yenny-figueroa.png';
 import RocioPirirImg from '../public/rocio-pirir.png';
 import DannyMogollonImg from '../public/danny-mogollon.png';
 import LuisaRodriguezImg from '../public/luisa-rodriguez.png';
@@ -79,6 +81,8 @@ export const teamPhotos = {
 	'rocio-pirir': RocioPirirImg,
 	'danny-mogollon': DannyMogollonImg,
 	'luisa-rodriguez': LuisaRodriguezImg,
+	'lizbeth-chavac': LizbethChavacImg,
+	'yenny-figueroa': YennyFigueroaImg,
 };
 export const urlTeamPhotos = {
 	'danny-mogollon': '/danny-mogollon.png',

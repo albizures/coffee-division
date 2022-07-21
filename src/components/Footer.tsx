@@ -8,7 +8,7 @@ export function Footer() {
 
 	return (
 		<div className="bg-komorebi">
-			<div className="max-w-sm mx-auto px-6 flex flex-col justify-between py-8 lg:(max-w-5xl flex-row)">
+			<div className="max-w-6xl mx-auto px-6 flex flex-col justify-between py-8 lg:flex-row">
 				<div className="space-x-5 flex-1 max-w-xs text-center lg:(max-w-max)">
 					<span className="inline-block">
 						<Image src={Logo2Img} />

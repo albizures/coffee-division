@@ -130,7 +130,7 @@ function Bean(props: BeanProps) {
 	const { isActive } = props;
 	return (
 		<BeanIcon
-			className={clsx({
+			className={clsx('w-4 h-4 md:(w-7 h-7)', {
 				'text-pumpkin': !isActive,
 				'text-lemon': isActive,
 			})}
@@ -211,9 +211,11 @@ export function CoffeeForm() {
 	}
 
 	return (
-		<div className="bg-hunt relative overflow-hidden">
-			<div ref={swingOnMount} className="absolute -top-40 md:-top-20">
-				<Image src={Leaf2} />
+		<div className="min-h-screen flex flex-col bg-hunt justify-center relative overflow-hidden">
+			<div className="transform scale-50 md:scale-100 absolute origin-left -top-40 md:-top-20">
+				<div ref={swingOnMount} className="">
+					<Image src={Leaf2} />
+				</div>
 			</div>
 			<div
 				ref={swingOnMount}
@@ -221,150 +223,162 @@ export function CoffeeForm() {
 			>
 				<Image src={Leaf1} />
 			</div>
-			<div className="max-w-5xl mx-auto px-6 text-center pt-8">
-				<div className="max-h-15 max-w-64 mx-auto">
-					<Link href="/">
-						<a>
-							<Image layout="responsive" src={WhiteLogoImg} />
-						</a>
-					</Link>
-				</div>
-				<div className="flex space-x-2 items-center mt-8 max-w-xs mx-auto">
-					<BeanIcon className="text-lemon" />
-					<Divider isActive={characteristic} />
-					<Bean isActive={characteristic} />
-					<Divider isActive={region} />
-					<Bean isActive={region} />
-					<Divider isActive={process} />
-					<Bean isActive={process} />
-				</div>
-				{!characteristic && (
-					<>
-						<Title>{form.characteristics.title}</Title>
-						<div className="pb-20 relative z-10 md:(flex space-x-4 mt-6)">
-							{form.characteristics.items.map((item, index) => {
-								return (
-									<div
-										ref={appearOnMount}
-										onClick={() => onSelectCharacteristics(index)}
-										key={index}
-										className={clsx(
-											'flex cursor-pointer mt-10 space-x-1 even:children:bg-caraway odd:children:bg-foothills',
-											'md:(flex-col space-x-0 space-y-1)',
-											{
-												'md:animate-delay-50': index === 1,
-												'md:animate-delay-100': index === 2,
-												'md:animate-delay-150': index === 3,
-											},
-										)}
-									>
-										<div className="flex-1">
-											<div className="-mt-5">
-												<Image
-													src={characteristicsImages[item.image]}
-												/>
+			<div className="w-full">
+				<div className="max-w-5xl mx-auto px-6 text-center pt-8">
+					<div className="max-h-15 max-w-64 mx-auto">
+						<Link href="/">
+							<a>
+								<Image layout="responsive" src={WhiteLogoImg} />
+							</a>
+						</Link>
+					</div>
+					<div className="flex space-x-2 items-center mt-8 max-w-[260px] md:max-w-[496px] mx-auto">
+						<Bean isActive={true} />
+						<Divider isActive={characteristic} />
+						<Bean isActive={characteristic} />
+						<Divider isActive={region} />
+						<Bean isActive={region} />
+						<Divider isActive={process} />
+						<Bean isActive={process} />
+					</div>
+					<div className="flex space-x-2 min-h-1 uppercase font-semibold text-[0.639rem] max-w-xs md:(text-xs max-w-[608px]) mt-3 justify-between mx-auto text-white">
+						<span className="flex-1">
+							{characteristic && characteristic.title}
+						</span>
+						<span className="flex-1">{region && region.title}</span>
+						<span className="flex-1">{process && process.title}</span>
+						<span className="flex-1">{/* space */}</span>
+					</div>
+					{!characteristic && (
+						<>
+							<Title>{form.characteristics.title}</Title>
+							<div className="pb-20 relative z-10 md:(flex space-x-4 mt-6)">
+								{form.characteristics.items.map((item, index) => {
+									return (
+										<div
+											ref={appearOnMount}
+											onClick={() => onSelectCharacteristics(index)}
+											key={index}
+											className={clsx(
+												'flex cursor-pointer mt-10 space-x-1 even:children:bg-caraway odd:children:bg-foothills',
+												'md:(flex-col space-x-0 space-y-1)',
+												{
+													'md:animate-delay-50': index === 1,
+													'md:animate-delay-100': index === 2,
+													'md:animate-delay-150': index === 3,
+												},
+											)}
+										>
+											<div className="flex-1">
+												<div className="-mt-5">
+													<Image
+														src={characteristicsImages[item.image]}
+													/>
+												</div>
+											</div>
+											<div className="flex-1 flex items-center">
+												<h5 className="flex-1 text-white font-serif text-2xl text-center py-4">
+													{item.title}
+												</h5>
 											</div>
 										</div>
-										<div className="flex-1 flex items-center">
-											<h5 className="flex-1 text-white font-serif text-2xl text-center py-4">
-												{item.title}
-											</h5>
-										</div>
-									</div>
-								);
-							})}
-						</div>
-					</>
-				)}
-				{characteristic && !region && (
-					<>
-						<Title>{form.regions.title}</Title>
-						<div className="pb-10 relative z-10 md:(flex space-x-4 mt-6)">
-							{regions.map((item, index) => {
-								return (
-									<Card
-										key={index}
-										title={item.title}
-										description={item.description}
-										onSelect={onSelectRegion}
-										index={index}
-										background={coffeeImages[item.background]}
-									/>
-								);
-							})}
-						</div>
-						<Back onBack={onSelectCharacteristics}>{form.back}</Back>
-					</>
-				)}
-				{region && !process && (
-					<>
-						<Title>{form.processes.title}</Title>
-						<div className="pb-10 relative z-10 md:(flex space-x-4 mt-6)">
-							{form.processes.items.map((item, index) => {
-								return (
-									<Card
-										key={index}
-										title={item.title}
-										description={item.description}
-										onSelect={onSelectProcess}
-										index={index}
-										background={processesImages[item.image]}
-									/>
-								);
-							})}
-						</div>
-						<Back onBack={onSelectRegion}>{form.back}</Back>
-					</>
-				)}
-				{process && (
-					<>
-						<Title>{form.contact.title}</Title>
-						<p className="text-white mt-4">
-							{form.contact.description}
-						</p>
-						<form
-							onSubmit={onSubmit}
-							className="text-white pt-4 pb-10 relative z-10 md:(grid grid-cols-2 gap-10)"
-						>
-							<Field name="name" label={contact.form.name} />
-							<Field
-								name="email"
-								type="email"
-								label={contact.form.email}
-							/>
-							<Field name="phone" label={contact.form.phone} />
-							<Field name="country" label={contact.form.country} />
-							<label className="py-3 mt-5 block md:col-span-full">
-								<span className="sr-only">
-									{contact.form.message}
-								</span>
-								<textarea
-									className="w-full bg-transparent mt-3 border border-komorebi p-2"
-									name="message"
-									rows={5}
-									placeholder={contact.form.message}
-								/>
-							</label>
-							<div className="flex flex-col md:(flex-row col-span-full) justify-between">
-								<button className="bg-lemon py-4 px-9 font-semibold text-hunt mt-6 md:hidden mb-10">
-									{contact.form.send}
-								</button>
-								<button
-									className="underline text-white"
-									onClick={(event) => {
-										event.preventDefault();
-										onSelectProcess(null);
-									}}
-								>
-									{form.back}
-								</button>
-								<button className="bg-lemon py-4 px-9 font-semibold text-hunt mt-6 hidden md:inline-block">
-									{contact.form.send}
-								</button>
+									);
+								})}
 							</div>
-						</form>
-					</>
-				)}
+						</>
+					)}
+					{characteristic && !region && (
+						<>
+							<Title>{form.regions.title}</Title>
+							<div className="pb-10 relative z-10 md:(flex space-x-4 mt-6)">
+								{regions.map((item, index) => {
+									return (
+										<Card
+											key={index}
+											title={item.title}
+											description={item.description}
+											onSelect={onSelectRegion}
+											index={index}
+											background={coffeeImages[item.background]}
+										/>
+									);
+								})}
+							</div>
+							<Back onBack={onSelectCharacteristics}>
+								{form.back}
+							</Back>
+						</>
+					)}
+					{region && !process && (
+						<>
+							<Title>{form.processes.title}</Title>
+							<div className="pb-10 relative z-10 md:(flex space-x-4 mt-6)">
+								{form.processes.items.map((item, index) => {
+									return (
+										<Card
+											key={index}
+											title={item.title}
+											description={item.description}
+											onSelect={onSelectProcess}
+											index={index}
+											background={processesImages[item.image]}
+										/>
+									);
+								})}
+							</div>
+							<Back onBack={onSelectRegion}>{form.back}</Back>
+						</>
+					)}
+					{process && (
+						<>
+							<Title>{form.contact.title}</Title>
+							<p className="text-white mt-4">
+								{form.contact.description}
+							</p>
+							<form
+								onSubmit={onSubmit}
+								className="text-white pt-4 pb-10 relative z-10 md:(grid grid-cols-2 gap-10)"
+							>
+								<Field name="name" label={contact.form.name} />
+								<Field
+									name="email"
+									type="email"
+									label={contact.form.email}
+								/>
+								<Field name="phone" label={contact.form.phone} />
+								<Field name="country" label={contact.form.country} />
+								<label className="py-3 mt-5 block md:col-span-full">
+									<span className="sr-only">
+										{contact.form.message}
+									</span>
+									<textarea
+										className="w-full bg-transparent mt-3 border border-komorebi p-2"
+										name="message"
+										rows={5}
+										placeholder={contact.form.message}
+									/>
+								</label>
+								<div className="flex flex-col md:(flex-row col-span-full) justify-between">
+									<button className="bg-lemon py-4 px-9 font-semibold text-hunt mt-6 md:hidden mb-10">
+										{contact.form.send}
+									</button>
+									<button
+										className="underline text-white"
+										onClick={(event) => {
+											event.preventDefault();
+											onSelectProcess(null);
+										}}
+									>
+										{form.back}
+									</button>
+									<button className="bg-lemon py-4 px-9 font-semibold text-hunt mt-6 hidden md:inline-block">
+										{contact.form.send}
+									</button>
+								</div>
+							</form>
+						</>
+					)}
+				</div>
 			</div>
 		</div>
 	);

@@ -36,7 +36,6 @@ export default defineConfig({
 				'back-in-left': 'backInLeft forwards',
 				'back-in-right': 'backInRight forwards',
 				'back-in-up': 'backInUp forwards',
-				pulse: 'pulse',
 				swing: 'swing',
 			},
 		},

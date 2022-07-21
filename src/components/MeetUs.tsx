@@ -92,7 +92,9 @@ export function MeetUs() {
 			<div className="bg-caraway px-4">
 				<Link href={meetUs.coffeeOrigin.href}>
 					<a className="max-w-5xl px-6 mx-auto text-sm md:text-base flex block justify-center items-center py-6 cursor-pointer">
-						<Image src={MiniGuateImg} height="60" width="45" />
+						<span className="animate-loop animate-heart-beat animate-duration-2000">
+							<Image src={MiniGuateImg} height="60" width="45" />
+						</span>
 						<p className="mx-4 text-center text-extra-white">
 							{meetUs.coffeeOrigin.label}
 						</p>
