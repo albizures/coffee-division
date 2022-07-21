@@ -107,7 +107,7 @@ export function OurCoffees() {
 				<div className="max-w-lg px-6 py-32 z-10 text-center">
 					<h3
 						ref={appearOnMount}
-						className="text-extra-white text-6xl font-serif"
+						className="text-extra-white text-5xl md:text-6xl font-serif"
 					>
 						{current.title}
 					</h3>
