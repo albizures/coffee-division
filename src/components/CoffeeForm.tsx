@@ -76,7 +76,7 @@ function Card(props: CardProps) {
 			onClick={() => onSelect(index)}
 			ref={appearOnMount}
 			className={clsx(
-				'flex md:(flex-col flex-1) cursor-pointer mt-10 even:children:bg-caraway odd:children:bg-foothills',
+				'flex md:(flex-col flex-1 max-w-60) cursor-pointer mt-10 even:children:bg-caraway odd:children:bg-foothills',
 				{
 					'md:animate-delay-50': index === 1,
 					'md:animate-delay-100': index === 2,
@@ -252,7 +252,7 @@ export function CoffeeForm() {
 					{!characteristic && (
 						<>
 							<Title>{form.characteristics.title}</Title>
-							<div className="pb-20 relative z-10 md:(flex space-x-4 mt-6)">
+							<div className="pb-20 relative z-10 md:(flex space-x-4 mt-6 justify-center)">
 								{form.characteristics.items.map((item, index) => {
 									return (
 										<div
@@ -290,7 +290,7 @@ export function CoffeeForm() {
 					{characteristic && !region && (
 						<>
 							<Title>{form.regions.title}</Title>
-							<div className="pb-10 relative z-10 md:(flex space-x-4 mt-6)">
+							<div className="pb-10 relative z-10 md:(flex space-x-4 mt-6 justify-center)">
 								{regions.map((item, index) => {
 									return (
 										<Card
@@ -312,7 +312,7 @@ export function CoffeeForm() {
 					{region && !process && (
 						<>
 							<Title>{form.processes.title}</Title>
-							<div className="pb-10 relative z-10 md:(flex space-x-4 mt-6)">
+							<div className="pb-10 relative z-10 md:(flex space-x-4 mt-6 justify-center)">
 								{form.processes.items.map((item, index) => {
 									return (
 										<Card
@@ -337,7 +337,7 @@ export function CoffeeForm() {
 							</p>
 							<form
 								onSubmit={onSubmit}
-								className="text-white pt-4 pb-10 relative z-10 md:(grid grid-cols-2 gap-10)"
+								className="text-white pt-4 pb-10 relative z-10 md:(grid grid-cols-2 gap-10 justify-center)"
 							>
 								<Field name="name" label={contact.form.name} />
 								<Field
