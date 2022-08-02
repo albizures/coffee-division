@@ -16,7 +16,7 @@
 	"homepage": "https://github.com/albizures/Next-CMS#readme",
 	"scripts": {
 		"dev": "next dev",
-		"build": "next export",
+		"build": "next build",
 		"start": "next start",
 		"test": "npm-run-all test:*",
 		"test:cy": "APP_ENV=test start-server-and-test dev http://localhost:3000 cy:run",
