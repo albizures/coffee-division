@@ -1,8 +1,9 @@
-import { createStruct, useItemValue } from 'react-take';
+import { createItem, useItemValue } from 'react-take';
 import type Content from '../content/content.json';
 
-const contentStruct = createStruct<typeof Content['es']>('content');
+export const contentItem =
+	createItem<typeof Content['es']>('content');
 
 export function useContent() {
-	return useItemValue(contentStruct);
+	return useItemValue(contentItem);
 }

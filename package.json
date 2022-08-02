@@ -16,7 +16,7 @@
 	"homepage": "https://github.com/albizures/Next-CMS#readme",
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build",
+		"build": "next export",
 		"start": "next start",
 		"test": "npm-run-all test:*",
 		"test:cy": "APP_ENV=test start-server-and-test dev http://localhost:3000 cy:run",
@@ -33,7 +33,7 @@
 		"next": "12.1.0",
 		"react": "17.0.2",
 		"react-dom": "17.0.2",
-		"react-take": "^0.0.7"
+		"react-take": "^0.1.5"
 	},
 	"devDependencies": {
 		"@albizures/prettier-config": "^1.0.1",

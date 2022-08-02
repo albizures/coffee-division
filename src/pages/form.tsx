@@ -17,6 +17,7 @@ export const getStaticProps: GetStaticProps = (context) => {
 	return {
 		props: {
 			content: merge(
+				{},
 				content[context.defaultLocale],
 				content[context.locale],
 			),
