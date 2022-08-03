@@ -130,11 +130,10 @@ export function Services() {
 									}
 									key={index}
 								>
-									<Image
-										src={icons[item.icon]}
-										className="mx-auto "
-									/>
-									<p className="text-liquorice text-center ml-3 lg:(m-1 ml-0)">
+									<div className="min-w-[60px] text-[0]">
+										<Image src={icons[item.icon]} />
+									</div>
+									<p className="text-liquorice text-left ml-3 lg:(text-center m-1 ml-0)">
 										{item.description}
 									</p>
 								</div>

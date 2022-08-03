@@ -143,6 +143,7 @@
 		"description": {
 			":type": "line"
 		},
+		"moreInfoHere": { ":type": "line" },
 		"items": {
 			":items": {
 				"title": { ":type": "line" },

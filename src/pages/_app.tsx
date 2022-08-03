@@ -1,6 +1,6 @@
 import 'windi.css';
 import Head from 'next/head';
-import { defaulStore, TakeRoot } from 'react-take';
+import { defaulStore } from 'react-take';
 import { contentItem } from '../state';
 import { AppProps } from 'next/app';
 

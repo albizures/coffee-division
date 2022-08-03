@@ -145,25 +145,29 @@ export function MeetUs() {
 							const asset = history[item.image];
 							return (
 								<div
-									ref={appearOnMount}
-									className={clsx('min-w-60 mr-16 history-item', {
-										'mt-6': index % 2 === 0,
-										'flex justify-center flex-col': !asset,
-
-										'md:animate-delay-50': index === 1,
-										'md:animate-delay-100': index === 2,
-										'md:animate-delay-150': index === 3,
-										'md:animate-delay-200': index === 4,
-									})}
+									className="min-w-60 mr-16 history-item"
 									key={index}
 								>
-									{asset && (
-										<Image src={asset} width="270" height="208" />
-									)}
-									<h3 className="text-4xl font-serif mt-5">
-										{item.title}
-									</h3>
-									<p className="mt-2">{item.description}</p>
+									<div
+										ref={appearOnMount}
+										className={clsx({
+											'mt-6': index % 2 === 0,
+											'flex justify-center flex-col': !asset,
+
+											'md:animate-delay-50': index === 1,
+											'md:animate-delay-100': index === 2,
+											'md:animate-delay-150': index === 3,
+											'md:animate-delay-200': index === 4,
+										})}
+									>
+										{asset && (
+											<Image src={asset} width="270" height="208" />
+										)}
+										<h3 className="text-4xl font-serif mt-5">
+											{item.title}
+										</h3>
+										<p className="mt-2">{item.description}</p>
+									</div>
 								</div>
 							);
 						})}
