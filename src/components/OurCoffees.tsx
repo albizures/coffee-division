@@ -120,7 +120,7 @@ export function OurCoffees() {
 					<div ref={appearOnMount} className="mt-9">
 						<Link href="/">
 							<a className="bg-rutherford text-white stroke-white py-4 px-7">
-								SOLICITA MÁS INFO
+								{ourCoffees.moreInfoHere}
 								<RightArrowIcon className="h-7 w-7 inline-block ml-2 align-bottom" />
 							</a>
 						</Link>
