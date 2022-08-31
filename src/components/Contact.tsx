@@ -40,7 +40,10 @@ export function Contact() {
 	}
 
 	return (
-		<div className="bg-crisp py-14 overflow-hidden">
+		<div
+			id="contact"
+			className="bg-crisp py-14 overflow-hidden relative"
+		>
 			<div className="text-center hidden lg:block">
 				<h2
 					ref={appearOnMount}

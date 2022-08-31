@@ -31,7 +31,7 @@ export function Team() {
 
 	return (
 		<>
-			<div className="bg-hunt text-crisp py-24 relative">
+			<div id="team" className="bg-hunt text-crisp py-24 relative">
 				<div
 					ref={swingOnMount}
 					className="absolute -right-50 xl:-right-40 -top-40"

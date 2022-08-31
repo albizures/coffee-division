@@ -22,7 +22,7 @@ export function Services() {
 
 	return (
 		<>
-			<div className="bg-hunt">
+			<div id="services" className="bg-hunt">
 				<div className="max-w-xl mx-auto px-6">
 					<div
 						ref={appearOnMount}

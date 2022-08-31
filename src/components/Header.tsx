@@ -50,8 +50,16 @@ export function Header() {
 		);
 	}
 
-	function onCloseMenu() {
+	function onCloseMenu(event: React.MouseEvent<HTMLAnchorElement>) {
+		event.preventDefault();
 		setMenuStatus('close');
+		const link = event.currentTarget;
+
+		const target = document.querySelector(link.getAttribute('href'));
+
+		target.scrollIntoView({
+			behavior: 'smooth',
+		});
 	}
 
 	return (
