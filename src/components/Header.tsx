@@ -63,7 +63,7 @@ export function Header() {
 	}
 
 	return (
-		<div className="shadow-md z-50 relative">
+		<div className="shadow-md z-50 relative sticky top-0 bg-white">
 			<header
 				className={clsx(
 					'max-w-5xl flex justify-between  mx-auto py-4 lg:(justify-center px-6)',
