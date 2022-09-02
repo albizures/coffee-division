@@ -247,7 +247,7 @@ export function CoffeeForm() {
 						</span>
 						<span className="flex-1">{region && region.title}</span>
 						<span className="flex-1">{process && process.title}</span>
-						<span className="flex-1">{/* space */}</span>
+						<span className="flex-1">{process && '¡Listo!'}</span>
 					</div>
 					{!characteristic && (
 						<>

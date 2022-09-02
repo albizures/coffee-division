@@ -16,7 +16,7 @@ function App({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
-				<title>Industrais Noviembre, S.A. | Coffee Division</title>
+				<title>Industrias Noviembre, S.A. | Coffee Division</title>
 			</Head>
 			<Component {...pageProps} />
 		</>

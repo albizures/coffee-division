@@ -1,734 +1,727 @@
 {
-  "es": {
-    "navbar": {
-      "items": [
-        {
-          "href": "#meet-us",
-          "label": "Conócenos"
-        },
-        {
-          "href": "#services",
-          "label": "Servicios"
-        },
-        {
-          "href": "#our-coffees",
-          "label": "Nuestros cafés"
-        },
-        {
-          "href": "#team",
-          "label": "Equipo"
-        },
-        {
-          "href": "#contact",
-          "label": "Contacto"
-        }
-      ],
-      "socialMedia": [
-        {
-          "href": "https://www.instagram.com/industriasnoviembre",
-          "icon": "instagram"
-        },
-        {
-          "href": "https://www.facebook.com/Industrias-Noviembre-110031768316912",
-          "icon": "facebook"
-        },
-        {
-          "href": "https://www.linkedin.com/company/industrias-noviembre",
-          "icon": "linkedin"
-        }
-      ]
-    },
-    "hero": {
-      "label": {
-        "part1": "La pasión por café",
-        "part2": "nos conecta"
-      },
-      "cta": {
-        "label": "INICIA AQUÍ",
-        "href": "/form"
-      }
-    },
-    "meetUs": {
-      "title": {
-        "part1": "¿Qué",
-        "part2": "hacemos?"
-      },
-      "description": {
-        "part1": "Enlazamos a productores guatemaltecos con compradores del mundo para exportar nuestros cafés. Nos enfocamos en el detalle de",
-        "part2": "selección de granos y trazabilidad."
-      },
-      "description2": {
-        "part1": "a través de Finca San José las Victorias como parte de nuestro grupo corporativo.",
-        "part2": "Exportamos y producimos excelentes cafés."
-      },
-      "coffeeOrigin": {
-        "label": "CONOCE EL ORIGEN DE NUESTRO CAFÉ",
-        "href": "/coffee-origin"
-      },
-      "mission": {
-        "title": "Misión",
-        "description": "Brindar el mejor servicio de comercialización de café a productores e importadores de café guatemalteco."
-      },
-      "vision": {
-        "title": "Visión",
-        "description": "Conectar a Guatemala con el mundo por medio de la comercialización del Café, enfocados en la trazabilidad y calidad."
-      },
-      "ourHistory": {
-        "upperTitle": "ASÍ INICIA",
-        "title": "Nuestra historia",
-        "items": [
-          {
-            "description": "Industrias Noviembre nace como un proyecto para procesar y exportar pulpa de piña congelada. Dicha empresa nos permitió conocer acerca de la industria de alimentos y la comercialización de productos agrícolas.",
-            "title": "2010 - inicio"
-          },
-          {
-            "image": "history-2019",
-            "title": "2019",
-            "description": "El CEO, siendo la 4ta generación de caficultores, comienza a trabajar en un proyecto para la exportación a Asia."
-          },
-          {
-            "image": "history-2020",
-            "description": "Obtenemos la licencia de comprador-exportador en Anacafé y se crean sólidas relaciones comerciales incrementando de esta forma la cantidad de exportaciones.",
-            "title": "2020"
-          },
-          {
-            "title": "2021",
-            "description": "Iniciamos la compra de café a otros productores guatemaltecos, logrando un aumento considerable en el volumen de ventas, asimismo exportando a Europa y América como nuevos mercados.",
-            "image": "history-2021"
-          },
-          {
-            "description": "Seguimos haciendo historia.",
-            "title": "2022",
-            "image": "history-2022"
-          }
-        ]
-      }
-    },
-    "services": {
-      "ourProccess": {
-        "upperTitle": "NUESTRO",
-        "title": "proceso",
-        "items": [
-          {
-            "description": "Recepción de muestras",
-            "icon": "package"
-          },
-          {
-            "description": "Codificación",
-            "icon": "computer"
-          },
-          {
-            "description": "Preparación y envasado",
-            "icon": "drop-and-coffee"
-          },
-          {
-            "description": "Exportación del café",
-            "icon": "coffee-beans"
-          },
-          {
-            "description": "Clientes felices",
-            "icon": "happy-pleople"
-          }
-        ]
-      },
-      "title": "Servicios",
-      "description1": {
-        "part1": "Abastecemos al mundo",
-        "part2": "con el mejor café guatemalteco."
-      },
-      "description2": {
-        "part1": "Apoyamos",
-        "part2": "a productores a comercializar su café."
-      },
-      "whatMakesUsDifferent": {
-        "title": "LO QUE NOS DIFERENCIA",
-        "items": [
-          {
-            "description": "Generamos relaciones personales y alianzas estratégicas con productores guatemaltecos",
-            "icon": "handshake"
-          },
-          {
-            "description": "Brindamos asesoría personalizada",
-            "icon": "talking"
-          },
-          {
-            "description": "Trazabilidad del café",
-            "icon": "coffee-cup"
-          },
-          {
-            "description": "Estricto control de calidad en todos los procesos",
-            "icon": "thumbs-up"
-          },
-          {
-            "description": "Innovación constante",
-            "icon": "hands-coffee"
-          }
-        ]
-      }
-    },
-    "ourCoffees": {
-      "title": "cafés",
-      "upperTitle": "NUESTROS",
-      "description": "Los cafetales guatemaltecos florecen una vez al año, durante los meses de marzo, abril o mayo, dependiendo de la elevación y régimen de lluvias de la región en particular. La floración tarda entre dos y tres días, y durante este espacio de tiempo los cafetales adquieren un aspecto de campo nevado. De cada flor nacerá un fruto que contiene dos semillas o granos de café.",
-      "items": [
-        {
-          "title": "Acatenango",
-          "description": "Cafetales plantados hasta 2,000 msnm. El perfil de Acatenango se caracteriza por tener una acidez marcada, aromático, cuerpo balanceado y postgusto prolongado.",
-          "background": "acatenango"
-        },
-        {
-          "title": "Antigua",
-          "description": "Suelos volcánicos que se caracterizan por su riqueza mineral, gracias a los volcanes de Fuego, Agua y Acatenango. El perfil de Antigua se caracteriza por ser bien balanceado, elegante, muy dulce y acuerpado.",
-          "background": "antigua"
-        },
-        {
-          "title": "Atitlán",
-          "description": "Los suelos más ricos en materia orgánica de Guatemala. Cafés producidos en las faldas de volcan Tolimán, Atitlán y San Pedro. El perfil de Atitlán se caracteriza por su acidez cítrica brillante y cuerpo completo.",
-          "background": "atitlan"
-        },
-        {
-          "description": "Región llena de riquezas naturales, lluvia y frío durante la mayoría del año. El perfil de Cobán se caracteriza por tener notas afrutadas, cuerpo fino y acidez delicada.",
-          "title": "Cobán",
-          "background": "coban"
-        },
-        {
-          "title": "Fraijanes",
-          "description": "Suelos volcánicos con piedra pómez, alturas hasta 1,700 msnm, mucha lluvia y un volcán activo (Pacaya). El perfil de Fraijanes se caracteriza por tener una acidez pronunciada y persistente, aromática y cuerpo definido.",
-          "background": "fraijanes"
-        },
-        {
-          "title": "Huehuetenango",
-          "description": "La región más alta y seca, alcanza hasta los 2,300 msnm. El perfil de Huehue se caracteriza por su acidez intensa, cuerpo completo y notas avinatadas.",
-          "background": "huehuetenango"
-        },
-        {
-          "title": "Santa Rosa",
-          "description": "Región destacada por su nivel de productividad. El perfil de Nuevo Oriente se caracteriza por ser bien balanceado, con mucho cuerpo y sabor achocolatado.",
-          "background": "santa-rosa"
-        },
-        {
-          "title": "San Marcos",
-          "description": "La región con la estación lluviosa más fuerte y floración más temprana. San Marcos se caracteriza por sus notas florales en aroma y sabor, acidez pronunciada y buen cuerpo.",
-          "background": "san-marcos"
-        }
-      ],
-      "moreInfoHere": "SOLICITA MÁS INFO"
-    },
-    "team": {
-      "upperTitle": "NUESTRO",
-      "title": "equipo",
-      "items": [
-        {
-          "name": "HECTOR VENTURA",
-          "title": "Gerente General",
-          "description": "Nace en una familia de 4ta generación de café, involucrado desde niño en esta industria. Graduado de Bachiller en Ciencias y Letras del Julio Verne. Ingeniero Industrial en la Universidad del Valle de Guatemala.\nEn el transcurso de sus estudios universitarios comienza a involucrarse en temas del café con la familia y en el 2001 comienza a trabajar en una exportadora de café en la cual estuvo durante 9 años.\nDesde el 2011, Hector Ventura forma parte de la junta directiva de colegio Julio Verne y lleva 3 años siendo el presidente de la junta directiva, teniendo relación con la biculturalidad francesa.\nActualmente Hector Ventura con 43 años y una amplia experiencia en la industria del café es el CEO de Industrias Noviembre.\nLa proyección de Hector Ventura con Industrias Noviembre es llegar a ser el proveedor más grande de Café en el mundo.",
-          "picture": "hector-ventura",
-          "shortDescription": "Nace en una familia de 4ta generación de café, involucrado desde niño en esta industria."
-        },
-        {
-          "name": "DIEGO SOLARES",
-          "title": "Departamento administrativo",
-          "description": "Soy Diego Solares, Administrador de Empresas con especialidad en Negocios Internacionales de la Universidad del Istmo y entrenador de CrossFit Nivel 1 y 2. Tengo un fuerte interés por los deportes y la administración de empresas. Mas de 8 años de experiencia como líder de equipos, manejo de presupuestos, innovación, ejecución de proyectos, estrategia, entre otras.\nEn Industrias Noviembre soy el responsable de la administración general de todas las áreas y del funcionamiento eficiente de todos los recursos y proyectos asignados. Líder de actividades y de la ejecución de la empresa, manteniendo comunicación con clientes, proveedores, staff y contrapartes.\nMi objetivo es el buen desempeño de la empresa, generar utilidades a los socios y generar relaciones estrechas y de confianza entre todas la partes para el crecimiento continuo.",
-          "picture": "diego-solares",
-          "shortDescription": "Soy Diego Solares, Administrador de Empresas con especialidad en Negocios Internacionales"
-        },
-        {
-          "name": "ALBA POZUELOS",
-          "title": "Departamento Administrativo",
-          "description": "Soy Alba Pozuelos, tengo 45, profesión Secretariado Oficinista.\nActualmente ocupo el puesto de Asistente de Gerencia para Industrias Noviembre, S. A. realizando tareas administrativas y auxiliando diferentes funciones en otras áreas.\nOtorgando el valor en la comunicación entre la empresa y el cliente en forma fluida y verídica.",
-          "picture": "alba-pozuelos",
-          "shortDescription": "Soy Alba Pozuelos, tengo 45, profesión Secretariado Oficinista."
-        },
-        {
-          "name": "LIZBETH CHAVAC",
-          "description": "Soy Lizbeth Chavac, de 33 años, graduada de Bachiller en Computación, estudiante universitaria en Recursos Humanos, emprendedora y carismática.\nLaboro para Industrias Noviembre ocupando el puesto de Asistente Administrativa contable, llevando a cabo el correcto y eficaz funcionamiento para el oportuno desarrollo de una información optimizada y veraz.\nAgregando valor a la empresa brindando un buen servicio al cliente interno y externo para incrementar la satisfacción y confianza del consumidor sobre nuestros servicios.",
-          "shortDescription": "Soy Lizbeth Chavac, de 33 años, graduada de Bachiller en Computación, estudiante universitaria en Recursos Humanos",
-          "picture": "lizbeth-chavac"
-        },
-        {
-          "name": "YENNY FIGUEROA",
-          "title": "",
-          "description": "Soy Yenny Figueroa, Contador Público y Auditor con M.A. en Dirección y Gestión Financiera, y M.A. en Normas Internacionales de Contabilidad y Auditoría. Cuento con experiencia en empresas Multinacionales, Gubernamentales y Pymes. Me destaco por agilizar y estandarizar procesos.\nEncargada de elaborar y analizar la información contable y financiera, que reflejen la imagen fiel y velar por el cumplimiento de las regulaciones fiscales y reglamentarias.\nMi objetivo es hacer que la empresa genere valor a través de una buena gestión financiera que vaya alineada a la gestión estratégica.",
-          "shortDescription": "Soy Yenny Figueroa, Contador Público y Auditor con M.A. en Dirección y Gestión Financiera",
-          "picture": "yenny-figueroa"
-        },
-        {
-          "name": "ROCIO PIRIR",
-          "title": "Departamento exportaciones",
-          "description": "Soy Rocio Pirir, tengo 28 años, graduada en Psicología Industrial, con 5 años de experiencia en operaciones logísticas y 3 años en área de exportaciones de café.\nActualmente soy la encargada de Logística y Exportación de Industrias Noviembre, mantengo comunicación con productores del país para promoción y coordinación de cada exportación y consolidados de café marítimo y aéreo.\nCon mi labor en Industrias Noviembre, apoyo en la comercialización del café de los productores del país, llevando un control de la logística y exportaciones.",
-          "picture": "rocio-pirir",
-          "shortDescription": "Soy Rocio Pirir, tengo 28 años, graduada en Psicología Industrial, con 5 años de experiencia en operaciones logísticas"
-        }
-      ],
-      "tasters": {
-        "title": "Catadores",
-        "description": "Nuestros catadores son QGraders y han participado en competencias internacionales como Cup of Excellence.",
-        "items": [
-          {
-            "title": "DANNY MOGOLLÓN",
-            "description": "Control de calidad",
-            "picture": "danny-mogollon"
-          },
-          {
-            "title": "LUISA RODRIGUEZ",
-            "description": "Control de calidad",
-            "picture": "luisa-rodriguez"
-          }
-        ]
-      }
-    },
-    "contact": {
-      "title": "Contáctanos",
-      "description": "Si eres un apasionado del café, contáctanos.",
-      "phone": "+502 2316-0556",
-      "email": "asistente@industriasnoviembre.com",
-      "address": "Km. 13.5 carretera a Muxbal, centro comercial Plaza Muxbal, Primer Nivel, Oficina 101",
-      "form": {
-        "name": "Nombre",
-        "email": "Correo electrónico",
-        "phone": "Teléfono",
-        "country": "País",
-        "message": "Mensaje",
-        "send": "ENVIAR"
-      }
-    },
-    "footer": {
-      "terms": "®Todos los derechos reservados, Industrias Noviembre."
-    },
-    "coffeeOrigin": {
-      "upperTitle": "Origen del",
-      "title": "café de Guatemala",
-      "items": [
-        {
-          "description": "La planta silvestre de café (coffea arabica) es una planta nativa de Etiopia, descubierta en 850 DC.",
-          "title": "850 DC",
-          "image": "850-dc"
-        },
-        {
-          "description": "El primer cafeto llega a Guatemala en 1760 desde las Antillas, llegando primero a Antigua Guatemala, donde fue utilizado por sacerdotes jesuitas como decoración en los conventos.",
-          "title": "1,760",
-          "image": "1760"
-        },
-        {
-          "description": "Al llegar 1,800 las plantas de café son llevadas a las afueras de Antigua, y poco a poco se extiende a una buena parte del territorio guatemalteco.",
-          "title": "1,800",
-          "image": "1800"
-        },
-        {
-          "title": "1,858",
-          "image": "1858",
-          "description": "La primera exportación se realiza en 1,858. Dos décadas después, el café ya era el cultivo más importante del país."
-        },
-        {
-          "title": "Café de Guatemala",
-          "description": "El café de Guatemala es recolectado manualmente seleccionando el fruto maduro, se traslada al beneficio húmedo y se procesa en el beneficio seco.",
-          "image": "guatemalan-coffee"
-        }
-      ]
-    },
-    "form": {
-      "back": "REGRESAR",
-      "characteristics": {
-        "title": "¿Qué características te gustan de un café?",
-        "items": [
-          {
-            "title": "Frutales",
-            "image": "frutales",
-            "regions": [
-              {
-                "name": "acatenango"
-              },
-              {
-                "name": "atitlan"
-              },
-              {
-                "name": "huehuetenango"
-              },
-              {
-                "name": "coban"
-              }
-            ]
-          },
-          {
-            "title": "Florales",
-            "image": "florales",
-            "regions": [
-              {
-                "name": "san-marcos"
-              },
-              {
-                "name": "acatenango"
-              },
-              {
-                "name": "atitlan"
-              }
-            ]
-          },
-          {
-            "title": "Cítricos",
-            "image": "citricos",
-            "regions": [
-              {
-                "name": "atitlan"
-              },
-              {
-                "name": "huehuetenango"
-              },
-              {
-                "name": "fraijanes"
-              },
-              {
-                "name": "acatenango"
-              }
-            ]
-          },
-          {
-            "title": "Chocolates",
-            "image": "chocolates",
-            "regions": [
-              {
-                "name": "santa-rosa"
-              },
-              {
-                "name": "antigua"
-              },
-              {
-                "name": "fraijanes"
-              }
-            ]
-          }
-        ]
-      },
-      "regions": {
-        "title": "¿Qué regiones te gustan?"
-      },
-      "processes": {
-        "title": "¿Qué procesos te gustan?",
-        "items": [
-          {
-            "description": "Consiste en despulpar las cerezas, fermentar la masa para despegar el mucílago, y posteriormente lavar la miel restante, para dejar un café completamente limpio.",
-            "title": "Lavado",
-            "image": "lavado"
-          },
-          {
-            "description": "Se conserva la pulpa, mucílago y semilla juntas mientras se seca. Este proceso ayuda a potenciar los sabores. Es un proceso más ecológico, no utiliza agua.",
-            "title": "Natural",
-            "image": "natural"
-          },
-          {
-            "title": "Honey",
-            "description": "Consiste en despulpar la cereza y dejar el mucílago adherido a la semilla. Por lo general, entre más cantidad de mucílago tiene el grano, más dulce será el perfil de taza.",
-            "image": "honey"
-          },
-          {
-            "description": "Los procesos experimentales pueden ir desde variaciones en el proceso de secado, hasta fermentaciones anaeróbicas, fermentaciones prolongadas o fermentaciones dobles.",
-            "title": "Experimental",
-            "image": "experimental"
-          }
-        ]
-      },
-      "contact": {
-        "title": "Estamos listos ☺",
-        "description": "Para poder asesorarte indícanos los siguientes datos:"
-      }
-    }
-  },
-  "en": {
-    "navbar": {
-      "items": [
-        {
-          "label": "About us"
-        },
-        {
-          "label": "Services"
-        },
-        {
-          "label": "Our coffees"
-        },
-        {
-          "label": "Team"
-        },
-        {
-          "label": "Contact"
-        }
-      ],
-      "socialMedia": [
-        {},
-        {},
-        {}
-      ]
-    },
-    "meetUs": {
-      "ourHistory": {
-        "items": [
-          {
-            "title": "2010 - beginnings",
-            "description": "Industrias Noviembre was born as a project to industrialize and export frozen pineapple pulp. The company allowed us to learn about the food industry and the marketing of agricultural products."
-          },
-          {
-            "description": "We started working on a project to export coffee to Asia. Being the 4th. Generation of coffee producers, with the experience acquired and having the all the materials, the export and penetration into the Asian market begins."
-          },
-          {
-            "description": "We obtain the buyer-exporter license in Anacafé and create commercial relations in Asia that gave us a big improvement in the number of exports and sales."
-          },
-          {
-            "description": "We consolidate the company, achieving a considerable increase in sales. Start exporting to new markets such as Europe and America."
-          },
-          {
-            "description": "We continue to write our history"
-          }
-        ],
-        "upperTitle": "This is how",
-        "title": "Our Story Begins"
-      },
-      "title": {
-        "part1": "How",
-        "part2": "we do it?"
-      },
-      "description": {
-        "part1": "We connect the world with the Guatemalan market to commercialize coffee with a better price. We focus on: bean selection, traceability and a perfect analysis.",
-        "part2": "bean selection, traceability and a perfect analysis."
-      },
-      "description2": {
-        "part1": "We are not just a coffee export, we also produce the best varieties through Finca San José Las Victorias as part of our group.",
-        "part2": "We export and produce excellent coffees."
-      },
-      "coffeeOrigin": {
-        "label": "Coffee Origin in Guatemala"
-      },
-      "mission": {
-        "title": "Mision",
-        "description": "Provide the best coffee marketing service to producers and importers of Guatemalan coffee."
-      },
-      "vision": {
-        "title": "Vision",
-        "description": "Connect Guatemala with the world through the commercialization of coffee, focused on traceability and quality."
-      }
-    },
-    "services": {
-      "ourProccess": {
-        "items": [
-          {
-            "description": "Receipt of samples"
-          },
-          {
-            "description": "The sample is encoded on the digital platform"
-          },
-          {
-            "description": "Preparation and packaging"
-          },
-          {
-            "description": "Exportation of coffee"
-          },
-          {
-            "description": "Satisfied/happy clients"
-          }
-        ],
-        "upperTitle": "Our",
-        "title": "process"
-      },
-      "whatMakesUsDifferent": {
-        "items": [
-          {
-            "description": "We generate personal relationships and strategic alliances with Guatemalan producers"
-          },
-          {
-            "description": "We provide personal advisory to al clients, suppliers, staff etc."
-          },
-          {
-            "description": "Coffee traceability"
-          },
-          {
-            "description": "Strict quality control in all processes"
-          },
-          {
-            "description": "Constant Innovation"
-          }
-        ],
-        "title": "What make us different"
-      },
-      "title": "Services",
-      "description1": {
-        "part1": "We supply the world",
-        "part2": "with the best Guatemalan coffee"
-      },
-      "description2": {
-        "part1": "We support",
-        "part2": "coffee producers to commercialize their coffee"
-      }
-    },
-    "ourCoffees": {
-      "items": [
-        {
-          "description": "Coffee plantations planted up to 2,000 meters above sea level. Acatenango's profile is characterized by having a marked acidity, aromatic, balanced body and prolonged aftertaste."
-        },
-        {
-          "description": "Volcanic soils that are characterized by their mineral wealth, thanks to the volcanoes of Fuego, Agua and Acatenango. Antigua's profile is characterized by being well balanced, elegant, very sweet and full-bodied."
-        },
-        {
-          "description": "The richest soils in organic matter in Guatemala. Coffees produced in the foothills of the Tolimán, Atitlán and San Pedro volcanoes. Atitlan's profile is characterized by its bright citrus acidity and full body."
-        },
-        {
-          "description": "Region full of natural wealth, rain and cold during most of the year. Cobán's profile is characterized by fruity notes, fine body and delicate acidity."
-        },
-        {
-          "description": "Volcanic soils with pumice stone, heights up to 1,700 meters above sea level, lots of rain and an active volcano (Pacaya). The Fraijanes profile is characterized by a pronounced and persistent acidity, aromatic and defined body."
-        },
-        {
-          "description": "The highest and driest region reaches up to 2,300 meters above sea level. Huehuetenagos’s profile is characterized by its intense acidity, full body and winey notes."
-        },
-        {
-          "description": "The highest and driest region reaches up to 2,300 meters above sea level. Huehue's profile is characterized by its intense acidity, full body and winey notes."
-        },
-        {
-          "description": "The region with the strongest rainy season and earliest flowering. San Marcos is characterized by its floral notes in aroma and flavor, pronounced acidity and good body."
-        }
-      ],
-      "upperTitle": "Our",
-      "title": "coffees",
-      "description": "Guatemalan coffee plantations flower once a year, during the months of March, April or May, depending on the elevation and rainfall pattern of the particular region. Flowering takes between two and three days, and during this time the coffee plantations take on the appearance of a snowy field. From each flower a fruit will be born that contains two seeds or coffee beans.",
-      "moreInfoHere": "More info"
-    },
-    "team": {
-      "items": [
-        {
-          "description": "Hector was born in the 4th generation coffee family, involved in this industry since he was a child. He graduated with a Bachelor of Science and Letters from Jules Verne. Industrial Engineer at the University of the Valley of Guatemala.\nDuring his university studies he began to get involved in coffee issues with his family and in 2001 he began to work in a coffee exporter where he worked for 9 years.\nSince 2011, Hector Ventura has been part of the board of directors of the Jules Verne school and has been the president of the board of directors for 3 years, having a relationship with French biculturalism.\nCurrently Hector Ventura, 43 years old and with extensive experience in the coffee industry, is the CEO of Industrias Noviembre.\nHector Ventura's projection with Industrias Noviembre is to become the largest coffee supplier in the world.",
-          "shortDescription": "Hector was born in the 4th generation coffee family, involved in this industry since he was a child."
-        },
-        {
-          "description": "I am Diego Solares, Business Administrator with a specialty in International Business from Universidad del Istmo. I have Sports Marketing courses and I am a CrossFit Trainer Level 1 and 2.\nI have a strong interest in sports and business administration. More than 8 years of experience as team leader, budget management, innovation, project execution, strategy, among others.\nAt Industrias Noviembre I am responsible for the general administration of all areas and the efficient operation of all assigned resources and projects. Leader of activities and execution of the company, maintaining communication with clients, suppliers, staff and counterparts.\nMy goal is the good performance of the company, generating profits for the partners and generating close and trusting relationships between all parties for continuous growth.",
-          "shortDescription": "I am Diego Solares, Business Administrator with a specialty in International Business"
-        },
-        {
-          "description": "I am Alba Pozuelos, 45 years old, Secretary\nShe currently holds the position of Management Assistant for Industrias Noviembre, S. A. performing administrative tasks and helping different functions in other areas.\nGiving the value in the communication between the company and the client in a fluid and truthful way.",
-          "shortDescription": "I am Alba Pozuelos, 45 years old, Secretary",
-          "title": "Administrative Department"
-        },
-        {
-          "description": "I am Lizbeth Chavac, 33 years old, a Bachelor of Computer Science graduate, a university student in Human Resources, an entrepreneur and charismatic person.\nI work in Industrias Noviembre currently as an Accounting Administrative Assistant, carrying out the correct and efficient operation for the timely development of optimized and truthful information.\nAdding value to the company by providing good service to internal and external customers to increase consumer satisfaction and confidence in our services.",
-          "shortDescription": "I am Lizbeth Chavac, 33 years old, a Bachelor of Computer Science graduate, a university student in Human Resources"
-        },
-        {
-          "description": "I am Yenny Figueroa, Public Accountant and Auditor with M.A. in Financial Management, and M.A. in International Accounting and Auditing Standards. I have experience in multinational, government and Pymes companies. I stand out for standardizing processes.\nResponsible for preparing an analyze accounting and financial information that reflect the true image of the company and compliance with tax and other regulations.\nMy objective is generate value for the company through good financial management that is aligned with strategic management.",
-          "shortDescription": "I am Yenny Figueroa, Public Accountant and Auditor with M.A. in Financial Management"
-        },
-        {
-          "description": "My name is Rocio Piri, I am a 28 year old woman with a Industrial Psychology degree, with 5 year experience in logistics operations and 3 years in coffee exports.\nIn Industrias Noviembre I am currently in charge of Logistics and Exports, I maintain communication with producers in my country to promote their coffee abroad with our clients. I also coordinate maritime and air coffee exports.\nWith my work, I support coffee producers to commercialize their coffee, when they meet the expectations of our external clients.",
-          "shortDescription": "My name is Rocio Piri, I am a 28 year old woman with a Industrial Psychology degree, with 5 year experience in logistics operations"
-        }
-      ],
-      "tasters": {
-        "items": [
-          {
-            "description": "Quality control"
-          },
-          {
-            "description": "Quality control"
-          }
-        ],
-        "title": "Coffee Blenders",
-        "description": "Our blenders are QGraders and have participated in international competitions such as the Cup of Excellence."
-      },
-      "upperTitle": "Our",
-      "title": "team"
-    },
-    "coffeeOrigin": {
-      "items": [
-        {
-          "title": "850 AD",
-          "description": "The wild coffee plant (coffea arabica) is a plant native to Ethiopia, discovered in 850 AD."
-        },
-        {
-          "description": "The first coffee tree arrived in Guatemala in 1760 from the Antilles, arriving first in Antigua Guatemala, where it was used by Jesuit priests as decoration in convents."
-        },
-        {
-          "description": "When 1,800 arrive, the coffee plants are taken to the outskirts of Antigua, and little by little it spreads to a good part of the Guatemalan territory."
-        },
-        {
-          "description": "The first export is made in 1,858. Two decades later, coffee was already the most important crop in the country."
-        },
-        {
-          "description": "Guatemalan coffee is manually harvested, selecting the ripe fruit, transferred to the wet mill and processed in the dry mill.",
-          "title": "Guatemalan Coffee"
-        }
-      ],
-      "upperTitle": "Coffee Origin",
-      "title": "in Guatemala"
-    },
-    "form": {
-      "characteristics": {
-        "items": [
-          {
-            "title": "Fruits"
-          },
-          {
-            "title": "Floral"
-          },
-          {
-            "title": "Citrus"
-          },
-          {
-            "title": "Caramels"
-          }
-        ],
-        "title": "What characteristics do you like in a coffee?"
-      },
-      "regions": {
-        "items": [
-          {},
-          {},
-          {},
-          {}
-        ],
-        "title": "What regions do you like?"
-      },
-      "processes": {
-        "items": [
-          {
-            "title": "Washed",
-            "description": "A washed process demonstrates the essence of a coffee, the quality of the variety, soil, and the washed and drying process carried out by the producer. It consists of depulping the coffee cherries, fermenting the dough to loosen the coffee mucilage, and then wash the remaining honey off. Leaving a completely clean coffee. A good washed coffee is the result of a well-worked coffee."
-          },
-          {
-            "title": "Natural",
-            "description": "During a natural processed coffee, the pulp, mucilage and seed are kept together while it dries. This process helps to enhance the flavors of coffee, obtaining very interesting characteristics. Its the more ecological process of all! It does not use water."
-          },
-          {
-            "description": "The honey process is a fruity and quite sweet coffee. It consists of depulping the coffee cherries and leaving the mucilage attached to the seed. Its named honey process because of the color of the dry mucilage, it looks like honey! Generally, the more mucilage in the vean, the sweeter the cup."
-          },
-          {
-            "description": "The experimental processes can be variations in the drying process, anaerobic fermentations, long fermentations, double fermentations.",
-            "title": "Experimentals"
-          }
-        ],
-        "title": "What processes do you like?"
-      },
-      "back": "Back",
-      "contact": {
-        "title": "You are ready ☺",
-        "description": "Please tell us your name, email, phone, message, country"
-      }
-    },
-    "hero": {
-      "label": {
-        "part1": "The passion of coffee",
-        "part2": "connects us"
-      },
-      "cta": {
-        "label": "Get started"
-      }
-    },
-    "contact": {
-      "title": "Contact Us",
-      "description": "If you are passionate about coffee, contact us",
-      "form": {
-        "name": "Name",
-        "email": "Email",
-        "phone": "Phone",
-        "country": "Country",
-        "message": "Message",
-        "send": "Send"
-      },
-      "address": "Address: Km. 13.5 carretera a Muxbal, centro comercial Plaza Muxbal, Primer Nivel, Oficina 101"
-    }
-  }
+	"es": {
+		"navbar": {
+			"items": [
+				{
+					"href": "#meet-us",
+					"label": "Conócenos"
+				},
+				{
+					"href": "#services",
+					"label": "Servicios"
+				},
+				{
+					"href": "#our-coffees",
+					"label": "Nuestros cafés"
+				},
+				{
+					"href": "#team",
+					"label": "Equipo"
+				},
+				{
+					"href": "#contact",
+					"label": "Contacto"
+				}
+			],
+			"socialMedia": [
+				{
+					"href": "https://www.instagram.com/industriasnoviembre",
+					"icon": "instagram"
+				},
+				{
+					"href": "https://www.facebook.com/Industrias-Noviembre-110031768316912",
+					"icon": "facebook"
+				},
+				{
+					"href": "https://www.linkedin.com/company/industrias-noviembre",
+					"icon": "linkedin"
+				}
+			]
+		},
+		"hero": {
+			"label": {
+				"part1": "La pasión por el café",
+				"part2": "nos conecta"
+			},
+			"cta": {
+				"label": "INICIA AQUÍ",
+				"href": "/form"
+			}
+		},
+		"meetUs": {
+			"title": {
+				"part1": "¿Qué",
+				"part2": "hacemos?"
+			},
+			"description": {
+				"part1": "Enlazamos a productores guatemaltecos con compradores del mundo para exportar nuestros cafés. Nos enfocamos en el detalle de",
+				"part2": "selección de granos y trazabilidad."
+			},
+			"description2": {
+				"part1": "a través de Finca San José las Victorias como parte de nuestro grupo corporativo.",
+				"part2": "Exportamos y producimos excelentes cafés."
+			},
+			"coffeeOrigin": {
+				"label": "CONOCE EL ORIGEN DE NUESTRO CAFÉ",
+				"href": "/coffee-origin"
+			},
+			"mission": {
+				"title": "Misión",
+				"description": "Brindar el mejor servicio de comercialización de café a productores e importadores de café guatemalteco."
+			},
+			"vision": {
+				"title": "Visión",
+				"description": "Conectar a Guatemala con el mundo por medio de la comercialización del Café, enfocados en la trazabilidad y calidad."
+			},
+			"ourHistory": {
+				"upperTitle": "ASÍ INICIA",
+				"title": "Nuestra historia",
+				"items": [
+					{
+						"description": "Industrias Noviembre nace como un proyecto para procesar y exportar pulpa de piña congelada. Dicha empresa nos permitió conocer acerca de la industria de alimentos y la comercialización de productos agrícolas.",
+						"title": "2010 - inicio"
+					},
+					{
+						"image": "history-2019",
+						"title": "2019",
+						"description": "El CEO, siendo la 4ta generación de caficultores, comienza a trabajar en un proyecto para la exportación a Asia."
+					},
+					{
+						"image": "history-2020",
+						"description": "Obtenemos la licencia de comprador-exportador en Anacafé y se crean sólidas relaciones comerciales incrementando de esta forma la cantidad de exportaciones.",
+						"title": "2020"
+					},
+					{
+						"title": "2021",
+						"description": "Iniciamos la compra de café a otros productores guatemaltecos, logrando un aumento considerable en el volumen de ventas, asimismo exportando a Europa y América como nuevos mercados.",
+						"image": "history-2021"
+					},
+					{
+						"description": "Seguimos haciendo historia.",
+						"title": "2022",
+						"image": "history-2022"
+					}
+				]
+			}
+		},
+		"services": {
+			"ourProccess": {
+				"upperTitle": "NUESTRO",
+				"title": "proceso",
+				"items": [
+					{
+						"description": "Recepción de muestras",
+						"icon": "package"
+					},
+					{
+						"description": "Codificación",
+						"icon": "computer"
+					},
+					{
+						"description": "Preparación y envasado",
+						"icon": "drop-and-coffee"
+					},
+					{
+						"description": "Exportación del café",
+						"icon": "coffee-beans"
+					},
+					{
+						"description": "Clientes felices",
+						"icon": "happy-pleople"
+					}
+				]
+			},
+			"title": "Servicios",
+			"description1": {
+				"part1": "Abastecemos al mundo",
+				"part2": "con el mejor café guatemalteco."
+			},
+			"description2": {
+				"part1": "Apoyamos",
+				"part2": "a productores a comercializar su café."
+			},
+			"whatMakesUsDifferent": {
+				"title": "LO QUE NOS DIFERENCIA",
+				"items": [
+					{
+						"description": "Generamos relaciones personales y alianzas estratégicas con productores guatemaltecos",
+						"icon": "handshake"
+					},
+					{
+						"description": "Brindamos asesoría personalizada",
+						"icon": "talking"
+					},
+					{
+						"description": "Trazabilidad del café",
+						"icon": "coffee-cup"
+					},
+					{
+						"description": "Estricto control de calidad en todos los procesos",
+						"icon": "thumbs-up"
+					},
+					{
+						"description": "Innovación constante",
+						"icon": "hands-coffee"
+					}
+				]
+			}
+		},
+		"ourCoffees": {
+			"title": "cafés",
+			"upperTitle": "NUESTROS",
+			"description": "Los cafetales guatemaltecos florecen una vez al año, durante los meses de marzo, abril o mayo, dependiendo de la elevación y régimen de lluvias de la región en particular. La floración tarda entre dos y tres días, y durante este espacio de tiempo los cafetales adquieren un aspecto de campo nevado. De cada flor nacerá un fruto que contiene dos semillas o granos de café.",
+			"items": [
+				{
+					"title": "Acatenango",
+					"description": "Cafetales plantados hasta 2,000 msnm. El perfil de Acatenango se caracteriza por tener una acidez marcada, aromático, cuerpo balanceado y postgusto prolongado.",
+					"background": "acatenango"
+				},
+				{
+					"title": "Antigua",
+					"description": "Suelos volcánicos que se caracterizan por su riqueza mineral, gracias a los volcanes de Fuego, Agua y Acatenango. El perfil de Antigua se caracteriza por ser bien balanceado, elegante, muy dulce y acuerpado.",
+					"background": "antigua"
+				},
+				{
+					"title": "Atitlán",
+					"description": "Los suelos más ricos en materia orgánica de Guatemala. Cafés producidos en las faldas de volcan Tolimán, Atitlán y San Pedro. El perfil de Atitlán se caracteriza por su acidez cítrica brillante y cuerpo completo.",
+					"background": "atitlan"
+				},
+				{
+					"description": "Región llena de riquezas naturales, lluvia y frío durante la mayoría del año. El perfil de Cobán se caracteriza por tener notas afrutadas, cuerpo fino y acidez delicada.",
+					"title": "Cobán",
+					"background": "coban"
+				},
+				{
+					"title": "Fraijanes",
+					"description": "Suelos volcánicos con piedra pómez, alturas hasta 1,700 msnm, mucha lluvia y un volcán activo (Pacaya). El perfil de Fraijanes se caracteriza por tener una acidez pronunciada y persistente, aromática y cuerpo definido.",
+					"background": "fraijanes"
+				},
+				{
+					"title": "Huehuetenango",
+					"description": "La región más alta y seca, alcanza hasta los 2,300 msnm. El perfil de Huehue se caracteriza por su acidez intensa, cuerpo completo y notas avinatadas.",
+					"background": "huehuetenango"
+				},
+				{
+					"title": "Santa Rosa",
+					"description": "Región destacada por su nivel de productividad. El perfil de Nuevo Oriente se caracteriza por ser bien balanceado, con mucho cuerpo y sabor achocolatado.",
+					"background": "santa-rosa"
+				},
+				{
+					"title": "San Marcos",
+					"description": "La región con la estación lluviosa más fuerte y floración más temprana. San Marcos se caracteriza por sus notas florales en aroma y sabor, acidez pronunciada y buen cuerpo.",
+					"background": "san-marcos"
+				}
+			],
+			"moreInfoHere": "SOLICITA MÁS INFO"
+		},
+		"team": {
+			"upperTitle": "NUESTRO",
+			"title": "equipo",
+			"items": [
+				{
+					"name": "HECTOR VENTURA",
+					"title": "Gerente General",
+					"description": "Nace en una familia de 4ta generación de café, involucrado desde niño en esta industria. Graduado de Bachiller en Ciencias y Letras del Julio Verne. Ingeniero Industrial en la Universidad del Valle de Guatemala.\nEn el transcurso de sus estudios universitarios comienza a involucrarse en temas del café con la familia y en el 2001 comienza a trabajar en una exportadora de café en la cual estuvo durante 9 años.\nDesde el 2011, Hector Ventura forma parte de la junta directiva de colegio Julio Verne y lleva 3 años siendo el presidente de la junta directiva, teniendo relación con la biculturalidad francesa.\nActualmente Hector Ventura con 43 años y una amplia experiencia en la industria del café es el CEO de Industrias Noviembre.\nLa proyección de Hector Ventura con Industrias Noviembre es llegar a ser el proveedor más grande de Café en el mundo.",
+					"picture": "hector-ventura",
+					"shortDescription": "Nace en una familia de 4ta generación de café, involucrado desde niño en esta industria."
+				},
+				{
+					"name": "DIEGO SOLARES",
+					"title": "Departamento administrativo",
+					"description": "Soy Diego Solares, Administrador de Empresas con especialidad en Negocios Internacionales de la Universidad del Istmo y entrenador de CrossFit Nivel 1 y 2. Tengo un fuerte interés por los deportes y la administración de empresas. Mas de 8 años de experiencia como líder de equipos, manejo de presupuestos, innovación, ejecución de proyectos, estrategia, entre otras.\nEn Industrias Noviembre soy el responsable de la administración general de todas las áreas y del funcionamiento eficiente de todos los recursos y proyectos asignados. Líder de actividades y de la ejecución de la empresa, manteniendo comunicación con clientes, proveedores, staff y contrapartes.\nMi objetivo es el buen desempeño de la empresa, generar utilidades a los socios y generar relaciones estrechas y de confianza entre todas la partes para el crecimiento continuo.",
+					"picture": "diego-solares",
+					"shortDescription": "Soy Diego Solares, Administrador de Empresas con especialidad en Negocios Internacionales"
+				},
+				{
+					"name": "ALBA POZUELOS",
+					"title": "Departamento Administrativo",
+					"description": "Soy Alba Pozuelos, tengo 45, profesión Secretariado Oficinista.\nActualmente ocupo el puesto de Asistente de Gerencia para Industrias Noviembre, S. A. realizando tareas administrativas y auxiliando diferentes funciones en otras áreas.\nOtorgando el valor en la comunicación entre la empresa y el cliente en forma fluida y verídica.",
+					"picture": "alba-pozuelos",
+					"shortDescription": "Soy Alba Pozuelos, tengo 45, profesión Secretariado Oficinista."
+				},
+				{
+					"name": "LIZBETH CHAVAC",
+					"description": "Soy Lizbeth Chavac, de 33 años, graduada de Bachiller en Computación, estudiante universitaria en Recursos Humanos, emprendedora y carismática.\nLaboro para Industrias Noviembre ocupando el puesto de Asistente Administrativa contable, llevando a cabo el correcto y eficaz funcionamiento para el oportuno desarrollo de una información optimizada y veraz.\nAgregando valor a la empresa brindando un buen servicio al cliente interno y externo para incrementar la satisfacción y confianza del consumidor sobre nuestros servicios.",
+					"shortDescription": "Soy Lizbeth Chavac, de 33 años, graduada de Bachiller en Computación, estudiante universitaria en Recursos Humanos",
+					"picture": "lizbeth-chavac"
+				},
+				{
+					"name": "YENNY FIGUEROA",
+					"title": "",
+					"description": "Soy Yenny Figueroa, Contador Público y Auditor con M.A. en Dirección y Gestión Financiera, y M.A. en Normas Internacionales de Contabilidad y Auditoría. Cuento con experiencia en empresas Multinacionales, Gubernamentales y Pymes. Me destaco por agilizar y estandarizar procesos.\nEncargada de elaborar y analizar la información contable y financiera, que reflejen la imagen fiel y velar por el cumplimiento de las regulaciones fiscales y reglamentarias.\nMi objetivo es hacer que la empresa genere valor a través de una buena gestión financiera que vaya alineada a la gestión estratégica.",
+					"shortDescription": "Soy Yenny Figueroa, Contador Público y Auditor con M.A. en Dirección y Gestión Financiera",
+					"picture": "yenny-figueroa"
+				},
+				{
+					"name": "ROCIO PIRIR",
+					"title": "Departamento exportaciones",
+					"description": "Soy Rocio Pirir, tengo 28 años, graduada en Psicología Industrial, con 5 años de experiencia en operaciones logísticas y 3 años en área de exportaciones de café.\nActualmente soy la encargada de Logística y Exportación de Industrias Noviembre, mantengo comunicación con productores del país para promoción y coordinación de cada exportación y consolidados de café marítimo y aéreo.\nCon mi labor en Industrias Noviembre, apoyo en la comercialización del café de los productores del país, llevando un control de la logística y exportaciones.",
+					"picture": "rocio-pirir",
+					"shortDescription": "Soy Rocio Pirir, tengo 28 años, graduada en Psicología Industrial, con 5 años de experiencia en operaciones logísticas"
+				}
+			],
+			"tasters": {
+				"title": "Catadores",
+				"description": "Nuestros catadores son QGraders y han participado en competencias internacionales como Cup of Excellence.",
+				"items": [
+					{
+						"title": "DANNY MOGOLLÓN",
+						"description": "Control de calidad",
+						"picture": "danny-mogollon"
+					},
+					{
+						"title": "LUISA RODRIGUEZ",
+						"description": "Control de calidad",
+						"picture": "luisa-rodriguez"
+					}
+				]
+			}
+		},
+		"contact": {
+			"title": "Contáctanos",
+			"description": "Si eres un apasionado del café, contáctanos.",
+			"phone": "+502 2316-0556",
+			"email": "asistente@industriasnoviembre.com",
+			"address": "Km. 13.5 carretera a Muxbal, centro comercial Plaza Muxbal, Primer Nivel, Oficina 101",
+			"form": {
+				"name": "Nombre",
+				"email": "Correo electrónico",
+				"phone": "Teléfono",
+				"country": "País",
+				"message": "Mensaje",
+				"send": "ENVIAR"
+			}
+		},
+		"footer": {
+			"terms": "®Todos los derechos reservados, Industrias Noviembre."
+		},
+		"coffeeOrigin": {
+			"upperTitle": "Origen del",
+			"title": "café de Guatemala",
+			"items": [
+				{
+					"description": "La planta silvestre de café (coffea arabica) es una planta nativa de Etiopia, descubierta en 850 DC.",
+					"title": "850 DC",
+					"image": "850-dc"
+				},
+				{
+					"description": "El primer cafeto llega a Guatemala en 1760 desde las Antillas, llegando primero a Antigua Guatemala, donde fue utilizado por sacerdotes jesuitas como decoración en los conventos.",
+					"title": "1,760",
+					"image": "1760"
+				},
+				{
+					"description": "Al llegar 1,800 las plantas de café son llevadas a las afueras de Antigua, y poco a poco se extiende a una buena parte del territorio guatemalteco.",
+					"title": "1,800",
+					"image": "1800"
+				},
+				{
+					"title": "1,858",
+					"image": "1858",
+					"description": "La primera exportación se realiza en 1,858. Dos décadas después, el café ya era el cultivo más importante del país."
+				},
+				{
+					"title": "Café de Guatemala",
+					"description": "El café de Guatemala es recolectado manualmente seleccionando el fruto maduro, se traslada al beneficio húmedo y se procesa en el beneficio seco.",
+					"image": "guatemalan-coffee"
+				}
+			]
+		},
+		"form": {
+			"back": "REGRESAR",
+			"done": "¡Listo!",
+			"characteristics": {
+				"title": "¿Qué características te gustan de un café?",
+				"items": [
+					{
+						"title": "Frutales",
+						"image": "frutales",
+						"regions": [
+							{
+								"name": "acatenango"
+							},
+							{
+								"name": "atitlan"
+							},
+							{
+								"name": "huehuetenango"
+							},
+							{
+								"name": "coban"
+							}
+						]
+					},
+					{
+						"title": "Florales",
+						"image": "florales",
+						"regions": [
+							{
+								"name": "san-marcos"
+							},
+							{
+								"name": "acatenango"
+							},
+							{
+								"name": "atitlan"
+							}
+						]
+					},
+					{
+						"title": "Cítricos",
+						"image": "citricos",
+						"regions": [
+							{
+								"name": "atitlan"
+							},
+							{
+								"name": "huehuetenango"
+							},
+							{
+								"name": "fraijanes"
+							},
+							{
+								"name": "acatenango"
+							}
+						]
+					},
+					{
+						"title": "Chocolates",
+						"image": "chocolates",
+						"regions": [
+							{
+								"name": "santa-rosa"
+							},
+							{
+								"name": "antigua"
+							},
+							{
+								"name": "fraijanes"
+							}
+						]
+					}
+				]
+			},
+			"regions": {
+				"title": "¿Qué regiones te gustan?"
+			},
+			"processes": {
+				"title": "¿Qué procesos te gustan?",
+				"items": [
+					{
+						"description": "Consiste en despulpar las cerezas, fermentar la masa para despegar el mucílago, y posteriormente lavar la miel restante, para dejar un café completamente limpio.",
+						"title": "Lavado",
+						"image": "lavado"
+					},
+					{
+						"description": "Se conserva la pulpa, mucílago y semilla juntas mientras se seca. Este proceso ayuda a potenciar los sabores. Es un proceso más ecológico, no utiliza agua.",
+						"title": "Natural",
+						"image": "natural"
+					},
+					{
+						"title": "Honey",
+						"description": "Consiste en despulpar la cereza y dejar el mucílago adherido a la semilla. Por lo general, entre más cantidad de mucílago tiene el grano, más dulce será el perfil de taza.",
+						"image": "honey"
+					},
+					{
+						"description": "Los procesos experimentales pueden ir desde variaciones en el proceso de secado, hasta fermentaciones anaeróbicas, fermentaciones prolongadas o fermentaciones dobles.",
+						"title": "Experimental",
+						"image": "experimental"
+					}
+				]
+			},
+			"contact": {
+				"title": "Estamos listos ☺",
+				"description": "Para poder asesorarte indícanos los siguientes datos:"
+			}
+		}
+	},
+	"en": {
+		"navbar": {
+			"items": [
+				{
+					"label": "About us"
+				},
+				{
+					"label": "Services"
+				},
+				{
+					"label": "Our coffees"
+				},
+				{
+					"label": "Team"
+				},
+				{
+					"label": "Contact"
+				}
+			],
+			"socialMedia": [{}, {}, {}]
+		},
+		"meetUs": {
+			"ourHistory": {
+				"items": [
+					{
+						"title": "2010 - beginnings",
+						"description": "Industrias Noviembre was born as a project to industrialize and export frozen pineapple pulp. The company allowed us to learn about the food industry and the marketing of agricultural products."
+					},
+					{
+						"description": "We started working on a project to export coffee to Asia. Being the 4th. Generation of coffee producers, with the experience acquired and having the all the materials, the export and penetration into the Asian market begins."
+					},
+					{
+						"description": "We obtain the buyer-exporter license in Anacafé and create commercial relations in Asia that gave us a big improvement in the number of exports and sales."
+					},
+					{
+						"description": "We consolidate the company, achieving a considerable increase in sales. Start exporting to new markets such as Europe and America."
+					},
+					{
+						"description": "We continue to write our history"
+					}
+				],
+				"upperTitle": "This is how",
+				"title": "Our Story Begins"
+			},
+			"title": {
+				"part1": "How",
+				"part2": "we do it?"
+			},
+			"description": {
+				"part1": "We connect the world with the Guatemalan market to commercialize coffee with a better price. We focus on: bean selection, traceability and a perfect analysis.",
+				"part2": "bean selection, traceability and a perfect analysis."
+			},
+			"description2": {
+				"part1": "We are not just a coffee export, we also produce the best varieties through Finca San José Las Victorias as part of our group.",
+				"part2": "We export and produce excellent coffees."
+			},
+			"coffeeOrigin": {
+				"label": "Coffee Origin in Guatemala"
+			},
+			"mission": {
+				"title": "Mission",
+				"description": "Provide the best coffee marketing service to producers and importers of Guatemalan coffee."
+			},
+			"vision": {
+				"title": "Vision",
+				"description": "Connect Guatemala with the world through the commercialization of coffee, focused on traceability and quality."
+			}
+		},
+		"services": {
+			"ourProccess": {
+				"items": [
+					{
+						"description": "Receipt of samples"
+					},
+					{
+						"description": "The sample is encoded on the digital platform"
+					},
+					{
+						"description": "Preparation and packaging"
+					},
+					{
+						"description": "Exportation of coffee"
+					},
+					{
+						"description": "Satisfied/happy clients"
+					}
+				],
+				"upperTitle": "Our",
+				"title": "process"
+			},
+			"whatMakesUsDifferent": {
+				"items": [
+					{
+						"description": "We generate personal relationships and strategic alliances with Guatemalan producers"
+					},
+					{
+						"description": "We provide personal advisory to al clients, suppliers, staff etc."
+					},
+					{
+						"description": "Coffee traceability"
+					},
+					{
+						"description": "Strict quality control in all processes"
+					},
+					{
+						"description": "Constant Innovation"
+					}
+				],
+				"title": "What make us different"
+			},
+			"title": "Services",
+			"description1": {
+				"part1": "We supply the world",
+				"part2": "with the best Guatemalan coffee"
+			},
+			"description2": {
+				"part1": "We support",
+				"part2": "coffee producers to commercialize their coffee"
+			}
+		},
+		"ourCoffees": {
+			"items": [
+				{
+					"description": "Coffee plantations planted up to 2,000 meters above sea level. Acatenango's profile is characterized by having a marked acidity, aromatic, balanced body and prolonged aftertaste."
+				},
+				{
+					"description": "Volcanic soils that are characterized by their mineral wealth, thanks to the volcanoes of Fuego, Agua and Acatenango. Antigua's profile is characterized by being well balanced, elegant, very sweet and full-bodied."
+				},
+				{
+					"description": "The richest soils in organic matter in Guatemala. Coffees produced in the foothills of the Tolimán, Atitlán and San Pedro volcanoes. Atitlan's profile is characterized by its bright citrus acidity and full body."
+				},
+				{
+					"description": "Region full of natural wealth, rain and cold during most of the year. Cobán's profile is characterized by fruity notes, fine body and delicate acidity."
+				},
+				{
+					"description": "Volcanic soils with pumice stone, heights up to 1,700 meters above sea level, lots of rain and an active volcano (Pacaya). The Fraijanes profile is characterized by a pronounced and persistent acidity, aromatic and defined body."
+				},
+				{
+					"description": "The highest and driest region reaches up to 2,300 meters above sea level. Huehuetenagos’s profile is characterized by its intense acidity, full body and winey notes."
+				},
+				{
+					"description": "The highest and driest region reaches up to 2,300 meters above sea level. Huehue's profile is characterized by its intense acidity, full body and winey notes."
+				},
+				{
+					"description": "The region with the strongest rainy season and earliest flowering. San Marcos is characterized by its floral notes in aroma and flavor, pronounced acidity and good body."
+				}
+			],
+			"upperTitle": "Our",
+			"title": "coffees",
+			"description": "Guatemalan coffee plantations flower once a year, during the months of March, April or May, depending on the elevation and rainfall pattern of the particular region. Flowering takes between two and three days, and during this time the coffee plantations take on the appearance of a snowy field. From each flower a fruit will be born that contains two seeds or coffee beans.",
+			"moreInfoHere": "More info"
+		},
+		"team": {
+			"items": [
+				{
+					"description": "Hector was born in the 4th generation coffee family, involved in this industry since he was a child. He graduated with a Bachelor of Science and Letters from Jules Verne. Industrial Engineer at the University of the Valley of Guatemala.\nDuring his university studies he began to get involved in coffee issues with his family and in 2001 he began to work in a coffee exporter where he worked for 9 years.\nSince 2011, Hector Ventura has been part of the board of directors of the Jules Verne school and has been the president of the board of directors for 3 years, having a relationship with French biculturalism.\nCurrently Hector Ventura, 43 years old and with extensive experience in the coffee industry, is the CEO of Industrias Noviembre.\nHector Ventura's projection with Industrias Noviembre is to become the largest coffee supplier in the world.",
+					"shortDescription": "Hector was born in the 4th generation coffee family, involved in this industry since he was a child."
+				},
+				{
+					"description": "I am Diego Solares, Business Administrator with a specialty in International Business from Universidad del Istmo. I have Sports Marketing courses and I am a CrossFit Trainer Level 1 and 2.\nI have a strong interest in sports and business administration. More than 8 years of experience as team leader, budget management, innovation, project execution, strategy, among others.\nAt Industrias Noviembre I am responsible for the general administration of all areas and the efficient operation of all assigned resources and projects. Leader of activities and execution of the company, maintaining communication with clients, suppliers, staff and counterparts.\nMy goal is the good performance of the company, generating profits for the partners and generating close and trusting relationships between all parties for continuous growth.",
+					"shortDescription": "I am Diego Solares, Business Administrator with a specialty in International Business"
+				},
+				{
+					"description": "I am Alba Pozuelos, 45 years old, Secretary\nShe currently holds the position of Management Assistant for Industrias Noviembre, S. A. performing administrative tasks and helping different functions in other areas.\nGiving the value in the communication between the company and the client in a fluid and truthful way.",
+					"shortDescription": "I am Alba Pozuelos, 45 years old, Secretary",
+					"title": "Administrative Department"
+				},
+				{
+					"description": "I am Lizbeth Chavac, 33 years old, a Bachelor of Computer Science graduate, a university student in Human Resources, an entrepreneur and charismatic person.\nI work in Industrias Noviembre currently as an Accounting Administrative Assistant, carrying out the correct and efficient operation for the timely development of optimized and truthful information.\nAdding value to the company by providing good service to internal and external customers to increase consumer satisfaction and confidence in our services.",
+					"shortDescription": "I am Lizbeth Chavac, 33 years old, a Bachelor of Computer Science graduate, a university student in Human Resources"
+				},
+				{
+					"description": "I am Yenny Figueroa, Public Accountant and Auditor with M.A. in Financial Management, and M.A. in International Accounting and Auditing Standards. I have experience in multinational, government and Pymes companies. I stand out for standardizing processes.\nResponsible for preparing an analyze accounting and financial information that reflect the true image of the company and compliance with tax and other regulations.\nMy objective is generate value for the company through good financial management that is aligned with strategic management.",
+					"shortDescription": "I am Yenny Figueroa, Public Accountant and Auditor with M.A. in Financial Management"
+				},
+				{
+					"description": "My name is Rocio Piri, I am a 28 year old woman with a Industrial Psychology degree, with 5 year experience in logistics operations and 3 years in coffee exports.\nIn Industrias Noviembre I am currently in charge of Logistics and Exports, I maintain communication with producers in my country to promote their coffee abroad with our clients. I also coordinate maritime and air coffee exports.\nWith my work, I support coffee producers to commercialize their coffee, when they meet the expectations of our external clients.",
+					"shortDescription": "My name is Rocio Piri, I am a 28 year old woman with a Industrial Psychology degree, with 5 year experience in logistics operations"
+				}
+			],
+			"tasters": {
+				"items": [
+					{
+						"description": "Quality control"
+					},
+					{
+						"description": "Quality control"
+					}
+				],
+				"title": "Coffee Cuppers",
+				"description": "Our Coffee Cuppers are QGraders and have participated in international competitions such as the Cup of Excellence."
+			},
+			"upperTitle": "Our",
+			"title": "team"
+		},
+		"coffeeOrigin": {
+			"items": [
+				{
+					"title": "850 AD",
+					"description": "The wild coffee plant (coffea arabica) is a plant native to Ethiopia, discovered in 850 AD."
+				},
+				{
+					"description": "The first coffee tree arrived in Guatemala in 1760 from the Antilles, arriving first in Antigua Guatemala, where it was used by Jesuit priests as decoration in convents."
+				},
+				{
+					"description": "When 1,800 arrive, the coffee plants are taken to the outskirts of Antigua, and little by little it spreads to a good part of the Guatemalan territory."
+				},
+				{
+					"description": "The first export is made in 1,858. Two decades later, coffee was already the most important crop in the country."
+				},
+				{
+					"description": "Guatemalan coffee is manually harvested, selecting the ripe fruit, transferred to the wet mill and processed in the dry mill.",
+					"title": "Guatemalan Coffee"
+				}
+			],
+			"upperTitle": "Coffee Origin",
+			"title": "in Guatemala"
+		},
+		"form": {
+			"characteristics": {
+				"items": [
+					{
+						"title": "Fruits"
+					},
+					{
+						"title": "Floral"
+					},
+					{
+						"title": "Citrus"
+					},
+					{
+						"title": "Caramels"
+					}
+				],
+				"title": "What characteristics do you like in a coffee?"
+			},
+			"regions": {
+				"items": [{}, {}, {}, {}],
+				"title": "What regions do you like?"
+			},
+			"processes": {
+				"items": [
+					{
+						"title": "Washed",
+						"description": "A washed process demonstrates the essence of a coffee, the quality of the variety, soil, and the washed and drying process carried out by the producer. It consists of depulping the coffee cherries, fermenting the dough to loosen the coffee mucilage, and then wash the remaining honey off. Leaving a completely clean coffee. A good washed coffee is the result of a well-worked coffee."
+					},
+					{
+						"title": "Natural",
+						"description": "During a natural processed coffee, the pulp, mucilage and seed are kept together while it dries. This process helps to enhance the flavors of coffee, obtaining very interesting characteristics. Its the more ecological process of all! It does not use water."
+					},
+					{
+						"description": "The honey process is a fruity and quite sweet coffee. It consists of depulping the coffee cherries and leaving the mucilage attached to the seed. Its named honey process because of the color of the dry mucilage, it looks like honey! Generally, the more mucilage in the vean, the sweeter the cup."
+					},
+					{
+						"description": "The experimental processes can be variations in the drying process, anaerobic fermentations, long fermentations, double fermentations.",
+						"title": "Experimentals"
+					}
+				],
+				"title": "What processes do you like?"
+			},
+			"back": "Back",
+			"done": "Done!",
+			"contact": {
+				"title": "You are ready ☺",
+				"description": "Please tell us your name, email, phone, message, country"
+			}
+		},
+		"hero": {
+			"label": {
+				"part1": "The passion of coffee",
+				"part2": "connects us"
+			},
+			"cta": {
+				"label": "Get started"
+			}
+		},
+		"contact": {
+			"title": "Contact Us",
+			"description": "If you are passionate about coffee, contact us",
+			"form": {
+				"name": "Name",
+				"email": "Email",
+				"phone": "Phone",
+				"country": "Country",
+				"message": "Message",
+				"send": "Send"
+			},
+			"address": "Address: Km. 13.5 carretera a Muxbal, centro comercial Plaza Muxbal, Primer Nivel, Oficina 101"
+		}
+	}
 }

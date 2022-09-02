@@ -53,7 +53,7 @@ export function Services() {
 					</div>
 				</div>
 				<div className="max-w-5xl mx-auto">
-					<h5 className="mt-16 font-semibold text-extra-white text-center">
+					<h5 className="mt-16 font-semibold text-extra-white text-center uppercase leading-5 tracking-widest">
 						{services.whatMakesUsDifferent.title}
 					</h5>
 				</div>
@@ -114,7 +114,7 @@ export function Services() {
 						/>
 					</div>
 					<h2 ref={appearOnMount} className="text-center text-hunt">
-						<span className="text-center font-semibold">
+						<span className="text-center font-semibold uppercase leading-5 tracking-widest">
 							{services.ourProccess.upperTitle}
 						</span>
 						<span className="text-center text-6xl lg:text-8xl font-serif block -mt-4">

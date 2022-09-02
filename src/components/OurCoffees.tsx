@@ -23,12 +23,25 @@ export function OurCoffees() {
 		init: 'anim-appear',
 	});
 
+	function onMoreInfo(event: React.MouseEvent<HTMLAnchorElement>) {
+		event.preventDefault();
+		const link = event.currentTarget;
+
+		const target = document.querySelector(
+			link.getAttribute('href').replace('/en', ''),
+		);
+
+		target.scrollIntoView({
+			behavior: 'smooth',
+		});
+	}
+
 	return (
 		<div id="our-coffees" className="flex flex-col lg:flex-row">
 			<div className="flex-1 py-20 px-6 text-extra-white relative bg-caraway">
 				<div className="max-w-lg m-auto">
 					<h2 ref={appearOnMount} className="text-center">
-						<span className="font-semibold">
+						<span className="font-semibold uppercase leading-5 tracking-widest">
 							{ourCoffees.upperTitle}
 						</span>
 						<span className="font-serif text-8xl block">
@@ -118,8 +131,11 @@ export function OurCoffees() {
 						{current.description}
 					</p>
 					<div ref={appearOnMount} className="mt-9">
-						<Link href="/">
-							<a className="bg-rutherford text-white stroke-white py-4 px-7">
+						<Link href="#contact">
+							<a
+								onClick={onMoreInfo}
+								className="bg-rutherford text-white stroke-white py-4 px-7 uppercase leading-5 tracking-widest"
+							>
 								{ourCoffees.moreInfoHere}
 								<RightArrowIcon className="h-7 w-7 inline-block ml-2 align-bottom" />
 							</a>

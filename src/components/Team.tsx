@@ -43,7 +43,7 @@ export function Team() {
 				</div>
 				<div className="max-w-5xl px-6 mx-auto overflow-hidden">
 					<h2 ref={appearOnMount} className="text-center">
-						<span className="block font-semibold">
+						<span className="block font-semibold uppercase leading-5 tracking-widest">
 							{team.upperTitle}
 						</span>
 						<span className="block font-serif text-8xl">

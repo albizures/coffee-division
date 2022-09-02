@@ -91,7 +91,7 @@ export function MeetUs() {
 			</div>
 			<div className="bg-caraway px-4">
 				<Link href={meetUs.coffeeOrigin.href}>
-					<a className="max-w-5xl px-6 mx-auto text-sm md:text-base flex block justify-center items-center py-6 cursor-pointer">
+					<a className="max-w-5xl px-6 mx-auto text-sm md:text-base flex block justify-center items-center py-6 cursor-pointer uppercase leading-5 tracking-widest">
 						<span className="animate-loop animate-heart-beat animate-duration-2000">
 							<Image src={MiniGuateImg} height="60" width="45" />
 						</span>
@@ -131,7 +131,7 @@ export function MeetUs() {
 			</div>
 			<div className="pt-20 md:pt-32 bg-crisp text-hunt">
 				<h2 className="text-center">
-					<span className="text-center font-semibold">
+					<span className="text-center font-semibold uppercase leading-5 tracking-widest">
 						{meetUs.ourHistory.upperTitle}
 					</span>
 					<span className="text-center text-6xl font-serif block">
@@ -140,7 +140,7 @@ export function MeetUs() {
 				</h2>
 
 				<div className="relative">
-					<div className="flex history flex-grow overflow-x-auto pl-50 mt-10 pb-30 md:pb-32">
+					<div className="flex scrollbar-hide history flex-grow overflow-x-auto pl-50 mt-10 pb-30 md:pb-32">
 						{meetUs.ourHistory.items.map((item, index) => {
 							const asset = history[item.image];
 							return (
@@ -161,7 +161,12 @@ export function MeetUs() {
 										})}
 									>
 										{asset && (
-											<Image src={asset} width="270" height="208" />
+											<Image
+												className="grayscale filter hover:grayscale-0"
+												src={asset}
+												width="270"
+												height="208"
+											/>
 										)}
 										<h3 className="text-4xl font-serif mt-5">
 											{item.title}

@@ -55,7 +55,9 @@ export function Header() {
 		setMenuStatus('close');
 		const link = event.currentTarget;
 
-		const target = document.querySelector(link.getAttribute('href'));
+		const target = document.querySelector(
+			link.getAttribute('href').replace('/en', ''),
+		);
 
 		target.scrollIntoView({
 			behavior: 'smooth',
@@ -78,9 +80,6 @@ export function Header() {
 						className={clsx(
 							'flex items-center justify-between w-full mx-6',
 							'lg:(mx-0 w-auto)',
-							// {
-							// 	hidden: menuStatus === 'open',
-							// },
 						)}
 					>
 						<button className="lg:hidden -mr-3" onClick={onClickMenu}>
