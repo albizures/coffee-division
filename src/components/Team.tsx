@@ -80,6 +80,9 @@ export function Team() {
 												className={clsx(
 													`hidden absolute inset-0 w-full opacity-0 md:flex justify-center bg-opacity-20 bg-hunt items-center hover:(opacity-100)`,
 													styles['team-hover'],
+													{
+														'opacity-100': currentIndex === index,
+													},
 												)}
 											>
 												<Plus className="z-20" />
@@ -110,8 +113,13 @@ export function Team() {
 							>
 								<div
 									key={currentIndex}
-									className="overflow-y-scroll max-h-sm pb-14"
+									className="overflow-y-scroll max-h-lg pb-14"
 								>
+									<Image
+										src={teamPhotos[current.picture]}
+										width="220"
+										height="250"
+									/>
 									<h4 className="text-xl font-semibold">
 										{current.name}
 									</h4>

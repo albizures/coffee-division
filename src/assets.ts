@@ -27,14 +27,14 @@ import FraijanesImg from '../public/fraijanes.jpeg';
 import HuehuetenangoImg from '../public/huehuetenango.jpeg';
 import SanMarcosImg from '../public/san-marcos.jpeg';
 import SantaRosaImg from '../public/santa-rosa.jpeg';
-import AlbaPozuelosImg from '../public/alba-pozuelos.png';
-import DiegoSolaresImg from '../public/diego-solares.png';
-import HectorVenturaImg from '../public/hector-ventura.png';
-import LizbethChavacImg from '../public/lizbeth-chavac.png';
-import YennyFigueroaImg from '../public/yenny-figueroa.png';
-import RocioPirirImg from '../public/rocio-pirir.png';
-import DannyMogollonImg from '../public/danny-mogollon.png';
-import LuisaRodriguezImg from '../public/luisa-rodriguez.png';
+import AlbaPozuelosImg from '../public/team/alba-pozuelos.png';
+import DiegoSolaresImg from '../public/team/diego-solares.png';
+import HectorVenturaImg from '../public/team/hector-ventura.png';
+import YennyFigueroaImg from '../public/team/yenny-figueroa.png';
+import RocioPirirImg from '../public/team/rocio-pirir.png';
+import YesseniaGodoyImg from '../public/team/yessenia-godoy.png';
+import DannyMogollonImg from '../public/tasters/danny-mogollon.png';
+import LuisaRodriguezImg from '../public/tasters/luisa-rodriguez.png';
 import ContactImg from '../public/contact.png';
 import Logo2Img from '../public/logo2.svg';
 import WhiteLogoImg from '../public/white-logo.svg';
@@ -81,12 +81,12 @@ export const teamPhotos = {
 	'rocio-pirir': RocioPirirImg,
 	'danny-mogollon': DannyMogollonImg,
 	'luisa-rodriguez': LuisaRodriguezImg,
-	'lizbeth-chavac': LizbethChavacImg,
 	'yenny-figueroa': YennyFigueroaImg,
+	'yessenia-godoy': YesseniaGodoyImg,
 };
 export const urlTeamPhotos = {
-	'danny-mogollon': '/danny-mogollon.png',
-	'luisa-rodriguez': '/luisa-rodriguez.png',
+	'danny-mogollon': '/tasters/danny-mogollon.png',
+	'luisa-rodriguez': '/tasters/luisa-rodriguez.png',
 };
 
 const history = {

@@ -1,4 +1,4 @@
-.team-hover:hover::before {
+.team-hover::before {
 	content: ' ';
 	position: absolute;
 	bottom: -10px;
