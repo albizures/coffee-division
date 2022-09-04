@@ -27,14 +27,14 @@ import FraijanesImg from '../public/fraijanes.jpeg';
 import HuehuetenangoImg from '../public/huehuetenango.jpeg';
 import SanMarcosImg from '../public/san-marcos.jpeg';
 import SantaRosaImg from '../public/santa-rosa.jpeg';
-import AlbaPozuelosImg from '../public/team/alba-pozuelos.png';
-import DiegoSolaresImg from '../public/team/diego-solares.png';
-import HectorVenturaImg from '../public/team/hector-ventura.png';
-import YennyFigueroaImg from '../public/team/yenny-figueroa.png';
-import RocioPirirImg from '../public/team/rocio-pirir.png';
-import YesseniaGodoyImg from '../public/team/yessenia-godoy.png';
-import DannyMogollonImg from '../public/tasters/danny-mogollon.png';
-import LuisaRodriguezImg from '../public/tasters/luisa-rodriguez.png';
+import AlbaPozuelosImg from '../public/team/alba-pozuelos.jpg';
+import DiegoSolaresImg from '../public/team/diego-solares.jpg';
+import HectorVenturaImg from '../public/team/hector-ventura.jpg';
+import YennyFigueroaImg from '../public/team/yenny-figueroa.jpg';
+import RocioPirirImg from '../public/team/rocio-pirir.jpg';
+import YesseniaGodoyImg from '../public/team/yessenia-godoy.jpg';
+import DannyMogollonImg from '../public/tasters/danny-mogollon.jpg';
+import LuisaRodriguezImg from '../public/tasters/luisa-rodriguez.jpg';
 import ContactImg from '../public/contact.png';
 import Logo2Img from '../public/logo2.svg';
 import WhiteLogoImg from '../public/white-logo.svg';
@@ -85,8 +85,8 @@ export const teamPhotos = {
 	'yessenia-godoy': YesseniaGodoyImg,
 };
 export const urlTeamPhotos = {
-	'danny-mogollon': '/tasters/danny-mogollon.png',
-	'luisa-rodriguez': '/tasters/luisa-rodriguez.png',
+	'danny-mogollon': DannyMogollonImg.src,
+	'luisa-rodriguez': LuisaRodriguezImg.src,
 };
 
 const history = {
