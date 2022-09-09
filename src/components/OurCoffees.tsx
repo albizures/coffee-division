@@ -27,9 +27,9 @@ export function OurCoffees() {
 		event.preventDefault();
 		const link = event.currentTarget;
 
-		const target = document.querySelector(
-			link.getAttribute('href').replace('/en', ''),
-		);
+		const { hash: id } = new URL(link.href);
+
+		const target = document.querySelector(id);
 
 		target.scrollIntoView({
 			behavior: 'smooth',

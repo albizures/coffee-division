@@ -53,11 +53,12 @@ export function Header() {
 	function onCloseMenu(event: React.MouseEvent<HTMLAnchorElement>) {
 		event.preventDefault();
 		setMenuStatus('close');
+
 		const link = event.currentTarget;
 
-		const target = document.querySelector(
-			link.getAttribute('href').replace('/en', ''),
-		);
+		const { hash: id } = new URL(link.href);
+
+		const target = document.querySelector(id);
 
 		target.scrollIntoView({
 			behavior: 'smooth',
