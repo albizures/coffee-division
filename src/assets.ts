@@ -33,6 +33,7 @@ import HectorVenturaImg from '../public/team/hector-ventura.jpg';
 import YennyFigueroaImg from '../public/team/yenny-figueroa.jpg';
 import RocioPirirImg from '../public/team/rocio-pirir.jpg';
 import YesseniaGodoyImg from '../public/team/yessenia-godoy.jpg';
+import DanielHernandezImg from '../public/team/daniel-hernandez.jpg';
 import DannyMogollonImg from '../public/tasters/danny-mogollon.jpg';
 import LuisaRodriguezImg from '../public/tasters/luisa-rodriguez.jpg';
 import ContactImg from '../public/contact.png';
@@ -83,6 +84,7 @@ export const teamPhotos = {
 	'luisa-rodriguez': LuisaRodriguezImg,
 	'yenny-figueroa': YennyFigueroaImg,
 	'yessenia-godoy': YesseniaGodoyImg,
+	'daniel-hernandez': DanielHernandezImg,
 };
 export const urlTeamPhotos = {
 	'danny-mogollon': DannyMogollonImg.src,

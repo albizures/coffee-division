@@ -52,7 +52,7 @@ export function Services() {
 						</p>
 					</div>
 				</div>
-				<div className="max-w-5xl mx-auto">
+				<div className="max-w-5xl px-6 mx-auto">
 					<h5 className="mt-16 font-semibold text-extra-white text-center uppercase leading-5 tracking-widest">
 						{services.whatMakesUsDifferent.title}
 					</h5>

@@ -19,10 +19,10 @@ export function Hero() {
 			</div>
 			<div className="max-w-5xl px-6 mx-auto relative">
 				<h1 className="text-center font-serif pt-20 pb-10 md:(pt-28 pb-14) text-extra-white">
-					<span className="md:text-6xl text-4xl block">
+					<span className="md:text-6xl text-3xl block">
 						{hero.label.part1}
 					</span>
-					<span className="md:text-8xl text-6xl	block">
+					<span className="md:text-8xl text-5xl block">
 						{hero.label.part2}
 					</span>
 				</h1>

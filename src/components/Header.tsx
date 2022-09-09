@@ -83,10 +83,13 @@ export function Header() {
 							'lg:(mx-0 w-auto)',
 						)}
 					>
-						<button className="lg:hidden -mr-3" onClick={onClickMenu}>
+						<button
+							className="lg:hidden -mr-3 "
+							onClick={onClickMenu}
+						>
 							<MenuIcon />
 						</button>
-						<div className={clsx('h-12 w-48')}>
+						<div className={clsx('h-12 w-44')}>
 							<Link href="/">
 								<a>
 									<Image src={LogoImg} layout="responsive" />
@@ -104,7 +107,7 @@ export function Header() {
 				>
 					<div className="flex items-center justify-between w-full px-6">
 						<span>{/* space */}</span>
-						<div className={clsx('h-12 w-48')}>
+						<div className={clsx('h-12 w-44')}>
 							<Link href="/">
 								<a>
 									<Image src={WhiteLogoImg} layout="responsive" />

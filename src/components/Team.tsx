@@ -88,7 +88,7 @@ export function Team() {
 												<Plus className="z-20" />
 											</button>
 										</div>
-										<div className="col-span-2 ml-6 md:hidden">
+										<div className="col-span-2 ml-6 md:hidden flex justify-center flex-col">
 											<h4 className="font-semibold font-sans text-sm">
 												{item.name}
 											</h4>
@@ -113,7 +113,7 @@ export function Team() {
 							>
 								<div
 									key={currentIndex}
-									className="overflow-y-scroll max-h-lg pb-14"
+									className="overflow-y-scroll max-h-3xl -mn-2 pb-14"
 								>
 									<Image
 										src={teamPhotos[current.picture]}
@@ -144,7 +144,7 @@ export function Team() {
 				</div>
 			</div>
 			<div className="bg-hunty text-crisp py-20 lg:py-24 overflow-hidden">
-				<div className="flex flex-col items-center lg:flex-row max-w-5xl px-6 mx-auto">
+				<div className="max-w-md mx-auto">
 					<div
 						ref={appearOnMount}
 						className="flex-1 text-center mt-8 lg:mb-14"
@@ -155,6 +155,8 @@ export function Team() {
 						</h3>
 						<p className="mt-4">{team.tasters.description}</p>
 					</div>
+				</div>
+				<div className="flex flex-col items-center lg:flex-row max-w-5xl px-6 mx-auto">
 					{team.tasters.items.map((taster, index) => {
 						return (
 							<div

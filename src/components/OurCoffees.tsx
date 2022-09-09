@@ -44,7 +44,7 @@ export function OurCoffees() {
 						<span className="font-semibold uppercase leading-5 tracking-widest">
 							{ourCoffees.upperTitle}
 						</span>
-						<span className="font-serif text-8xl block">
+						<span className="font-serif text-6xl md:text-8xl block">
 							{ourCoffees.title}
 						</span>
 					</h2>

@@ -134,13 +134,13 @@ export function MeetUs() {
 					<span className="text-center font-semibold uppercase leading-5 tracking-widest">
 						{meetUs.ourHistory.upperTitle}
 					</span>
-					<span className="text-center text-6xl font-serif block">
+					<span className="text-center text-3xl md:text-6xl font-serif block">
 						{meetUs.ourHistory.title}
 					</span>
 				</h2>
 
 				<div className="relative">
-					<div className="flex scrollbar-hide history flex-grow overflow-x-auto pl-50 mt-10 pb-30 md:pb-32">
+					<div className="flex scrollbar-hide history flex-grow overflow-x-auto pl-10 md:pl-50 mt-10 pb-30 md:pb-32">
 						{meetUs.ourHistory.items.map((item, index) => {
 							const asset = history[item.image];
 							return (
