@@ -29,7 +29,7 @@ module.exports = {
 			'error',
 			{
 				allowList: { env: true },
-				ignore: [/args/i, /props/i],
+				ignore: [/args/i, /props/i, /Ref/i],
 			},
 		],
 	},

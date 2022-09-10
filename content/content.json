@@ -273,13 +273,17 @@
 				"description": "Nuestros catadores son QGraders y han participado en competencias internacionales como Cup of Excellence.",
 				"items": [
 					{
-						"title": "DANNY MOGOLLÓN",
-						"description": "Control de Calidad y Operaciones",
+						"name": "DANNY MOGOLLÓN",
+						"title": "Control de Calidad y Operaciones",
+						"description": "Hola! Soy Danny Mogollón. Llevo 11 años en la industria del café, a lo largo de estos años he llevado distintos cursos y diplomados para ampliar mis conocimientos organizacionales, operativos, técnicos y sensoriales como catador de café.\nEstoy a cargo de las operaciones, superviso la trazabilidad del café desde que sale de la finca hasta que lo exportamos, tomando el control de calidad en beneficio y en la preparación para exportar.\nMi objetivo es brindar un excelente servicio al cliente, me esfuerzo en cumplir los retos que se presentan durante cada cosecha, velo por el cuidado de los recursos, inventarios y materia prima de la empresa.",
+						"shortDescription": "Hello! I'm Danny Mogollon. I have been in the coffee industry for 11 years",
 						"picture": "danny-mogollon"
 					},
 					{
-						"title": "LUISA RODRIGUEZ",
-						"description": "Control de Calidad",
+						"name": "LUISA RODRIGUEZ",
+						"title": "Control de Calidad",
+						"description": "Mi nombre es Luisa Rodriguez, me considero una apasionada del café. Soy ingeniera química de profesión y tengo un Master en economía y ciencia del café. Me especializo en procesos y calidades del café. Soy catadora certificada de Café Arábigo y Robusta, licencias otorgadas por la organización internacional CQI. Barista y campeona nacional de competencia de Café en Aeropress 2017. He participado como Juez nacional en Taza de excelencia Guatemala y Juez nacional e Internacional en Campeonatos de Barismo.\nEn Industrias Noviembre soy encargada de seleccionar los cafés para nuestros clientes, así como verificar su calidad en cada etapa hasta que se exportan.\nTengo experiencia catando cafés de Guatemala y de todo el mundo. Soy catadora Q Robusta (segunda en Guatemala). Soy trilingüe y me considero una persona muy positiva y energética, soy afortunada de amar lo que hago.",
+						"shortDescription": "Mi nombre es Luisa Rodriguez, me considero una apasionada del café.",
 						"picture": "luisa-rodriguez"
 					}
 				]
@@ -635,10 +639,14 @@
 			"tasters": {
 				"items": [
 					{
-						"description": "Quality Control and Operations"
+						"title": "Quality Control and Operations",
+						"description": "Hello! I'm Danny Mogollon. I have been in the coffee industry for 11 years, throughout these years I have taken different courses, diplomas to expand my organizational, operational, technical and sensory knowledge as a coffee cupper.\nI am in charge of the company's operations, I supervise the traceability of the coffee from the time it leaves the farm until we export it, taking quality control and preparations.\nMy goal is to provide excellent customer service, I strive to meet the challenges that arise during each harvest, I watch over the care of the company's resources, inventories and raw materials.",
+						"shortDescription": "Hello! I'm Danny Mogollon. I have been in the coffee industry for 11 years."
 					},
 					{
-						"description": "Quality Control"
+						"title": "Quality Control",
+						"description": "My name is Luisa Rodriguez, I consider myself a coffee passionate. I am a chemical engineer and Master in Coffee Economics and Science. I specialize in coffee processing and qualities. I am a certified cupper of Arabica and Robusta coffee, license granted by the international organization CQI. Barista and national Aeropress champion 2017. I have participated as a national Judge in Cup of Excellence Guatemala, and national and International Judge in Barista Championships.\nAt Industrias Noviembre I am in charge of selecting the coffees for our clients, as well as verifying their quality at all moment until they are exported.\nI have a lot of experience cupping coffees from Guatemala and from all over the world. I am a Q Robusta grader (second in Guatemala). I am a trilingual and consider myself a positive and energetic person, I’m so lucky to love what I do ☺",
+						"shortDescription": "My name is Luisa Rodriguez, I consider myself a coffee passionate."
 					}
 				],
 				"title": "Coffee Cuppers",

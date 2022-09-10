@@ -1,6 +1,7 @@
 import { defineConfig } from 'windicss/helpers';
 import scrollSnapPlugin from 'windicss/plugin/scroll-snap';
 import animationsPlugin from '@windicss/plugin-animations';
+import questionMarkPlugin from '@windicss/plugin-question-mark';
 
 export default defineConfig({
 	extract: {
@@ -42,5 +43,5 @@ export default defineConfig({
 			},
 		},
 	},
-	plugins: [animationsPlugin, scrollSnapPlugin],
+	plugins: [questionMarkPlugin, animationsPlugin, scrollSnapPlugin],
 });

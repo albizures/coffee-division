@@ -69,7 +69,7 @@ export function Header() {
 		<div className="shadow-md z-50 relative sticky top-0 bg-white">
 			<header
 				className={clsx(
-					'max-w-5xl flex justify-between  mx-auto py-4 lg:(justify-center px-6)',
+					'max-w-5xl flex justify-between mx-auto py-2 md:py-4 lg:(justify-center px-6)',
 					{
 						'bg-hunt fixed inset-0 z-30': menuStatus === 'open',
 						'flex-col overflow-auto': menuStatus === 'open',
@@ -89,7 +89,7 @@ export function Header() {
 						>
 							<MenuIcon />
 						</button>
-						<div className={clsx('h-12 w-44')}>
+						<div className={clsx('h-12 w-40 md:w-48')}>
 							<Link href="/">
 								<a>
 									<Image src={LogoImg} layout="responsive" />
@@ -107,7 +107,7 @@ export function Header() {
 				>
 					<div className="flex items-center justify-between w-full px-6">
 						<span>{/* space */}</span>
-						<div className={clsx('h-12 w-44')}>
+						<div className={clsx('h-12 w-40 md:w-48')}>
 							<Link href="/">
 								<a>
 									<Image src={WhiteLogoImg} layout="responsive" />

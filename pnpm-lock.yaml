@@ -10,6 +10,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.15.0
   '@typescript-eslint/parser': ^5.18.0
   '@windicss/plugin-animations': ^1.0.9
+  '@windicss/plugin-question-mark': ^0.1.1
   clsx: ^1.1.1
   cypress: ^9.6.1
   eslint: ^8.11.0
@@ -46,6 +47,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.25.0_qo2hgs5jt7x2a3p77h2rutcdae
   '@typescript-eslint/parser': 5.25.0_hcfsmds2fshutdssjqluwm76uu
   '@windicss/plugin-animations': 1.0.9
+  '@windicss/plugin-question-mark': 0.1.1
   cypress: 9.6.1
   eslint: 8.15.0
   eslint-config-next: 12.1.0_ngsc5i3ilkffj5subk6rzz2era
@@ -719,6 +721,10 @@ packages:
 
   /@windicss/plugin-animations/1.0.9:
     resolution: {integrity: sha512-9WsQsPzLurkwV5zaMCwmylxfSHlQ1pPmzud4ysvMkMBRB7obub9ESmqlHefcCjEhatz/ZROi1U1XOuOPPUO1nA==}
+    dev: true
+
+  /@windicss/plugin-question-mark/0.1.1:
+    resolution: {integrity: sha512-LTnySh28mFncJqCw7VjZzYD3HkJynjHQ8wAIgsZUPTi8WzDJtUeYyFc8/ImXGL/jon55zzg9yy9y/lUyCvvrmA==}
     dev: true
 
   /@windicss/plugin-utils/1.8.4:

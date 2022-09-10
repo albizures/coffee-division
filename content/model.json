@@ -169,9 +169,11 @@
 			"description": { ":type": "line" },
 			"items": {
 				":items": {
+					"name": { ":type": "line" },
 					"title": { ":type": "line" },
 					"description": { ":type": "text" },
-					"picture": { ":type": "line" }
+					"picture": { ":type": "line" },
+					"shortDescription": { ":type": "line" }
 				}
 			}
 		}

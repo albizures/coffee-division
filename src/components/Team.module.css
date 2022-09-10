@@ -1,7 +1,6 @@
 .team-hover::before {
 	content: ' ';
 	position: absolute;
-	bottom: -10px;
 	left: 0;
 	height: 100%;
 	width: 100%;
@@ -11,9 +10,13 @@
 .team-gradient::before {
 	content: ' ';
 	position: absolute;
-	bottom: -10px;
 	left: 0;
 	height: 100%;
 	width: 100%;
+	z-index: 10;
 	background: linear-gradient(0deg, #2b4f3f, transparent 40%);
+}
+
+.team-gradient.dark::before {
+	background: linear-gradient(0deg, #244335, transparent 40%);
 }
