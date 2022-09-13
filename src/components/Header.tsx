@@ -35,6 +35,7 @@ function Language(props: LanguageProps) {
 
 export function Header() {
 	const { navbar } = useContent();
+	const router = useRouter();
 	const [menuStatus, setMenuStatus] = React.useState<
 		'open' | 'close'
 	>('close');
@@ -66,7 +67,7 @@ export function Header() {
 				behavior: 'smooth',
 			});
 		} else {
-			location.href = link.href;
+			router.push(link.href);
 		}
 	}
 
