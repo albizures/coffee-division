@@ -9,7 +9,7 @@ import {
 	Leaf2,
 	Leaf1,
 } from '../assets';
-import { useContent } from '../state';
+import { contentItem, useContent } from '../state';
 import { BeanIcon } from './Icons';
 import clsx from 'clsx';
 import { Field } from './Field';
@@ -247,7 +247,7 @@ export function CoffeeForm() {
 						</span>
 						<span className="flex-1">{region && region.title}</span>
 						<span className="flex-1">{process && process.title}</span>
-						<span className="flex-1">{process && '¡Listo!'}</span>
+						<span className="flex-1">{process && form.done}</span>
 					</div>
 					{!characteristic && (
 						<>
