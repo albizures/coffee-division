@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { coffeeImages } from '../assets';
 import { useAnimateOnScreen } from '../hooks';
@@ -8,6 +9,7 @@ import { useContent } from '../state';
 import { RightArrowIcon } from './Icons';
 
 export function OurCoffees() {
+	const router = useRouter();
 	const { ourCoffees } = useContent();
 	const [currentIndex, setCurrentIndex] = React.useState(0);
 
@@ -31,9 +33,13 @@ export function OurCoffees() {
 
 		const target = document.querySelector(id);
 
-		target.scrollIntoView({
-			behavior: 'smooth',
-		});
+		if (target) {
+			target.scrollIntoView({
+				behavior: 'smooth',
+			});
+		} else {
+			router.push(link.href);
+		}
 	}
 
 	return (
@@ -131,7 +137,7 @@ export function OurCoffees() {
 						{current.description}
 					</p>
 					<div ref={appearOnMount} className="mt-9">
-						<Link href="#contact">
+						<Link href="/#contact">
 							<a
 								onClick={onMoreInfo}
 								className="bg-rutherford text-white stroke-white py-4 px-7 uppercase leading-5 tracking-widest"
