@@ -56,10 +56,10 @@ import FrutalesImg from '../public/frutales.png';
 import CitricosImg from '../public/citricos.png';
 import ChocolatesImg from '../public/chocolates.png';
 
-import ExperimentalImg from '../public/experimental.jpeg';
-import HoneyImg from '../public/honey.jpeg';
-import LavadoImg from '../public/lavado.jpeg';
-import NaturalImg from '../public/natural.jpeg';
+import ExperimentalImg from '../public/processes/experimental.jpeg';
+import HoneyImg from '../public/processes/honey.jpg';
+import LavadoImg from '../public/processes/lavado.jpg';
+import NaturalImg from '../public/processes/natural.jpg';
 
 export const characteristicsImages = {
 	florales: FloralesImg,
