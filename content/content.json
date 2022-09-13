@@ -3,23 +3,23 @@
 		"navbar": {
 			"items": [
 				{
-					"href": "#meet-us",
+					"href": "/#meet-us",
 					"label": "Conócenos"
 				},
 				{
-					"href": "#services",
+					"href": "/#services",
 					"label": "Servicios"
 				},
 				{
-					"href": "#our-coffees",
+					"href": "/#our-coffees",
 					"label": "Nuestros cafés"
 				},
 				{
-					"href": "#team",
+					"href": "/#team",
 					"label": "Equipo"
 				},
 				{
-					"href": "#contact",
+					"href": "/#contact",
 					"label": "Contacto"
 				}
 			],

@@ -60,9 +60,14 @@ export function Header() {
 
 		const target = document.querySelector(id);
 
-		target.scrollIntoView({
-			behavior: 'smooth',
-		});
+		// if the target doesn't exists means it's in another page
+		if (target) {
+			target.scrollIntoView({
+				behavior: 'smooth',
+			});
+		} else {
+			location.href = link.href;
+		}
 	}
 
 	return (
