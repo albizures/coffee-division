@@ -36,9 +36,22 @@ function Language(props: LanguageProps) {
 export function Header() {
 	const { navbar } = useContent();
 	const router = useRouter();
+	const [onTop, setOnTop] = React.useState(false);
 	const [menuStatus, setMenuStatus] = React.useState<
 		'open' | 'close'
 	>('close');
+
+	React.useEffect(() => {
+		function onScroll() {
+			setOnTop(window.scrollY > 10);
+		}
+
+		window.addEventListener('scroll', onScroll);
+
+		return () => {
+			window.removeEventListener('scroll', onScroll);
+		};
+	}, []);
 
 	React.useEffect(() => {
 		document.body.style.overflow =
@@ -72,7 +85,14 @@ export function Header() {
 	}
 
 	return (
-		<div className="shadow-md z-50 relative sticky top-0 bg-white">
+		<div
+			className={clsx(
+				'shadow-md z-50 transition-opacity  relative sticky top-0 bg-white',
+				{
+					'opacity-80 duration-150': onTop,
+				},
+			)}
+		>
 			<header
 				className={clsx(
 					'max-w-5xl flex justify-between mx-auto py-2 md:py-4 lg:(justify-center px-6)',
@@ -89,10 +109,7 @@ export function Header() {
 							'lg:(mx-0 w-auto)',
 						)}
 					>
-						<button
-							className="lg:hidden -mr-3 "
-							onClick={onClickMenu}
-						>
+						<button className="lg:hidden -mr-3" onClick={onClickMenu}>
 							<MenuIcon />
 						</button>
 						<div className={clsx('h-12 w-40 md:w-48')}>
