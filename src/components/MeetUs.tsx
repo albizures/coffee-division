@@ -177,7 +177,7 @@ export function MeetUs() {
 							);
 						})}
 					</div>
-					<div className="absolute pointer-events-none inset-x-0 bottom-15 lg:(top-15 right-1/4) flex justify-center items-start">
+					<div className="absolute pointer-events-none inset-x-0 bottom-15 lg:(top-44 right-1/4) flex justify-center items-start">
 						<button
 							className="pointer-events-auto"
 							onClick={onMoveHistory}
