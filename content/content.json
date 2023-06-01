@@ -254,13 +254,6 @@
 					"title": "Maintenance"
 				},
 				{
-					"name": "YENNY FIGUEROA",
-					"title": "Administración",
-					"description": "Soy Yenny Figueroa, Contador Público y Auditor con M.A. en Dirección y Gestión Financiera, y M.A. en Normas Internacionales de Contabilidad y Auditoría. Cuento con experiencia en empresas Multinacionales, Gubernamentales y Pymes. Me destaco por agilizar y estandarizar procesos.\nEncargada de elaborar y analizar la información contable y financiera, que reflejen la imagen fiel y velar por el cumplimiento de las regulaciones fiscales y reglamentarias.\nMi objetivo es hacer que la empresa genere valor a través de una buena gestión financiera que vaya alineada a la gestión estratégica.",
-					"shortDescription": "Soy Yenny Figueroa, Contador Público y Auditor con M.A. en Dirección y Gestión Financiera",
-					"picture": "yenny-figueroa"
-				},
-				{
 					"name": "ROCIO PIRIR",
 					"title": "Exportaciones",
 					"description": "Soy Rocio Pirir, Psicologa Industrial, con 5 años de experiencia en operaciones logísticas y 3 años en área de exportaciones de café. \nActualmente soy la encargada de Logística y Exportación de Industrias Noviembre, mantengo comunicación con productores del país para promoción y coordinación de cada exportación y consolidados de café marítimo y aéreo.\nCon mi labor en Industrias Noviembre, apoyo en la comercialización del café de los productores del país, llevando un control de la logística y exportaciones.",
@@ -292,9 +285,9 @@
 		"contact": {
 			"title": "Contáctanos",
 			"description": "Si eres un apasionado del café, contáctanos.",
-			"phone": "+502 2316-0556",
+			"phone": "+502 6206-0082",
 			"email": "asistente@industriasnoviembre.com",
-			"address": "Km. 13.5 carretera a Muxbal, centro comercial Plaza Muxbal, Primer Nivel, Oficina 101",
+			"address": "Km. 16.5 Carretera a El Salvador, Resicenciales San Antonio, Lote 200.",
 			"form": {
 				"name": "Nombre",
 				"email": "Correo electrónico",
@@ -624,11 +617,6 @@
 					"description": "I am Yessenia Godoy, for more than 8 years I have been in charge of the maintenance of Industrias Noviembre where every day my job is to ensure cleanliness, order and attention.\nMy goal is to ensure that all work areas and equipment are clean and tidy.",
 					"shortDescription": "I am Yessenia Godoy, for more than 8 years I have been in charge of the maintenance of Industrias Noviembre",
 					"picture": "yessenia-godoy"
-				},
-				{
-					"description": "I am Yenny Figueroa, Public Accountant and Auditor with M.A. in Financial Management, and M.A. in International Accounting and Auditing Standards. I have experience in multinational, government and Pymes companies. I stand out for standardizing processes.\nResponsible for preparing an analyze accounting and financial information that reflect the true image of the company and compliance with tax and other regulations.\nMy objective is generate value for the company through good financial management that is aligned with strategic management.",
-					"shortDescription": "I am Yenny Figueroa, Public Accountant and Auditor with M.A. in Financial Management",
-					"title": "Administrative Department"
 				},
 				{
 					"description": "My name is Rocio Pirir, with an Industrial Psychology degree, with 5 years of experience in logistics operations and 3 years in coffee export.\nIn Industrias Noviembre I am currently in charge of Logistics and Export, maintaining communication with producers to promote their coffee abroad with our clients. I also coordinate maritime and air coffee export.\nWith my work, I support coffee producers to commercialize their coffee with our clients all over the world.",

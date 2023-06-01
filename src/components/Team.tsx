@@ -49,8 +49,8 @@ function List(props: ListItemProps) {
 		<div className="flex mt-11 max-w-xl4">
 			<div
 				className={clsx('flex flex-col md:(gap-1 grid)', {
-					'md:(grid-cols-3 grid-rows-3)': items.length > 6,
-					'md:(grid-cols-2 grid-rows-1)': items.length === 2,
+					'md:grid-cols-3': items.length > 3,
+					'md:grid-cols-2': items.length === 2,
 				})}
 			>
 				{items.map((item, index) => {
