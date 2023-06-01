@@ -287,7 +287,7 @@
 			"description": "Si eres un apasionado del café, contáctanos.",
 			"phone": "+502 6206-0082",
 			"email": "asistente@industriasnoviembre.com",
-			"address": "Km. 16.5 Carretera a El Salvador, Resicenciales San Antonio, Lote 200.",
+			"address": "Km. 16.5 Carretera a El Salvador, Residenciales San Antonio, Lote 200.",
 			"form": {
 				"name": "Nombre",
 				"email": "Correo electrónico",
@@ -735,7 +735,7 @@
 				"message": "Message",
 				"send": "Send"
 			},
-			"address": "Address: Km. 13.5 carretera a Muxbal, centro comercial Plaza Muxbal, Primer Nivel, Oficina 101"
+			"address": "Km. 16.5 Carretera a El Salvador, Residenciales San Antonio, Lote 200."
 		}
 	}
 }
